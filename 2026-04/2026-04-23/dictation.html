@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-23 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-23</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+    <audio controls preload="metadata" src="2026-04-23_dictation.mp3"></audio>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>During the carnival, Mira took her younger brother for a walk near the river.</li>
+<li>A narrow path winds behind the school and reaches the quiet community garden.</li>
+<li>The guide took the tired dog for a walk after the noisy carnival.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>カーニバルの間、ミラは弟を川の近くへ散歩に連れて行った。</li>
+<li>細い道は学校の裏で曲がりくねり、静かな地域の庭にたどり着く。</li>
+<li>ガイドは騒がしいカーニバルの後、疲れた犬を散歩に連れて行った。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>carnival</td><td>カーニバル、祭り</td></tr>
+<tr><td>take ... for a walk</td><td>〜を散歩に連れて行く</td></tr>
+<tr><td>wind</td><td>曲がりくねる、巻く</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>During the carnival, Mira took her younger brother for a walk near the river.</li>
+<li>A narrow path winds behind the school and reaches the quiet community garden.</li>
+<li>The guide took the tired dog for a walk after the noisy carnival.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

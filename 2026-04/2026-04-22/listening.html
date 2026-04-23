@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-22 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-22</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+    <audio controls preload="metadata" src="2026-04-22_listening.mp3"></audio>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>When I visited the old dock last weekend, I expected to see only fishing boats. Instead, I found a small team repairing a weather station near the water. The station collected multiple kinds of data, including wind speed, temperature, and sea level. A volunteer explained that storms often descend from the hills quickly, so the town needs early warnings.</p>
+<p>Behind the dock, there was a line of pine trees that protected the road from strong wind. One engineer showed me a broken sensor and said, “We have to take this apart before we can understand the problem.” The work looked simple at first, but each small part mattered. If one wire failed, the whole system could send wrong information.</p>
+<p>I realized that local safety often depends on quiet work that most people never see. The weather station was not impressive like a large research center, but it helped people decide when to close the harbor or move boats away from danger.</p>
+<h2>Japanese Translation</h2>
+<p>先週末、古い波止場を訪れたとき、私は漁船だけを見ると思っていた。ところが、水辺の近くで気象観測装置を修理している小さなチームを見つけた。その装置は、風速、気温、海面の高さなど、複数の種類のデータを集めていた。ボランティアの一人は、嵐が丘から急に下ってくることが多いので、町には早期警報が必要なのだと説明した。</p>
+<p>波止場の後ろには、強風から道路を守る松の木の列があった。ある技術者は壊れたセンサーを見せて、「問題を理解する前に、これを分解しなければなりません」と言った。その作業は最初は単純に見えたが、小さな部品の一つひとつが重要だった。一本の配線が故障すれば、システム全体が誤った情報を送る可能性があった。</p>
+<p>私は、地域の安全は多くの人が見ることのない静かな仕事に支えられていることが多いのだと気づいた。その気象観測装置は大きな研究所のように目立つものではなかったが、港を閉鎖すべき時や船を危険から遠ざけるべき時を判断する助けになっていた。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>multiple</td><td>複数の、多数の</td></tr>
+<tr><td>descend</td><td>下る、降りる</td></tr>
+<tr><td>pine</td><td>松、松の木</td></tr>
+<tr><td>take ... apart</td><td>〜を分解する</td></tr>
+<tr><td>dock</td><td>波止場、ドック</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-18 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-18</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>私は以前、何か新しいことを始めるには十分な時間とお金が必要だと思っていた。</p>
+<p>しかし、毎日十五分だけでも続ければ、少しずつ自信がついてくることに気づいた。</p>
+<p>大切なのは完璧な計画を立てることではなく、無理のない形で続けることだ。</p>
+<h2>Task</h2>
+<p>Translate into English.</p>
+<h2>Ideal Version</h2>
+<p>I used to think that starting something new required enough time and money.</p>
+<p>However, I realized that if I kept at it for only fifteen minutes a day, I would gradually become more confident.</p>
+<p>What matters is not making a perfect plan but continuing in a way that is realistic for me.</p>
+<h2>Focus</h2>
+<ul>
+<li><code>used to think</code> is a natural way to describe a past belief that has changed.</li>
+<li><code>if I kept at it ..., I would ...</code> practices a conditional structure for repeated effort and gradual change.</li>
+<li><code>What matters is not A but B</code> is a useful pattern for contrasting what is truly important.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

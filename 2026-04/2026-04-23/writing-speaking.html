@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-23 Writing + Speaking</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-23</div>
+    <h1>Writing + Speaking</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Writing + Speaking</h1>
+<h2>Topic</h2>
+<p>When you are busy, is it better to reduce your goals, or to keep your goals and reduce the quality for a while?</p>
+<h2>Task 1: Speaking</h2>
+<p>First, speak about the topic in English for 1-2 minutes. Try to include:</p>
+<ul>
+<li>your basic opinion</li>
+<li>one concrete example from study, work, or daily life</li>
+<li>one reason why the opposite approach can also make sense</li>
+</ul>
+<h2>Task 2: Japanese Draft</h2>
+<p>日本語で「本当に言いたかった内容」を書いてください。きれいな文章でなくて大丈夫です。</p>
+<p>目安:</p>
+<ul>
+<li>自分はどちらを選びやすいか</li>
+<li>最近の具体例</li>
+<li>その選び方の弱点</li>
+</ul>
+<h2>Task 3: English Writing</h2>
+<p>日本語ドラフトをもとに、英語で 100-150 words 程度の文章を書いてください。完璧な表現より、「自分の言いたいことが英語でどこまで出せるか」を優先してください。</p>
+<h2>Task 4: Ideal Version</h2>
+<p>日本語ドラフトを書いたあと、Codex に渡して自然な英語版を作ってもらってください。まだドラフトがない段階では、ここは空欄で大丈夫です。</p>
+<h2>Task 5: Gap Check</h2>
+<ul>
+<li>言いたかったが出てこなかった表現</li>
+<li>自分の英語では不自然だった表現</li>
+<li>次回も使いたい表現</li>
+<li><code>review</code> に追加したい <code>word</code> / <code>idiom</code> / <code>usage</code> / <code>pattern</code></li>
+</ul>
+<h2>Task 6: Re-Speaking</h2>
+<p>改善後の内容でもう一度 1-2 分話してください。最初より自然に言えた表現をメモしてください。</p>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

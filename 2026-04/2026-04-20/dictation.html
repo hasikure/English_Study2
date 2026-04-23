@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-20 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-20</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+    <audio controls preload="metadata" src="2026-04-20_dictation.mp3"></audio>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>At the final corner, Mina began to sprint after saving her energy for three laps.</li>
+<li>Even during heated meetings, calm voices often prevail when people explain evidence clearly with patience.</li>
+<li>The desert caravan stopped near a well before the guides checked every tired camel.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>最後のコーナーで、ミナは3周分の体力を温存したあと全力疾走を始めた。</li>
+<li>白熱した会議の中でも、人々が根拠を辛抱強くはっきり説明すると、落ち着いた声が勝ることが多い。</li>
+<li>砂漠の隊商は井戸の近くで止まり、案内人たちは疲れたラクダを一頭ずつ確認した。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>sprint</td><td>全力疾走する、短距離走</td></tr>
+<tr><td>prevail</td><td>勝る、広く行きわたる</td></tr>
+<tr><td>caravan</td><td>隊商、旅人隊</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>At the final corner, Mina began to sprint after saving her energy for three laps.</li>
+<li>Even during heated meetings, calm voices often prevail when people explain evidence clearly with patience.</li>
+<li>The desert caravan stopped near a well before the guides checked every tired camel.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

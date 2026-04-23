@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Study</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<main class="shell">
+  <section class="hero">
+    <div class="kicker">English Study</div>
+    <h1>Daily Practice</h1>
+    <p>ローカルで生成した英語演習を、スマホで読みやすい静的ページとして表示します。</p>
+  </section>
+  <section class="grid">
+<section class="card">
+  <h2><a href="2026-04/2026-04-23/index.html">2026-04-23</a></h2>
+  <div class="links"><a href="2026-04/2026-04-23/reading.html">Reading</a>
+<a href="2026-04/2026-04-23/listening.html">Listening + audio</a>
+<a href="2026-04/2026-04-23/dictation.html">Dictation + audio</a>
+<a href="2026-04/2026-04-23/writing-speaking.html">Writing + Speaking</a>
+<a href="2026-04/2026-04-23/translation.html">Translation</a></div>
+</section>
+<section class="card">
+  <h2><a href="2026-04/2026-04-22/index.html">2026-04-22</a></h2>
+  <div class="links"><a href="2026-04/2026-04-22/reading.html">Reading</a>
+<a href="2026-04/2026-04-22/listening.html">Listening + audio</a>
+<a href="2026-04/2026-04-22/dictation.html">Dictation + audio</a>
+<a href="2026-04/2026-04-22/writing-speaking.html">Writing + Speaking</a>
+<a href="2026-04/2026-04-22/translation.html">Translation</a></div>
+</section>
+<section class="card">
+  <h2><a href="2026-04/2026-04-21/index.html">2026-04-21</a></h2>
+  <div class="links"><a href="2026-04/2026-04-21/reading.html">Reading</a>
+<a href="2026-04/2026-04-21/translation.html">Translation</a></div>
+</section>
+<section class="card">
+  <h2><a href="2026-04/2026-04-20/index.html">2026-04-20</a></h2>
+  <div class="links"><a href="2026-04/2026-04-20/reading.html">Reading</a>
+<a href="2026-04/2026-04-20/dictation.html">Dictation + audio</a></div>
+</section>
+<section class="card">
+  <h2><a href="2026-04/2026-04-18/index.html">2026-04-18</a></h2>
+  <div class="links"><a href="2026-04/2026-04-18/translation.html">Translation</a></div>
+</section>
+  </section>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

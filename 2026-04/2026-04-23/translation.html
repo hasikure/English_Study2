@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-23 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-23</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>たとえ短い練習でも、毎日続ければ自信につながる。逆に、計画がどれほど完璧でも、実際に手を動かさなければほとんど意味がない。</p>
+<h2>Task</h2>
+<p>Translate into English.</p>
+<h2>Ideal Version</h2>
+<p>Even short practice can lead to confidence if you keep doing it every day. On the other hand, even a perfect plan means little unless you actually take action.</p>
+<h2>Focus</h2>
+<ul>
+<li><code>Even ... can ...</code>: 「たとえ〜でも、〜し得る」を自然に表せます。</li>
+<li><code>if you keep doing it</code>: 「続ければ」は <code>continue</code> でもよいですが、日常的には <code>keep doing</code> が自然です。</li>
+<li><code>unless you actually take action</code>: 「実際に行動しなければ」は <code>unless</code> で簡潔に表せます。</li>
+<li><code>means little</code>: 「ほとんど意味がない」。<code>has little meaning</code> より自然な場面が多い表現です。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

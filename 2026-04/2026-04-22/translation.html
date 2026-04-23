@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-22 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-22</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>情報が多ければ多いほど、何が本当に重要なのかを選ぶのは難しくなる。だから、勉強計画を立てるときは、最初に目的をはっきりさせるべきだ。</p>
+<h2>Task</h2>
+<p>上の日本語を英訳してください。特に「〜すればするほど…」「何が本当に重要なのか」「最初に目的をはっきりさせる」を自然に表現することを意識してください。</p>
+<h2>Ideal Version</h2>
+<p>The more information we have, the harder it becomes to choose what really matters. Therefore, when we make a study plan, we should clarify our purpose first.</p>
+<h2>Focus</h2>
+<ul>
+<li><code>The more A, the harder B becomes</code>: 「Aすればするほど、Bは難しくなる」。</li>
+<li><code>what really matters</code>: 「本当に重要なこと」。</li>
+<li><code>clarify our purpose</code>: 「目的をはっきりさせる」。</li>
+<li><code>when we make a study plan</code>: 「勉強計画を立てるとき」。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
