@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend:wght@500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +24,7 @@ body {
     radial-gradient(circle at top left, rgba(242, 212, 155, 0.45), transparent 34rem),
     radial-gradient(circle at 92% 12%, rgba(15, 118, 110, 0.18), transparent 26rem),
     linear-gradient(145deg, #fffaf0 0%, #eef7f2 100%);
-  font-family: "Aptos", "Segoe UI", "BIZ UDPGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
   font-feature-settings: "palt";
   line-height: 1.72;
 }
@@ -54,7 +56,9 @@ a {
   background: rgba(255, 255, 255, 0.62);
   color: var(--accent-ink);
   text-decoration: none;
+  font-family: "Lexend", "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", sans-serif;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .hero,
@@ -72,6 +76,7 @@ a {
 }
 
 .kicker {
+  font-family: "Lexend", "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", sans-serif;
   color: var(--accent);
   font-size: 0.86rem;
   font-weight: 700;
@@ -82,14 +87,15 @@ a {
 h1,
 h2,
 h3 {
+  font-family: "Lexend", "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", sans-serif;
   line-height: 1.25;
 }
 
 h1 {
   margin: 8px 0 10px;
   font-size: clamp(2rem, 8vw, 4.6rem);
-  font-weight: 760;
-  letter-spacing: -0.025em;
+  font-weight: 700;
+  letter-spacing: -0.035em;
 }
 
 h2 {
@@ -123,11 +129,12 @@ h2 {
 }
 
 .links a {
+  font-family: "Lexend", "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", sans-serif;
   border-radius: 14px;
   background: var(--soft);
   padding: 8px 11px;
   text-decoration: none;
-  font-weight: 760;
+  font-weight: 650;
 }
 
 .material {
@@ -154,9 +161,10 @@ h2 {
 }
 
 .reveal summary {
+  font-family: "Lexend", "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", sans-serif;
   cursor: pointer;
   color: var(--accent-ink);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 audio {
