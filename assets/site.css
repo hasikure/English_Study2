@@ -22,8 +22,9 @@ body {
     radial-gradient(circle at top left, rgba(242, 212, 155, 0.45), transparent 34rem),
     radial-gradient(circle at 92% 12%, rgba(15, 118, 110, 0.18), transparent 26rem),
     linear-gradient(145deg, #fffaf0 0%, #eef7f2 100%);
-  font-family: ui-serif, Georgia, "Yu Mincho", "Hiragino Mincho ProN", serif;
-  line-height: 1.75;
+  font-family: "Aptos", "Segoe UI", "BIZ UDPGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-feature-settings: "palt";
+  line-height: 1.72;
 }
 
 a {
@@ -87,7 +88,8 @@ h3 {
 h1 {
   margin: 8px 0 10px;
   font-size: clamp(2rem, 8vw, 4.6rem);
-  letter-spacing: -0.045em;
+  font-weight: 760;
+  letter-spacing: -0.025em;
 }
 
 h2 {
@@ -110,6 +112,10 @@ h2 {
   margin: 0 0 10px;
 }
 
+.card h2 a {
+  text-decoration: none;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +127,7 @@ h2 {
   background: var(--soft);
   padding: 8px 11px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 760;
 }
 
 .material {
