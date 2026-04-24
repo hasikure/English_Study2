@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-24 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-24</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+    <audio controls preload="metadata" src="2026-04-24_listening.wav"></audio>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last month, Mia became an applicant for a part-time job at a language school. She almost gave up because the process looked long, but her friend told her to get through with it one step at a time. First, she wrote a short essay about language acquisition and explained how people learn by listening and repeating. Then she prepared for the interview. Outside the station, volunteers were giving hot tea away for nothing, and that small kindness helped her relax.</p>
+<p>During the interview, the manager asked why she wanted the job. Mia said she enjoyed helping new students feel comfortable. She also said that learning a language should not be for nothing; every small effort should lead to real progress. The manager smiled and asked one final question. Mia&#x27;s heart gave a jump, but she answered calmly. Two days later, she got the job. Looking back, she was glad she had decided to get through with the process instead of quitting halfway.</p>
+<h2>Japanese Translation</h2>
+<p>先月、ミアは語学学校のアルバイトの応募者になりました。手続きが長そうに見えたので、彼女はあやうくあきらめるところでしたが、友人は「一つずつ進めれば最後まで終えられるよ」と励ましました。まず彼女は、言語習得についての短い作文を書き、人は聞いて繰り返すことで学ぶのだと説明しました。それから面接の準備をしました。駅の外では、ボランティアが温かいお茶を無料で配っていて、そのちょっとした親切のおかげで彼女は落ち着くことができました。</p>
+<p>面接では、責任者がなぜその仕事をしたいのかと尋ねました。ミアは、新しい生徒が安心できるように手助けするのが好きだと答えました。また、語学学習は無駄になってはいけないし、小さな努力の一つ一つが本当の上達につながるべきだとも言いました。責任者はほほえみ、最後にもう一つ質問をしました。ミアは心臓がぎくっとしましたが、落ち着いて答えました。二日後、彼女はその仕事を得ました。振り返ってみると、途中でやめずに、その手続きを最後までやり遂げてよかったと思いました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>acquisition</td><td>獲得すること、習得すること</td></tr>
+<tr><td>applicant</td><td>申請者、志願者、応募者</td></tr>
+<tr><td>get through with</td><td>〜を終える</td></tr>
+<tr><td>for nothing</td><td>無料で／無駄に</td></tr>
+<tr><td>jump</td><td>跳ぶこと、急な上昇、ぎくっとすること</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-24 Writing + Speaking</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-24</div>
+    <h1>Writing + Speaking</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Writing + Speaking</h1>
+<h2>Topic</h2>
+<p>When you want to recharge, is it better to stay home and rest, or to go out and do something active?</p>
+<h2>Task 1: Speaking</h2>
+<p>First, speak about the topic in English for 1-2 minutes. Try to include:</p>
+<ul>
+<li>your basic preference</li>
+<li>one recent example from your own life</li>
+<li>one situation where the opposite choice is better</li>
+</ul>
+<h2>Task 2: Japanese Draft</h2>
+<p>日本語で、「本当はこう言いたい」という内容を書いてください。きれいな文章でなくて大丈夫です。次の点を入れると書きやすいです。</p>
+<ul>
+<li>普段はどちらを選ぶことが多いか</li>
+<li>その理由</li>
+<li>最近の具体的な体験</li>
+<li>状況によって考えが変わるかどうか</li>
+</ul>
+<h2>Task 3: English Writing</h2>
+<p>日本語ドラフトをもとに、英語で 100-150 words くらいの文章を書いてください。完璧さよりも、「自分の考え」と「具体例」が自然につながることを意識しましょう。</p>
+<h2>Task 4: Ideal Version</h2>
+<p>日本語ドラフトを書いたあと、Codex に自然な英語版を作ってもらってください。自分の英文と比べながら、次の点を確認しましょう。</p>
+<ul>
+<li>どの表現がより自然だったか</li>
+<li>どこで語順やつなぎ方が違ったか</li>
+<li>自分の気持ちやニュアンスが英語でどう表現されていたか</li>
+</ul>
+<h2>Task 5: Gap Check</h2>
+<ul>
+<li>言いたかったのに英語で出てこなかった表現</li>
+<li>自分では書いたけれど少し不自然かもしれない表現</li>
+<li>次回そのまま使いたい表現</li>
+</ul>
+<h2>Task 6: Re-Speaking</h2>
+<p>Task 4 で見つけた表現を使って、もう一度 1-2 分話してください。最初よりも、理由と具体例をはっきり入れることを意識しましょう。</p>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
