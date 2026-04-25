@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-25 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-25</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>私はその記事を昨日のうちに読むつもりだったが、予想以上に仕事が長引いたので、結局読めなかった。今夜時間があれば、要点をメモしながら読むつもりだ。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>I had planned to read the article yesterday, but work took longer than I expected, so I didn&#x27;t get to it in the end. If I have time tonight, I&#x27;ll read it while taking notes on the main points.</p>
+<h2>Focus</h2>
+<ul>
+<li>Use <code>had planned to ...</code> to express 「〜するつもりだった」 in a natural way.</li>
+<li><code>take longer than I expected</code> is a useful pattern for 「予想以上に長引く」.</li>
+<li><code>while taking notes on ...</code> is a natural way to say 「〜をメモしながら」.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

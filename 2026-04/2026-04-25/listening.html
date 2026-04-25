@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-25 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-25</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+    <audio controls preload="metadata" src="2026-04-25_listening.wav"></audio>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last week, our company invited a fitness coach to speak during lunch. She said that small habits matter more than dramatic plans. When people talk about health, they often refer to expensive gyms or strict diets, but her advice was simpler. First, keep a small stock of easy food at home, such as fruit, yogurt, and nuts. If healthy food is ready, you are less likely to order fast food late at night. She also told us to stand up every hour and stretch the front of the thigh after long periods of sitting. I had never paid attention to that part of my body, but it felt surprisingly tight.</p>
+<p>The coach explained that these simple actions amount to more than physical change. They also reduce stress and improve sleep. In her view, the goal is not to become an athlete. The goal is to stay healthy while managing school, work, or family life. After the talk, I wrote down her ideas and put them on my desk. I still forget sometimes, but now I have a clear plan that feels realistic.</p>
+<h2>Japanese Translation</h2>
+<p>先週、私たちの会社は昼休みにフィットネスコーチを招いて話をしてもらいました。彼女は、大げさな計画よりも小さな習慣のほうが大切だと言いました。健康について話すとき、人は高いジムや厳しい食事制限に言及しがちですが、彼女の助言はもっとシンプルでした。まず、果物、ヨーグルト、ナッツのような手軽な健康食品を家に少しストックしておくことです。健康的な食べ物がすぐに食べられる状態なら、夜遅くにファストフードを頼む可能性は低くなります。さらに彼女は、長時間座った後は毎時間立ち上がり、ももの前側を伸ばすようにと言いました。私はその部分を今まであまり意識したことがありませんでしたが、思った以上に固くなっていました。</p>
+<p>そのコーチは、こうした簡単な行動は単なる身体的な変化以上の意味を持つと説明しました。ストレスを減らし、睡眠も改善してくれるのです。彼女の考えでは、目標はアスリートになることではありません。学校や仕事、家庭生活を続けながら健康でいることが目標なのです。話のあと、私は彼女のアイデアを書き留めて机の上に置きました。今でも時々忘れてしまいますが、現実的で続けやすいはっきりした計画ができました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>stay healthy</td><td>健康でいる</td></tr>
+<tr><td>refer to</td><td>〜に言及する／〜を参照する</td></tr>
+<tr><td>amount to</td><td>合計〜になる／結局〜に等しい</td></tr>
+<tr><td>thigh</td><td>もも、大腿部</td></tr>
+<tr><td>stock</td><td>在庫、蓄え、ストック</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
