@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-26 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-26</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>来週の発表までに資料を完成させるために、私は毎朝一時間早く起きることにした。最初は大変だったが、この習慣のおかげで、夜にあわてて作業することが少なくなった。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>To finish my slides before next week&#x27;s presentation, I decided to get up an hour earlier every morning. It was hard at first, but thanks to this habit, I don&#x27;t have to rush through my work at night as often.</p>
+<h2>Focus</h2>
+<ul>
+<li>Use <code>to + verb</code> to express purpose: <code>To finish my slides ...</code></li>
+<li><code>decided to ...</code> is a natural pattern for <code>〜することにした</code></li>
+<li><code>don&#x27;t ... as often</code> is a useful way to say <code>〜ことが少なくなった</code></li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

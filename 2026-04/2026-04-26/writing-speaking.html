@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-26 Writing + Speaking</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-26</div>
+    <h1>Writing + Speaking</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Writing + Speaking</h1>
+<h2>Topic</h2>
+<p>A small habit that makes your day better</p>
+<p>Talk about a habit in your daily life that helps you feel better, work better, or stay calm.</p>
+<p>Examples: taking a walk, making coffee, checking your schedule, stretching, writing a to-do list.</p>
+<h2>Task 1: Speaking</h2>
+<p>Speak in English for 30-60 seconds before you write anything.</p>
+<p>Try to answer these questions:</p>
+<ul>
+<li>What is the habit?</li>
+<li>When do you usually do it?</li>
+<li>Why did you start it?</li>
+<li>How does it help you?</li>
+<li>What happens when you do not do it?</li>
+</ul>
+<h2>Task 2: Japanese Draft</h2>
+<p>英語で言えなかったことを、日本語で自然に書いてください。</p>
+<p>書くときのヒント:</p>
+<ul>
+<li>その習慣は何か</li>
+<li>いつするか</li>
+<li>始めた理由</li>
+<li>どんな効果があるか</li>
+<li>しない日はどう感じるか</li>
+</ul>
+<h2>Task 3: English Writing</h2>
+<p>Use your Japanese draft and write 5-7 sentences in English.</p>
+<p>Focus on clear meaning first.</p>
+<p>You do not need difficult words.</p>
+<p>Try to connect your ideas with words like <code>because</code>, <code>when</code>, <code>so</code>, and <code>even</code>.</p>
+<h2>Task 4: Ideal Version</h2>
+<p>Read this after Task 3 and compare it with your version.</p>
+<p>One small habit that makes my day better is taking a short walk in the morning. I started doing it because I often felt sleepy and unfocused after waking up. Even a ten-minute walk helps me wake up and organize my thoughts. I also enjoy getting some fresh air before I begin my work or study. When I skip this habit, my morning feels slower and less productive. It is simple, but it makes a clear difference in my day.</p>
+<h2>Task 5: Gap Check</h2>
+<ul>
+<li>Which ideas were easy to say, and which expressions were missing?</li>
+<li>Which parts of your English sounded unnatural or too simple?</li>
+<li>Which expressions do you want to reuse next time? For example: <code>helps me wake up</code>, <code>organize my thoughts</code>, <code>skip this habit</code>, <code>makes a clear difference</code></li>
+</ul>
+<h2>Task 6: Re-Speaking</h2>
+<p>Speak again in English for 30-60 seconds.</p>
+<p>This time, try to:</p>
+<ul>
+<li>use at least two expressions from Task 5</li>
+<li>speak more smoothly without translating word by word</li>
+<li>say your opinion and your personal example clearly</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
