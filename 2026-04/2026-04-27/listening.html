@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-27 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-27</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+    <audio controls preload="metadata" src="2026-04-27_listening.wav"></audio>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Yesterday morning, I arrived early at city hall for a youth science award ceremony. Our team leader, Ken, had received a nomination for a local project that turned empty rooftops into small gardens. Before the event started, we ate a quick breakfast in the waiting room. Someone had brought coffee and a warm pancake from a street cart outside.</p>
+<p>Then a reporter asked Ken a sharp question. She said one part of our report seemed to be inconsistent with a photo on social media. Ken stayed calm and explained that the photo was old and did not show the final design. His answer seemed to take away some doubt, but I still stayed on my guard because more questions were coming.</p>
+<p>In the end, the judges thanked him for being clear and honest. We did not win the top prize, but the nomination itself meant a lot to our small team. On the train home, Ken said the best part was learning how to speak under pressure.</p>
+<h2>Japanese Translation</h2>
+<p>昨日の朝、私は若者向け科学賞の式典のために早めに市役所へ着きました。私たちのチームリーダーのケンは、使われていない屋上を小さな庭に変える地域プロジェクトでノミネートされていました。イベントが始まる前、私たちは控え室で軽い朝食を取りました。外の屋台で買ってきたコーヒーと温かいパンケーキを、誰かが持ってきてくれていました。</p>
+<p>その後、ある記者がケンに鋭い質問をしました。彼女は、私たちの報告書の一部がSNS上の写真と一致しないように見えると言いました。ケンは落ち着いたままで、その写真は古く、最終的なデザインを示していないのだと説明しました。彼の答えで疑いはいくらか薄れたようでしたが、さらに質問が来そうだったので、私はまだ警戒していました。</p>
+<p>結局、審査員たちは彼の説明が明確で誠実だったことに感謝しました。私たちは最優秀賞は取れませんでしたが、そのノミネート自体が私たちの小さなチームにとって大きな意味を持っていました。帰りの電車でケンは、いちばんよかったのはプレッシャーの中で話す方法を学べたことだと言いました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>be inconsistent with</td><td>〜と一致しない</td></tr>
+<tr><td>take away</td><td>〜を取り去る</td></tr>
+<tr><td>nomination</td><td>指名、任命 / 《…を…に》指名すること、任命すること</td></tr>
+<tr><td>pancake</td><td>パンケーキ</td></tr>
+<tr><td>on one&#x27;s guard</td><td>警戒して</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
