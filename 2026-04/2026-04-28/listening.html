@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-28 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-28</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+    <audio controls preload="metadata" src="2026-04-28_listening.wav"></audio>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Sunday, I visited a small community radio station with my friend Nina. She hosts a weekly book show, and she had invited me to watch the recording. Usually, she talks about detective stories, but this time she wanted to delve into a different genre and discuss travel memoirs. Before the program started, the station owner brought us warm cinnamon rolls. Nina laughed and said they were too indulgent for an ordinary afternoon, but she ate one anyway.</p>
+<p>Everything went smoothly at first. Nina introduced the books, read a short passage, and explained why the writers sounded honest and curious. Then, midway through the show, one of the microphones stopped working. For a moment, we were in a real predicament. The red recording light was still on, but the control screen showed only silence.</p>
+<p>Nina took a deep breath and kept speaking while I hurried to replace the cable. After a few tense seconds, the sound returned. Later, she said that radio teaches you to stay calm because listeners can hear your mood. I left the station thinking that even a small program can feel exciting when something unexpected happens.</p>
+<h2>Japanese Translation</h2>
+<p>先週の日曜日、私は友人のニナと一緒に小さなコミュニティラジオ局を訪れました。彼女は毎週、本を紹介する番組を担当していて、その収録を見に来ないかと私を誘ってくれたのです。普段は探偵小説について話していますが、今回は別のジャンルを掘り下げて、旅行回想録について取り上げたいと思っていました。番組が始まる前に、局のオーナーが温かいシナモンロールを持ってきてくれました。ニナは、普通の午後には少しぜいたくすぎるねと笑いながら言いましたが、それでもひとつ食べました。</p>
+<p>最初はすべて順調でした。ニナは本を紹介し、短い一節を読み、その作家たちの文章がなぜ率直で好奇心に満ちているように聞こえるのかを説明しました。ところが、番組の途中で、マイクのひとつが動かなくなってしまいました。その瞬間、私たちは本当に困った状況に陥りました。赤い録音ランプはまだついていましたが、操作画面には無音しか表示されていませんでした。</p>
+<p>ニナは深呼吸をして話し続け、私は急いでケーブルを交換しました。数秒の緊張した時間のあと、音は戻りました。あとで彼女は、ラジオは落ち着いていることを教えてくれると言いました。なぜなら、聞き手には話し手の気分が伝わるからです。私は、たとえ小さな番組でも、思いがけないことが起こるととてもわくわくするものだと思いながら、そのラジオ局を後にしました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>indulgent</td><td>気ままな; 寛大な, 甘い</td></tr>
+<tr><td>delve into</td><td>〜を掘り下げる</td></tr>
+<tr><td>genre</td><td>ジャンル</td></tr>
+<tr><td>predicament</td><td>苦境, 窮地</td></tr>
+<tr><td>midway through</td><td>〜の途中で</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
