@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-29 Writing + Speaking</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-29</div>
+    <h1>Writing + Speaking</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Writing + Speaking</h1>
+<h2>Topic</h2>
+<p>Do you prefer shopping in a physical store, or buying things online?</p>
+<p>Think about clothes, books, daily items, gifts, or electronics.</p>
+<h2>Task 1: Speaking</h2>
+<p>Speak in English first for 60-90 seconds.</p>
+<p>Try to include:</p>
+<ul>
+<li>which option you usually prefer</li>
+<li>two reasons for that preference</li>
+<li>one real example from your life</li>
+<li>one situation where you would choose the opposite option</li>
+</ul>
+<h2>Task 2: Japanese Draft</h2>
+<p>Write what you really wanted to say in Japanese in 3-6 sentences.</p>
+<p>You can include:</p>
+<ul>
+<li>what kinds of things you usually buy</li>
+<li>why that method is convenient or comfortable for you</li>
+<li>one memorable shopping experience</li>
+<li>one case where the other option is better</li>
+</ul>
+<h2>Task 3: English Writing</h2>
+<p>Use your Japanese draft and write 5-8 sentences in English.</p>
+<p>Try to make your writing clear:</p>
+<ul>
+<li>start with your main preference</li>
+<li>add one or two reasons</li>
+<li>give one concrete example</li>
+<li>mention an exception or contrast</li>
+<li>end with a short conclusion</li>
+</ul>
+<h2>Task 4: Ideal Version</h2>
+<p>Read this after Task 3 and compare it with your version.</p>
+<p>I usually prefer buying things online, especially when I already know what I need. It is easy to compare prices, read reviews, and order from home without spending extra time. For example, when I need books or simple daily items, online shopping is faster and gives me more choices. However, I still like going to a physical store when I buy clothes or shoes, because I want to check the size, color, and comfort in person. I also visit stores when I need something right away and cannot wait for delivery. In general, online shopping is more convenient for me, but physical stores are better when I want to make sure something really fits my needs.</p>
+<h2>Task 5: Gap Check</h2>
+<ul>
+<li>Expressions you could not produce: Which ideas were hard to say, such as <code>compare prices</code>, <code>read reviews</code>, <code>check the size</code>, <code>in person</code>, or <code>right away</code>?</li>
+<li>Expressions that sounded unnatural: Check whether your reason sentences and contrast words, such as <code>however</code> and <code>in general</code>, sounded smooth when you read them aloud.</li>
+<li>Expressions you want to reuse next time: Choose 2-3 phrases from the ideal version that match your own speaking style.</li>
+</ul>
+<h2>Task 6: Re-Speaking</h2>
+<p>Speak again for 60-90 seconds after revision.</p>
+<p>This time:</p>
+<ul>
+<li>use at least 2 expressions from your gap check</li>
+<li>keep one concrete shopping example</li>
+<li>focus on sounding natural and clear, not perfect</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
