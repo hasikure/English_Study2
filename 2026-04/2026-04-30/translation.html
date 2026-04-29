@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-30 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-30</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>先月からベランダでトマトを育てているが、忙しい日が続いて、数日水やりを忘れてしまった。今朝見たら葉が少し元気がなかったので、仕事の前に土を入れ替えて、支柱も立て直した。うまく回復したら、今度は世話の時間をスマホにメモしておこうと思う。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>I&#x27;ve been growing tomatoes on my balcony since last month, but I had a series of busy days and forgot to water them for a few days. When I checked them this morning, the leaves looked a little weak, so before work I changed the soil and fixed the support stakes. If they recover well, I&#x27;ll make a note on my phone so I can remember when to take care of them next time.</p>
+<h2>Focus</h2>
+<ul>
+<li>Use <code>have been growing</code> for something that started in the past and continues now.</li>
+<li><code>forgot to water them for a few days</code> is a natural pattern for missed routine actions.</li>
+<li><code>If they recover well, I&#x27;ll ...</code> is a useful way to connect a condition and a future plan.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

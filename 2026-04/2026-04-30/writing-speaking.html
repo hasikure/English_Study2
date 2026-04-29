@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-30 Writing + Speaking</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-30</div>
+    <h1>Writing + Speaking</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Writing + Speaking</h1>
+<h2>Topic</h2>
+<p>Do you prefer discussing important things by phone, or by text message?</p>
+<p>Think about making plans, solving a misunderstanding, checking on someone, or talking with classmates or coworkers.</p>
+<h2>Task 1: Speaking</h2>
+<p>Speak in English for 1-2 minutes.</p>
+<p>Try to answer these points:</p>
+<ul>
+<li>Which do you usually choose: phone calls or text messages?</li>
+<li>Why does that choice work better for you?</li>
+<li>Describe one real situation.</li>
+<li>What is one weakness of your choice?</li>
+</ul>
+<h2>Task 2: Japanese Draft</h2>
+<p>英語で言いたかったことを、日本語で自然に書いてください。</p>
+<p>入れるとよい内容:</p>
+<ul>
+<li>自分はどちらを好むか</li>
+<li>その理由</li>
+<li>実際の場面や経験</li>
+<li>逆に、もう一方のほうがよい場面</li>
+</ul>
+<h2>Task 3: English Writing</h2>
+<p>Write your idea in English in 5-8 sentences.</p>
+<p>Try to include:</p>
+<ul>
+<li>your preference</li>
+<li>at least one clear reason</li>
+<li>one specific example</li>
+<li>one exception or opposite case</li>
+</ul>
+<h2>Task 4: Ideal Version</h2>
+<p>I usually prefer sending text messages when I need to discuss something important. Writing gives me a little time to think, so I can choose my words more carefully. This is useful when I need to make plans or explain a small problem clearly. For example, if I have to change a meeting time, I can send all the details in one message, and the other person can check them later. However, if there is a serious misunderstanding, I would rather make a phone call. Hearing the other person&#x27;s voice makes it easier to understand their feelings and solve the problem quickly.</p>
+<h2>Task 5: Gap Check</h2>
+<ul>
+<li>Expressions you could not produce: &quot;choose my words more carefully,&quot; &quot;check them later,&quot; &quot;solve the problem quickly&quot;</li>
+<li>Expressions that sounded unnatural: &quot;talk important things by message&quot; -&gt; &quot;discuss something important by text message&quot;</li>
+<li>Expressions you want to reuse next time: &quot;make plans,&quot; &quot;explain a small problem clearly,&quot; &quot;hear the other person&#x27;s voice,&quot; &quot;serious misunderstanding&quot;</li>
+</ul>
+<h2>Task 6: Re-Speaking</h2>
+<p>Speak again for 1-2 minutes after revision.</p>
+<p>This time:</p>
+<ul>
+<li>reuse at least two expressions from Task 5</li>
+<li>add one specific example</li>
+<li>use one contrast such as &quot;However,&quot; or &quot;On the other hand,&quot;</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

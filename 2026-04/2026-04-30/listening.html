@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-30 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-30</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+    <audio controls preload="metadata" src="2026-04-30_listening.wav"></audio>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>On Monday morning, I arrived at Haneda Airport earlier than usual for a business trip to Sapporo. Even so, a long line had already formed, and dozens of passengers were starting to queue for the security check. The airport had introduced a new security regime that week, so every bag needed an extra scan. At first, most people stayed calm and tried to carry on as normal. Some opened their laptops, and others quietly drank coffee while they waited.</p>
+<p>About twenty minutes later, a problem came to light. One of the scanning machines had stopped working, and the staff had only just noticed it. That was why the line was moving so slowly. A tired airport worker apologized to us and explained the situation through a speaker. He asked everyone to think over their next step and decide whether they still had enough time to catch their flights. A few travelers left the line and went to talk to the airline desk, but most of us decided to stay. In the end, the machine was fixed, the line moved again, and I reached my gate just before boarding began.</p>
+<h2>Japanese Translation</h2>
+<p>月曜日の朝、私は札幌への出張のため、いつもより早く羽田空港に着きました。それでも、すでに長い列ができていて、何十人もの乗客が保安検査のために並び始めていました。その週、空港では新しい保安体制が導入されたばかりで、すべての荷物に追加のスキャンが必要でした。最初は、ほとんどの人が落ち着いていて、いつもどおりに過ごそうとしていました。ノートパソコンを開く人もいれば、静かにコーヒーを飲みながら待つ人もいました。</p>
+<p>20分ほどたったころ、問題が明るみに出ました。スキャン機の1台が止まっていたのに、スタッフがそれに気づいたのはついさっきだったのです。それが列の進みがとても遅かった理由でした。疲れた様子の空港職員が私たちに謝り、スピーカーで状況を説明しました。そして、次にどうするかをよく考え、自分の便にまだ間に合うかどうか判断してほしいと呼びかけました。何人かの旅行者は列を離れて航空会社のカウンターへ向かいましたが、私たちの大半はそのまま待つことにしました。結局、機械は直り、列は再び進み始め、私は搭乗開始の直前にゲートへ着きました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>come to light</td><td>明るみに出る</td></tr>
+<tr><td>carry on</td><td>続ける</td></tr>
+<tr><td>queue</td><td>列を作って待つ</td></tr>
+<tr><td>think over</td><td>〜を熟考する</td></tr>
+<tr><td>regime</td><td>体制 / 制度</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
