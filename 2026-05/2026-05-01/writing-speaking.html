@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-01 Writing + Speaking</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-01</div>
+    <h1>Writing + Speaking</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Writing + Speaking</h1>
+<h2>Topic</h2>
+<p>When you need a break after studying or working, do you prefer going outside for a short walk, or staying indoors and relaxing?</p>
+<p>Think about situations like after a long class, during a lunch break, on a rainy day, after work, or during exam week.</p>
+<h2>Task 1: Speaking</h2>
+<p>Speak in English first for 45 to 60 seconds.</p>
+<p>Include:</p>
+<ul>
+<li>which option you usually prefer</li>
+<li>two reasons</li>
+<li>one real example from your life</li>
+<li>one situation where your choice might change</li>
+</ul>
+<h2>Task 2: Japanese Draft</h2>
+<p>Write what you really wanted to say in Japanese.</p>
+<p>You can include:</p>
+<ul>
+<li>ふだんはどちらを選ぶか</li>
+<li>その理由</li>
+<li>最近の具体例</li>
+<li>ただし例外もあること</li>
+</ul>
+<h2>Task 3: English Writing</h2>
+<p>Write it in English in 4 to 6 sentences.</p>
+<p>Try to connect your ideas with words like:</p>
+<ul>
+<li>usually</li>
+<li>because</li>
+<li>for example</li>
+<li>however</li>
+</ul>
+<h2>Task 4: Ideal Version</h2>
+<p>After writing your own English, compare it with this sample.</p>
+<p>I usually prefer going outside for a short walk when I need a break after studying or working. Moving my body helps me refresh my mind, and even ten minutes of fresh air can change my mood. For example, when I feel tired after a long afternoon of work, I often walk around my neighborhood before dinner. However, if the weather is bad or I am very exhausted, I would rather stay indoors and relax with music or tea.</p>
+<h2>Task 5: Gap Check</h2>
+<ul>
+<li>Expressions you could not produce: for example, &quot;refresh my mind,&quot; &quot;get some fresh air,&quot; &quot;feel exhausted&quot;</li>
+<li>Expressions that sounded unnatural: check articles, verb tense, and whether your comparison sounded smooth</li>
+<li>Expressions you want to reuse next time: &quot;even ten minutes of...,&quot; &quot;change my mood,&quot; &quot;I would rather...&quot;</li>
+</ul>
+<h2>Task 6: Re-Speaking</h2>
+<p>Speak again after revision for 45 to 60 seconds.</p>
+<p>This time, try to:</p>
+<ul>
+<li>use at least two expressions from Task 5</li>
+<li>speak more smoothly without reading word by word</li>
+<li>add one extra detail or example</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

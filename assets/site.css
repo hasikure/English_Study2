@@ -152,6 +152,16 @@ h2 {
   background: rgba(231, 243, 239, 0.9);
 }
 
+.audio-item + .audio-item {
+  margin-top: 12px;
+}
+
+.audio-label {
+  font-family: "Lexend", "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", sans-serif;
+  color: var(--accent-ink);
+  font-weight: 700;
+}
+
 .reveal {
   margin: 1.4rem 0;
   padding: 0.85rem 1rem;
