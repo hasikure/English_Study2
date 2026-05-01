@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-02 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-02</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-02_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Friday evening, I attended a public talk at our city&#x27;s aquarium. The hall was dim, and a large tank glowed behind the speaker. She was a marine biologist, and she warned us that several kinds of sea turtles could become extinct if pollution and illegal fishing continue. She explained the problem in simple words and showed how cleaner beaches can enhance the survival of young turtles.</p>
+<p>After the talk, the aquarium staff asked visitors for a small donation to support a rescue project. They said the money would buy tracking tags and medicine for injured animals. I also learned that the aquarium was trying to keep down its own energy use by reducing extra lights and using quieter pumps at night.</p>
+<p>What impressed me most was a high school volunteer in the front row. He unashamedly asked whether local businesses were doing enough to protect the coast. His question was direct, but it made the whole room think. On my way home, I felt that the evening had turned a distant issue into something personal and real.</p>
+<h2>Japanese Translation</h2>
+<p>先週の金曜の夕方、私は市内の水族館で開かれた一般向けの講演会に参加した。会場は薄暗く、話し手の後ろでは大きな水槽が光っていた。話し手は海洋生物学者で、汚染や違法な漁がこのまま続けば、数種類のウミガメが絶滅するおそれがあると警告した。彼女はその問題をやさしい言葉で説明し、海岸をきれいにすることが子ガメの生存を高めると示した。</p>
+<p>講演のあと、水族館のスタッフは、保護活動を支えるために少額の寄付を来場者に呼びかけた。そのお金は、追跡用のタグや、けがをした動物のための薬を買うのに使われるという。また私は、その水族館自体も、余分な照明を減らし、夜はより静かなポンプを使うことで、自分たちのエネルギー使用を抑えようとしていると知った。</p>
+<p>いちばん印象に残ったのは、最前列に座っていた高校生のボランティアだった。彼は臆することなく、地元の企業は海岸を守るために十分なことをしているのかと質問した。その問いは率直だったが、会場全体に考えさせる力があった。帰り道、私は、その夜の出来事によって、遠い問題だと思っていたことが、自分にとって身近で現実的なものに変わったと感じた。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>keep down</td><td>〜を抑える／低く保つ</td></tr>
+<tr><td>donation</td><td>寄贈,寄付 / 寄付金,寄贈品</td></tr>
+<tr><td>enhance</td><td>...の程度を高める, ...の価値を高める, ...を向上させる</td></tr>
+<tr><td>unashamedly</td><td>気後れすることなく, 臆することなく, 恥じらいもなく</td></tr>
+<tr><td>become extinct</td><td>絶滅する</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
