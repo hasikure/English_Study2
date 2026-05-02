@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-03 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-03</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-03_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Saturday, our university held a used-book festival in the gym. I worked at the welcome desk from early morning. Before the doors opened, I tried to conceal my worry because we had fewer volunteers than expected. Our chief organizer, Ms. Tanaka, stayed calm. She told us to do our best and said that the chief executive of a local bookstore chain would visit at noon.</p>
+<p>When he arrived, he surprised everyone. Instead of giving a formal speech, he picked up boxes and helped us carry them. He also bought several English-learning books at a discount and joked that he might become a student again. A little later, a problem came up. The price labels fell off one table, and some students wanted to conceal the mistake until we could fix it. Ms. Tanaka said honesty mattered more. So we explained the problem to customers and wrote new labels by hand.</p>
+<p>In the end, people were patient, and the sale went well. We raised enough money to buy new chairs for the library reading room. I went home tired, but proud of our team.</p>
+<h2>Japanese Translation</h2>
+<p>先週の土曜日、私たちの大学は体育館で古本フェスティバルを開きました。私は朝早くから受付で働いていました。開場前、予想よりボランティアの数が少なかったので、不安を隠そうとしていました。責任者の田中さんは落ち着いていて、私たちに最善を尽くそうと言い、正午には地元の書店チェーンの最高責任者が来ると話しました。</p>
+<p>その人が到着すると、みんな驚きました。形式的なスピーチをする代わりに、箱を持ち上げて私たちと一緒に運んでくれたのです。さらに、英語学習の本を何冊か割引で買い、「また学生になりたくなるね」と冗談を言いました。少しして、問題が起きました。あるテーブルの値札が落ちてしまい、直せるまでそのミスを隠したいと思う学生もいました。けれど田中さんは、正直さのほうが大切だと言いました。そこで私たちはお客さんに事情を説明し、手書きで新しい値札を作りました。</p>
+<p>最後には、お客さんたちも辛抱強く待ってくれて、セールはうまくいきました。図書館の閲覧室に新しい椅子を買えるだけのお金も集まりました。私は疲れて家に帰りましたが、チームのことを誇らしく思いました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>conceal</td><td>を隠す / を秘密にする</td></tr>
+<tr><td>at a discount</td><td>割引で</td></tr>
+<tr><td>chief</td><td>長 / 責任者</td></tr>
+<tr><td>executive</td><td>重役 / 経営幹部</td></tr>
+<tr><td>do one&#x27;s best</td><td>最善を尽くす</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
