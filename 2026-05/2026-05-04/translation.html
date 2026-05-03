@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-04 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-04</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>今朝、駅に着いたときには、事故の影響で電車がすでに20分以上遅れていた。私はホームで待っているあいだに、上司に遅れるかもしれないと連絡し、スマホで会議の資料を見直した。結局、会議が始まる前には会社に着けたが、次からは別の行き方も調べておこうと思う。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>By the time I got to the station this morning, the train was already more than twenty minutes late because of an accident. While I was waiting on the platform, I messaged my boss that I might be late and reviewed the meeting materials on my phone. In the end, I made it to the office before the meeting started, but next time I think I&#x27;ll look into another route as well.</p>
+<h2>Focus</h2>
+<ul>
+<li><code>By the time ... , ... already ...</code> is a useful pattern for 「〜したときには、すでに…だった」.</li>
+<li><code>might be late</code> sounds natural when you want to say 「遅れるかもしれない」 without sounding too certain.</li>
+<li><code>look into another route</code> is a natural way to say 「別の行き方も調べる」.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
