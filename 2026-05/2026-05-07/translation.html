@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-07 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-07</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>最近、寝る前にスマホを見る時間が長すぎると感じている。昨夜は30分だけ動画を見るつもりだったのに、気がついたら1時間以上たっていて、読むはずだった本を開く時間がなくなってしまった。明日からは充電器を机の上に置いて、ベッドの近くにスマホを持ち込まないようにしたい。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>Lately, I feel that I spend too much time looking at my phone before bed. Last night, I only meant to watch videos for thirty minutes, but before I knew it, more than an hour had passed, and I no longer had time to open the book I had planned to read. Starting tomorrow, I want to keep my charger on my desk so that I won&#x27;t bring my phone near my bed.</p>
+<h2>Focus</h2>
+<ul>
+<li>Use <code>meant to ...</code> for <code>...するつもりだった</code>.</li>
+<li><code>before I knew it</code> is a natural way to say <code>気がついたら</code>.</li>
+<li><code>so that I won&#x27;t ...</code> helps express <code>...しないようにしたい</code> clearly.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

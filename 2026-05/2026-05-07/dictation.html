@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-07 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-07</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <div class="audio-label">Question 1</div>
+      <audio controls preload="metadata" src="2026-05-07_dictation_q1.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 2</div>
+      <audio controls preload="metadata" src="2026-05-07_dictation_q2.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 3</div>
+      <audio controls preload="metadata" src="2026-05-07_dictation_q3.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>Many farmers now discuss global warming when spring rains arrive several weeks later than usual.</li>
+<li>Some cafes import beans directly, but controversy still grows over prices at the weekend market.</li>
+<li>Residents appeal for quieter streets, and additionally they suggest safer crossings near the busy park.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>春の雨がいつもより数週間遅れて来ると、多くの農家は今、地球温暖化について話し合います。</li>
+<li>いくつかのカフェは豆を直接輸入していますが、週末の市場では価格をめぐる論争が今も続いています。</li>
+<li>住民たちは、より静かな通りを求めて訴え、その上、にぎやかな公園の近くにより安全な横断歩道を提案しています。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>global warming</td><td>地球温暖化</td></tr>
+<tr><td>import</td><td>輸入する</td></tr>
+<tr><td>controversy</td><td>論争</td></tr>
+<tr><td>appeal for</td><td>〜を求めて訴える</td></tr>
+<tr><td>additionally</td><td>その上、さらに</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>Many farmers now discuss global warming when spring rains arrive several weeks later than usual.</li>
+<li>Some cafes import beans directly, but controversy still grows over prices at the weekend market.</li>
+<li>Residents appeal for quieter streets, and additionally they suggest safer crossings near the busy park.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
