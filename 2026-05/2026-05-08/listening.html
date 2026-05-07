@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-08 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-08</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-08_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Thursday, I attended a special evening lesson at our local history museum. The speaker was Mr. Sato, a postcard collector who now teaches art online through a cyberschool. He wanted to show us that even ordinary objects can become stories.</p>
+<p>He placed several old postcards on a long table and asked us to choose one. Mine showed a rainy harbor with two children holding paper boats. Mr. Sato said we were under an obligation to describe only what we could really see before adding our imagination. That rule sounded strict at first, but it helped me pay attention to small details.</p>
+<p>After that, he read a short verse he had written about the picture. His voice was calm, and the room became completely quiet. Then the museum staff opened a side gallery with rare maps and glass cases. Because the floor was old and noisy, we had to tiptoe between the displays.</p>
+<p>By the end of the lesson, I understood Mr. Sato&#x27;s point. A collector does not simply keep things. He also protects memories. On my way home, I looked at the city lights and felt that even a simple postcard could carry a whole life inside it.</p>
+<h2>Japanese Translation</h2>
+<p>先週の木曜日、私は地元の歴史博物館で開かれた特別な夜のレッスンに参加しました。講師は佐藤さんという絵はがきの収集家で、今はサイバースクールを通してオンラインで美術を教えています。彼は、ありふれた物でさえ物語になりうることを私たちに伝えたかったのです。</p>
+<p>彼は古い絵はがきを何枚か長いテーブルの上に並べ、私たちに1枚選ぶように言いました。私が選んだものには、雨の港と、紙の船を持った2人の子どもが描かれていました。佐藤さんは、想像を加える前に、実際に見えることだけを説明する義務があるのだと言いました。そのルールは最初は厳しく感じられましたが、小さな細部に注意を向ける助けになりました。</p>
+<p>そのあと、彼はその絵について自分で書いた短い詩を読みました。彼の声は穏やかで、部屋はすっかり静かになりました。それから博物館のスタッフが、珍しい地図やガラスケースのある別の展示室を開けてくれました。床が古くて音がしやすかったので、私たちは展示の間をつま先でそっと歩かなければなりませんでした。</p>
+<p>レッスンの終わりまでに、私は佐藤さんの言いたいことを理解しました。収集家は、ただ物を持っているだけではありません。思い出も守っているのです。帰り道、街の明かりを見ながら、1枚のシンプルな絵はがきでさえ、その中に誰かの人生まるごとを運べるのだと感じました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>collector</td><td>収集家、集める人</td></tr>
+<tr><td>verse</td><td>詩、詩の一行</td></tr>
+<tr><td>cyberschool</td><td>サイバースクール、オンライン上の学校</td></tr>
+<tr><td>under an obligation to do</td><td>〜する義務がある</td></tr>
+<tr><td>tiptoe</td><td>つま先で歩く、忍び足で歩く</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-08 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-08</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>先週、地域センターの料理教室に参加したら、思ったより人が多くて少し緊張した。でも、隣の席の人が話しかけてくれたおかげで、最後には新しいレシピだけでなく、近くのおすすめの店まで教えてもらえた。次は、家でその料理を作ってから、もう一度参加したい。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>When I attended a cooking class at the community center last week, there were more people than I had expected, so I felt a little nervous. However, thanks to the person sitting next to me, who struck up a conversation with me, I ended up learning not only a new recipe but also about some good restaurants nearby. Next time, I&#x27;d like to make the dish at home first and then join the class again.</p>
+<h2>Focus</h2>
+<ul>
+<li><code>there were more people than I had expected</code> is a useful pattern for describing a result that was different from your expectation.</li>
+<li><code>thanks to ...</code> introduces a positive reason.</li>
+<li><code>not only A but also B</code> and <code>ended up ...ing</code> are helpful for showing an added or unexpected result.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
