@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-10 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-10</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <div class="audio-label">Question 1</div>
+      <audio controls preload="metadata" src="2026-05-10_dictation_q1.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 2</div>
+      <audio controls preload="metadata" src="2026-05-10_dictation_q2.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 3</div>
+      <audio controls preload="metadata" src="2026-05-10_dictation_q3.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>At the dental clinic, I used my debit card because the receptionist could not accept cash.</li>
+<li>After one coding lesson, my nephew began to take to programming faster than anyone expected.</li>
+<li>The crowd fell into a hush when the lantern rose skyward above the dark field.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>歯科医院では受付で現金が使えなかったので、私はデビットカードを使った。</li>
+<li>たった一回のコーディングの授業のあとで、甥は予想以上の速さでプログラミングを好きになり始めた。</li>
+<li>ランタンが暗い野原の上へ空高く上がると、群衆はしんと静まり返った。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>debit card</td><td>デビットカード</td></tr>
+<tr><td>take to</td><td>〜を好きになる</td></tr>
+<tr><td>hush</td><td>静けさ</td></tr>
+<tr><td>skyward</td><td>空の方へ</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>At the dental clinic, I used my debit card because the receptionist could not accept cash.</li>
+<li>After one coding lesson, my nephew began to take to programming faster than anyone expected.</li>
+<li>The crowd fell into a hush when the lantern rose skyward above the dark field.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-10 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-10</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-10_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Saturday, I visited a small recording studio near the train station. My friend Lena had invited me to watch a youth orchestra prepare music for a charity radio show. The room was full of wires, music stands, and paper cups of tea. In the center stood an elderly maestro named Mr. Kido. He had spent a lifetime composing short melodies for films, but he spoke in a calm, simple way.</p>
+<p>Before rehearsal, he asked each student why they had come. One girl said she was there of her own will, not because her parents pushed her. The maestro smiled and said that was the best reason to study art. During the first song, a violin player missed her first note and looked embarrassed. Mr. Kido did not exalt only the strongest performers. Instead, he stopped the group and showed everyone how to breathe together and follow the piano.</p>
+<p>By the end of the session, the music sounded warmer and more confident. On the whole, I learned something surprising that day. Great teachers are not famous because they demand perfection. They are remembered because they help ordinary people create something beautiful together.</p>
+<h2>Japanese Translation</h2>
+<p>先週の土曜日、私は駅の近くにある小さな録音スタジオを訪れました。友人のレナが、チャリティーのラジオ番組のための音楽を準備しているユースオーケストラを見に来ないかと誘ってくれたのです。部屋にはケーブルや譜面台、そして紙コップのお茶がありました。中央には、木戸さんという年配の名指揮者が立っていました。彼は生涯をかけて映画用の短い旋律を作ってきましたが、話し方は落ち着いていて、とても簡潔でした。</p>
+<p>リハーサルの前に、彼は生徒一人ひとりに、なぜここに来たのかを尋ねました。ある少女は、親に言われたからではなく、自分の意志で来たのだと言いました。マエストロはほほえみ、それこそが芸術を学ぶいちばんよい理由だと言いました。最初の曲では、あるバイオリン奏者が最初の音を出し損ね、恥ずかしそうにしていました。木戸さんは、いちばん上手な演奏者だけを持ち上げるようなことはしませんでした。代わりに演奏を止め、みんなにどうやって一緒に呼吸を合わせ、ピアノに合わせるかを教えました。</p>
+<p>練習の終わりには、音楽はより温かく、より自信に満ちたものに聞こえました。概して、その日私は意外なことを学びました。優れた先生が有名なのは、完璧さを求めるからではありません。普通の人たちが力を合わせて美しいものを作れるよう助けるからこそ、長く記憶に残るのです。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>on the whole</td><td>概して</td></tr>
+<tr><td>lifetime</td><td>生涯、一生</td></tr>
+<tr><td>exalt</td><td>ほめたたえる、持ち上げる</td></tr>
+<tr><td>maestro</td><td>名指揮者、大音楽家</td></tr>
+<tr><td>of one’s own will</td><td>自分の意志で</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
