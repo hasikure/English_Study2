@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-12 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-12</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>来月の出張に備えて、私は英語で自己紹介する練習をしながら、自分の声を録音している。最初は原稿を一度書けば十分だと思っていたが、実際に声に出してみると、言いにくい部分や長すぎる文がすぐに分かる。短く言い換える練習を続ければ、本番でも今より落ち着いて話せる気がする。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>To prepare for a business trip next month, I have been recording myself while practicing how to introduce myself in English. At first, I thought writing a script once would be enough, but when I actually said it out loud, I immediately noticed which parts were hard to say and which sentences were too long. If I keep practicing how to say the same thing more simply, I think I&#x27;ll be able to speak more calmly in the real situation.</p>
+<h2>Focus</h2>
+<ul>
+<li><code>have been ...</code> is useful for an action you started before now and are still continuing.</li>
+<li><code>I thought ... would be enough, but ...</code> is a natural pattern for contrast.</li>
+<li><code>If I keep ..., I think I&#x27;ll be able to ...</code> expresses a realistic hope about improvement.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
