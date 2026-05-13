@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-13 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-13</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>今朝、管理会社の人が壊れたエアコンを見に来ることになっていたので、私は出かける前に部屋を片づけた。修理には午後までかかるかもしれないと聞いていたが、部品を一つ交換するだけで済んだので、一時間ほどで終わった。次に同じような問題が起きたときのために、型番と連絡先をメモしておこうと思う。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>This morning, someone from the management company was supposed to come and check my broken air conditioner, so I tidied up the room before leaving. I had heard that the repair might take until the afternoon, but it was finished in about an hour because they only had to replace one part. I think I&#x27;ll write down the model number and the contact information in case the same kind of problem comes up again.</p>
+<h2>Focus</h2>
+<ul>
+<li><code>be supposed to + verb</code> is useful for <code>〜することになっていた</code>: <code>was supposed to come</code>.</li>
+<li><code>only had to + verb</code> is a natural way to express <code>〜するだけで済んだ</code>.</li>
+<li><code>in case ...</code> works well for <code>〜のために / 〜に備えて</code> when you prepare for a future possibility.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
