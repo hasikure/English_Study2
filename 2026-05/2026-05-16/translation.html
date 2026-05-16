@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-16 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-16</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<p>土曜日に友人と山に行く予定だったが、朝から雨が強かったので、私たちは駅の近くのカフェで行き先を話し合った。午後には天気が回復するかもしれないと思っていたが、結局やまなかったので、近くの博物館に行くことにした。予定どおりにいかなくても、早めに別の案を考えておけば、一日を無駄にせずに済むと感じた。</p>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<p>We were going to go hiking on Saturday, but it had been raining hard since morning, so we talked about where to go instead at a cafe near the station. We thought the weather might clear up in the afternoon, but it never did, so we ended up going to a museum nearby. Even when things do not go as planned, I feel that if we think of another option early, we can still make good use of the day.</p>
+<h2>Focus</h2>
+<ul>
+<li><code>were going to ...</code> is a natural way to describe a plan that later changed.</li>
+<li><code>end up + -ing</code> is useful for saying what finally happened.</li>
+<li><code>go as planned</code> and <code>make good use of the day</code> are practical fixed expressions.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
