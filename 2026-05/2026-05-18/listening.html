@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-18 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-18</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-18_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Saturday, I volunteered at a charity that sends books to people in prison. We met in a bright room behind the city library, where long tables were covered with donated novels, dictionaries, and rolls of tape. Before we started packing, our coordinator, Ms. Lee, asked us to refrain from writing personal notes inside the books. Some prisons return the books if there are extra messages or loose paper inside.</p>
+<p>We also had to inspect each book carefully. If a cover was torn or if there was microscopic mold near the pages, we had to put it aside. At first, I thought the rules sounded too strict, but I soon understood why they mattered. The group wanted every package to arrive safely and without delay.</p>
+<p>I was genuinely moved by how serious everyone was about the work. Near the end of the afternoon, we began to run short of labels, so one volunteer biked to a nearby shop to buy more. By the time we sealed the last box, I felt tired but grateful. It was a small task, yet it connected our quiet room to people far away.</p>
+<h2>Japanese Translation</h2>
+<p>先週の土曜日、私は刑務所にいる人たちへ本を送る慈善団体の活動を手伝いました。集合場所は市立図書館の裏にある明るい部屋で、長い机の上には寄付された小説、辞書、そしてテープの巻きが並んでいました。荷造りを始める前に、担当のリーさんは、本の中に個人的なメモを書かないよう私たちに求めました。刑務所によっては、余計なメッセージや紙が入っていると本を返送してしまうからです。</p>
+<p>私たちは一冊ずつ本を丁寧に点検しなければなりませんでした。表紙が破れていたり、ページの近くに目に見えないほど小さなカビがあったりした場合は、別に分ける決まりでした。最初は少し厳しすぎるようにも感じましたが、すぐにその理由が分かりました。この団体は、どの荷物も安全に、遅れなく届くことを大切にしていたのです。</p>
+<p>私は、みんながこの作業にどれほど真剣かを見て本当に心を動かされました。午後の終わりごろにはラベルが足りなくなり始めたので、あるボランティアが近くの店まで自転車で買いに行きました。最後の箱を封をしたころには、私は疲れていましたが、同時にありがたい気持ちにもなっていました。小さな作業ではあっても、静かなその部屋が遠く離れた人たちとつながっているのを感じたからです。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>refrain</td><td>控える</td></tr>
+<tr><td>microscopic</td><td>顕微鏡レベルの / 極めて小さな</td></tr>
+<tr><td>in prison</td><td>刑務所に入って</td></tr>
+<tr><td>genuinely</td><td>本当に</td></tr>
+<tr><td>run short of</td><td>～が足りなくなる</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
