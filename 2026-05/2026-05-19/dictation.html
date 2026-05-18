@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-19 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-19</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <div class="audio-label">Question 1</div>
+      <audio controls preload="metadata" src="2026-05-19_dictation_q1.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 2</div>
+      <audio controls preload="metadata" src="2026-05-19_dictation_q2.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 3</div>
+      <audio controls preload="metadata" src="2026-05-19_dictation_q3.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>Please keep an eye on the soup, because I need to answer the delivery phone.</li>
+<li>The strange noise may result from a loose fan behind the old classroom ceiling.</li>
+<li>My grandmother gripped the handrail and laughed, though she had been petrified a minute earlier.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>配達の電話に出る必要があるので、スープを少し見ていてください。</li>
+<li>その奇妙な音は、古い教室の天井裏にあるゆるんだ換気扇が原因かもしれません。</li>
+<li>祖母は手すりをしっかり握って笑いましたが、その一分前まではひどくおびえていました。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>keep an eye on</td><td>～を見ておく / 気を配る</td></tr>
+<tr><td>result from</td><td>～に起因する</td></tr>
+<tr><td>handrail</td><td>手すり</td></tr>
+<tr><td>petrified</td><td>ひどくおびえた</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>Please keep an eye on the soup, because I need to answer the delivery phone.</li>
+<li>The strange noise may result from a loose fan behind the old classroom ceiling.</li>
+<li>My grandmother gripped the handrail and laughed, though she had been petrified a minute earlier.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
