@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-20 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-20</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-20_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>On Tuesday evening, I stopped by a small health exhibit in the station plaza. A volunteer in a blue jacket welcomed us and asked everyone to sit near a portable screen. At first, two high school boys behind me began to murmur to each other, but they quickly went quiet when the speaker graphically showed how lack of sleep affects reaction time.</p>
+<p>One slide compared staying awake for twenty hours with driving after drinking an alcoholic beverage. The comparison surprised me. Then the speaker asked, &quot;What if your best friend said he was fine to ride home?&quot; I couldn&#x27;t help but think about a classmate who often studies all night before exams and still rides his scooter the next morning.</p>
+<p>The talk lasted only fifteen minutes, yet it changed my mood for the rest of the evening. I left the plaza feeling that tiredness is not a private problem at all. It can put other people in danger too.</p>
+<h2>Japanese Translation</h2>
+<p>火曜日の夕方、私は駅前広場で開かれていた小さな健康展示に立ち寄りました。青い上着を着たボランティアが私たちを迎え、持ち運び式のスクリーンの近くに座るよう皆に案内しました。最初は、後ろにいた高校生の男の子二人が小声で話していましたが、話し手が睡眠不足が反応速度にどう影響するかを図で生々しく示すと、すぐに静かになりました。</p>
+<p>あるスライドでは、二十時間起き続けた状態と、アルコール飲料を飲んだあとに運転する状態が比べられていました。その比較に私は驚きました。続いて話し手は、「もし親友が大丈夫だからそのまま乗って帰ると言ったらどうしますか」と問いかけました。私は、試験前によく徹夜で勉強し、それでも翌朝スクーターに乗るクラスメートのことを思わず考えてしまいました。</p>
+<p>話はたった十五分ほどでしたが、その夜の私の気分を変えるには十分でした。私は、眠気は個人だけの問題ではまったくないのだと感じながら広場を後にしました。それは他の人まで危険にさらすことがあるのです。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>murmur</td><td>小声で話す / つぶやく</td></tr>
+<tr><td>can&#x27;t help but do</td><td>どうしても～してしまう</td></tr>
+<tr><td>What if ...?</td><td>もし～ならどうする？</td></tr>
+<tr><td>alcoholic</td><td>アルコール性の / アルコールを含む</td></tr>
+<tr><td>graphically</td><td>図で / 生々しく</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

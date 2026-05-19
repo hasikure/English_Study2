@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-20 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-20</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>彼女はとても忙しかったが、締め切りの前にレポートを仕上げて私にも見せてくれた。</li>
+</ol>
+<p>Grammar hint: use <code>although</code> or <code>even though</code>.</p>
+<ol>
+<li>大学に入って以来、私は以前より計画的に勉強するようになった。</li>
+</ol>
+<p>Grammar hint: use <code>since</code> with the present perfect.</p>
+<h2>Task</h2>
+<p>Translate sentences 1 and 2 into English. Keep the grammar hints in mind.</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>Even though she was very busy, she finished the report before the deadline and showed it to me as well.</li>
+<li>Since entering university, I have started studying more systematically than before.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li><code>Even though ...</code> is a natural way to show a contrast like 「忙しかったが」.</li>
+<li><code>Since ... , I have ...</code> is useful for describing a change that began in the past and continues to the present.</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
