@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-21 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-21</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-21_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>This afternoon, I joined a short university workshop about cybercrime in the media room. The instructor began by showing us a fake email that looked as if it had come from the student office. At first, some of us thought it looked harmless, and one classmate said he would think nothing of clicking the link if he saw it late at night.</p>
+<p>The instructor then corrected three small details on the screen. The sender&#x27;s address was strange, the message did not include a student number, and the warning at the bottom sounded far too urgent. She said we are expected to do more than memorize simple safety rules. We also need to be conscious of our own habits, especially when we check messages in a hurry on our phones.</p>
+<p>She ended with a story about a graduate student who lost access to her account for two days after replying to a false message about scholarship money. The workshop lasted only twenty minutes, but it made me more careful. Before dinner, I deleted two suspicious emails that I might have ignored on another day.</p>
+<h2>Japanese Translation</h2>
+<p>今日の午後、私はメディアルームで開かれた大学の短いサイバー犯罪対策ワークショップに参加しました。講師は、学生課から来たように見える偽のメールを私たちに見せるところから始めました。最初は何人かが、それは害のなさそうなメールに見えると言っていて、あるクラスメートは、夜遅くに見たならそのリンクを特に何とも思わずクリックしてしまうかもしれない、と言っていました。</p>
+<p>そのあと講師は、画面上の三つの細かい点を修正しながら説明しました。送信者のアドレスが不自然で、文面には学生番号がなく、最後の警告文はあまりにも切迫しすぎていたのです。彼女は、私たちには単純な安全ルールを暗記する以上のことが求められていると言いました。特にスマートフォンで急いでメッセージを確認するときには、自分自身の習慣に気づいていることも必要なのです。</p>
+<p>最後に彼女は、奨学金に関する偽のメッセージに返信してしまい、二日間アカウントに入れなくなった大学院生の話をしてくれました。ワークショップはたった二十分でしたが、私はそれでかなり慎重になりました。夕食前には、別の日なら見過ごしていたかもしれない怪しいメールを二通削除しました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>correct</td><td>訂正する / 修正する</td></tr>
+<tr><td>cybercrime</td><td>サイバー犯罪</td></tr>
+<tr><td>think nothing of</td><td>〜を何とも思わない</td></tr>
+<tr><td>be expected to do</td><td>〜することが求められている</td></tr>
+<tr><td>be conscious of</td><td>〜を意識している / 気づいている</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
