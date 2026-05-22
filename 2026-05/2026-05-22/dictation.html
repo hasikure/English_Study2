@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-22 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-22</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <div class="audio-label">Question 1</div>
+      <audio controls preload="metadata" src="2026-05-22_dictation_q1.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 2</div>
+      <audio controls preload="metadata" src="2026-05-22_dictation_q2.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 3</div>
+      <audio controls preload="metadata" src="2026-05-22_dictation_q3.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>The cafe looked mediocre from outside, but its lunch special was popular with local nurses.</li>
+<li>If you see my blue folder underneath the chair, feel free to bring it over.</li>
+<li>Selling exam answers online may seem lucrative, but it is technically fraud and pure folly.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>そのカフェは外から見ると平凡に見えたが、ランチ定食は近所の看護師たちに人気だった。</li>
+<li>もし椅子の下に私の青いファイルが見えたら、遠慮なくこちらに持ってきてください。</li>
+<li>試験の答えをネットで売ることはもうかりそうに見えるかもしれないが、厳密に言えば詐欺であり、まったく愚かな行為だ。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>mediocre</td><td>平凡な</td></tr>
+<tr><td>underneath</td><td>下に / 下の方に</td></tr>
+<tr><td>feel free to do</td><td>遠慮なく〜する</td></tr>
+<tr><td>lucrative</td><td>利益が上がる / もうかる</td></tr>
+<tr><td>technically</td><td>厳密に言えば</td></tr>
+<tr><td>folly</td><td>愚かな行為 / 愚かさ</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>The cafe looked mediocre from outside, but its lunch special was popular with local nurses.</li>
+<li>If you see my blue folder underneath the chair, feel free to bring it over.</li>
+<li>Selling exam answers online may seem lucrative, but it is technically fraud and pure folly.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

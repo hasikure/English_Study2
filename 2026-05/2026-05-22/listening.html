@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-22 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-22</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-22_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>This morning, I visited a neighborhood repair lab with my younger cousin. He wants to join the summer program there, so we went to ask a few questions before lunch. The room was quiet, and every workbench was covered with labeled tools, torn bags, and old desk lamps waiting to be fixed.</p>
+<p>Ms. Sato, the instructor, told us that students who attend eight sessions will be eligible for a free starter kit. My cousin gave a small sigh when he heard that, because he had hoped he could get it after only two classes. Ms. Sato laughed and turned a damaged backpack inside out to show us how the lessons worked. She said the goal was not just to repair objects, but to help students cope with mistakes calmly and try again.</p>
+<p>By the end of the visit, my cousin looked much more excited. On the way home, he said the place felt serious but kind, which sounded exactly right to me.</p>
+<h2>Japanese Translation</h2>
+<p>今朝、私は年下のいとこと一緒に近所の修理ラボを訪れました。彼はそこの夏のプログラムに参加したいと思っているので、昼前に少し質問をしに行ったのです。部屋は静かで、どの作業台にも、名前の書かれた工具や破れたかばん、修理を待つ古いデスクランプが並んでいました。</p>
+<p>講師の佐藤さんは、八回の授業に出席した生徒には無料のスターターキットを受け取る資格があると説明してくれました。それを聞いて、いとこは小さくため息をつきました。二回くらいの授業で手に入ると思っていたからです。佐藤さんは笑いながら、壊れたリュックを裏返しにして見せ、授業がどんなものか説明してくれました。彼女は、目標はただ物を修理することではなく、失敗に落ち着いて対処し、もう一度やってみる力を生徒につけることだと言いました。</p>
+<p>見学が終わるころには、いとこはずっとわくわくした表情になっていました。帰り道で彼は、その場所は真剣だけれど親切な感じがしたと言っていて、まさにその通りだと私は思いました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>be eligible for</td><td>〜の資格がある</td></tr>
+<tr><td>cope with</td><td>〜に対処する</td></tr>
+<tr><td>workbench</td><td>作業台</td></tr>
+<tr><td>sigh</td><td>ため息をつく</td></tr>
+<tr><td>inside out</td><td>裏返しに / 徹底的に</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
