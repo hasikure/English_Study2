@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-24 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-24</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-24_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Yesterday afternoon, I helped at a community donation event inside a small bookstore. Near the entrance, a volunteer had set up a rack where people could try on jackets and scarves before choosing what to take home. In the back, the owner&#x27;s daughter-in-law was organizing used novels beside a table of school supplies.</p>
+<p>One customer became excited when she found a signed bestseller under a pile of magazines. She held it up, and everyone around her laughed. The owner smiled too, but he watched the book almost jealously for a moment before deciding to donate it to the charity shelf instead of selling it online. He said he wanted the event to feel generous, not competitive.</p>
+<p>By closing time, the room was almost empty. The signed book was gone, three children had left in warm coats, and the owner told me the event had gone better than expected.</p>
+<h2>Japanese Translation</h2>
+<p>昨日の午後、私は小さな書店の中で開かれた地域の寄付イベントを手伝いました。入り口の近くには、持ち帰る前に上着やマフラーを試着できるラックがボランティアによって置かれていました。奥では、店主の息子の妻が、学用品のテーブルの横で古本の小説を整理していました。</p>
+<p>ある客は、雑誌の山の下からサイン入りのベストセラー本を見つけて興奮しました。彼女がそれを持ち上げると、周りの人たちはみんな笑いました。店主も微笑みましたが、その本をほんの一瞬、少し惜しそうに見つめていました。それでも最終的には、ネットで売るのではなく、チャリティー棚に寄付することにしたのです。彼は、このイベントを競争的なものではなく、気前のよい雰囲気にしたかったのだと言いました。</p>
+<p>閉店時間までには、部屋はほとんど空になっていました。サイン本はなくなり、三人の子どもたちは暖かいコートを着て帰り、店主は私に、このイベントは予想以上にうまくいったと話してくれました。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>bestseller</td><td>ベストセラー</td></tr>
+<tr><td>try on</td><td>試着する</td></tr>
+<tr><td>daughter-in-law</td><td>息子の妻 / 嫁</td></tr>
+<tr><td>jealously</td><td>惜しそうに / 嫉妬深く / 油断なく</td></tr>
+<tr><td>donate</td><td>寄付する / 寄贈する</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
