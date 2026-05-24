@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-25 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-25</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>The researcher used m_________ to study the tiny structures inside the leaf cells.</li>
+<li>When my cousin said she had won a design award, I asked if she was f__ ____.</li>
+<li>The documentary included old footage of a b_____ returning to base after a long mission.</li>
+<li>Many cases of food poisoning r_____ ____ poor storage conditions in warm weather.</li>
+<li>It is never right to c____ __ a test, even when the exam feels too difficult to pass.</li>
+<li>All staff members must log in before accessing the patient d_______.</li>
+<li>My nutritionist advised me to choose foods that are low in f__ for a healthier diet.</li>
+<li>The shopkeeper replied c______ when I asked why the item had not arrived after two weeks.</li>
+<li>Personal tastes are m______, so what feels stylish today may look outdated within a few years.</li>
+<li>The author uses i______ of frozen rivers and bare trees to show how isolated the character feels.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>研究者は葉の細胞内の微細構造を調べるために顕微鏡法を使った。</li>
+<li>いとこがデザイン賞を受賞したと言ったので、本当かどうか聞いた。</li>
+<li>そのドキュメンタリーには、長時間の任務を終えて基地に戻る爆撃機の古い映像が含まれていた。</li>
+<li>食中毒の多くのケースは、暖かい気候での不適切な保存状態に起因する。</li>
+<li>どんなに試験が難しく感じても、カンニングをすることは決して正しくない。</li>
+<li>すべてのスタッフは患者データベースにアクセスする前にログインしなければならない。</li>
+<li>栄養士は、より健康的な食事のために脂肪分の少ない食品を選ぶよう勧めた。</li>
+<li>2週間経っても商品が届かないと聞いたら、店主はふきげんに答えた。</li>
+<li>個人の好みは変わりやすいので、今日スタイリッシュに感じるものも数年で時代遅れに見えることがある。</li>
+<li>著者は凍った川と葉のない木の比喩的表現を使って、主人公がいかに孤立していると感じているかを示している。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>microscopy</li>
+<li>for real</li>
+<li>bomber</li>
+<li>result from</li>
+<li>cheat on</li>
+<li>database</li>
+<li>fat</li>
+<li>crossly</li>
+<li>mutable</li>
+<li>imagery</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>microscopy | 顕微鏡法</li>
+<li>for real | 本当に、本気で</li>
+<li>bomber | 爆撃機</li>
+<li>result from | 〜に起因する</li>
+<li>cheat on | カンニングをする</li>
+<li>database | データベース</li>
+<li>fat | 脂肪（分）</li>
+<li>crossly | ふきげんに</li>
+<li>mutable | 変わりやすい</li>
+<li>imagery | 比喩的表現</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

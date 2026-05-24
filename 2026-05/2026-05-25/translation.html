@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-25 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-25</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>どれだけ準備をしていても、初めての面接では緊張するものだ。</li>
+</ol>
+<p>Grammar hint: use <code>no matter how much</code> and <code>it is natural to</code>.</p>
+<ol>
+<li>今週中に返事をもらえるかどうかは、先方がどれだけ忙しいかによって変わってくる。</li>
+</ol>
+<p>Grammar hint: use <code>whether ... depends on</code> and <code>how</code>.</p>
+<h2>Task</h2>
+<p>Translate into English.</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>No matter how much you prepare, it is natural to feel nervous in your first interview.</li>
+<li>Whether we get a reply this week depends on how busy the other party is.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li><code>no matter how much + S + V</code>: 「どれだけ〜しても」。程度を問わず成立することを表す。<code>no matter how + adj/adv</code> の形でも使える（例: no matter how tired you are）。</li>
+<li><code>whether A depends on B</code>: 「AかどうかはBによる」。&quot;It depends on whether...&quot; の形との違いにも注意（主語が変わる）。</li>
+<li><code>how + adj/adv</code> as noun clause: &quot;how busy the other party is&quot; のように間接疑問文の語順（疑問詞 + S + V）を守る。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
