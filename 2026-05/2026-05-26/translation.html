@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-26 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-26</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>実際に試してみて初めて、どれだけ難しいかがわかる。</li>
+</ol>
+<p>Grammar hint: use <code>It is not until ... that ...</code>.</p>
+<ol>
+<li>彼は会議に出席するどころか、事前に連絡すらしなかった。</li>
+</ol>
+<p>Grammar hint: use <code>let alone</code>.</p>
+<h2>Task</h2>
+<p>Translate into English.</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>It is not until you try it yourself that you realise how difficult it is.</li>
+<li>He did not even contact us in advance, let alone attend the meeting.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li><code>It is not until A that B</code>: 「Aして初めてBする」。強調構文で時間的・条件的な順序を際立たせる。<code>until</code> の後には節（S+V）または名詞句が続く（例: It is not until you fail that you learn）。</li>
+<li><code>let alone</code>: 「〜はおろか」。否定文の後に置いて「より困難・大きなことはなおさら（無理だ）」を表す。A not/never ... let alone B の語順。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

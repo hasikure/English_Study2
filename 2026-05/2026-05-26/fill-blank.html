@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-26 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-26</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>If you are not free this weekend, we will have to c_____ ____ of the plan entirely.</li>
+<li>Could you l___ _____ my houseplants while I am away for the next two weeks?</li>
+<li>The wooden o_______ hanging from the door was hand-carved by her grandfather.</li>
+<li>It took the whole team a morning to c___ __ ____ a name for the new product.</li>
+<li>My uncle is so a______-m_____ that he once locked his keys inside the car twice in one day.</li>
+<li>The manager returned the report because the figures were s_____ and some numbers were clearly wrong.</li>
+<li>The small noodle shop became popular b_ ____ __ _____, and soon there was a queue every lunchtime.</li>
+<li>The retired judge was asked to p______ ____ the final round of the national debate competition.</li>
+<li>Some older students would t_____ the newcomer about his accent, which upset him deeply.</li>
+<li>The community project was cancelled f__ ____ __ funding before it had even begun.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>もし今週末都合が悪ければ、あなたを計画から完全に除外するしかない。</li>
+<li>私が2週間不在の間、観葉植物の世話をしてもらえますか？</li>
+<li>ドアに掛かっている木製の飾りは、彼女の祖父が手彫りしたものだ。</li>
+<li>チーム全員が新製品の名前を考え出すのに午前中かかった。</li>
+<li>私の叔父はとてもぼんやりしていて、1日に2度も車の中に鍵を閉じ込めたことがある。</li>
+<li>数字がいいかげんで明らかに間違っていたため、マネージャーは報告書を差し戻した。</li>
+<li>その小さなラーメン店は口コミで人気になり、やがて毎昼時に行列ができるようになった。</li>
+<li>退職した裁判官が全国討論大会の決勝ラウンドを主宰するよう依頼された。</li>
+<li>上級生の何人かが新入りの訛りをあざ笑い、彼はひどく傷ついた。</li>
+<li>そのコミュニティプロジェクトは、始まる前に資金不足で中止になった。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>count out</li>
+<li>look after</li>
+<li>ornament</li>
+<li>come up with</li>
+<li>absent-minded</li>
+<li>sloppy</li>
+<li>by word of mouth</li>
+<li>preside over</li>
+<li>taunt</li>
+<li>for lack of</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>count out | 〜を除外する</li>
+<li>look after | 〜の面倒をみる</li>
+<li>ornament | 装飾品；飾り</li>
+<li>come up with | 〜を思いつく</li>
+<li>absent-minded | ぼんやりした；上の空の</li>
+<li>sloppy | いいかげんな；だらしのない</li>
+<li>by word of mouth | 口コミで</li>
+<li>preside over | 〜を主宰する</li>
+<li>taunt | あざ笑う；ののしる</li>
+<li>for lack of | 〜が不足しているために</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
