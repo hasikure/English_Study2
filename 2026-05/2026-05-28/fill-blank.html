@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-28 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-28</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>I did not want to i______ on their conversation, so I waited until they had finished.</li>
+<li>On my walk through the forest, I was surprised to e________ a deer standing right in the middle of the path.</li>
+<li>The children pressed their faces against the fence to get a closer look at the k_______ and her joey.</li>
+<li>Buying in bulk can be a real s_____ when you use the same product every week.</li>
+<li>I missed the last bus, so I called my brother to see if I could g__ _ ____ home.</li>
+<li>The documentary showed a l______ waiting motionless in a tree before dropping onto its prey below.</li>
+<li>She used a sharp knife to c___ the onions into small pieces before adding them to the pot.</li>
+<li>The loud music from upstairs k___ the baby ____ ________ through the night.</li>
+<li>My brother&#x27;s r_______ when he opened his birthday present was worth seeing.</li>
+<li>The winter this year was e____________ mild, and many flowers bloomed two months early.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>彼らの会話の邪魔をしたくなかったので、話し終わるまで待った。</li>
+<li>森を歩いていると、道の真ん中に立っている鹿に出くわして驚いた。</li>
+<li>子どもたちはフェンスに顔を押しつけて、カンガルーと赤ちゃんをよく見ようとした。</li>
+<li>毎週同じ商品を使うなら、まとめ買いは本当の節約になる。</li>
+<li>最終バスに乗り遅れたので、兄に車で送ってもらえないか電話した。</li>
+<li>そのドキュメンタリーには、木の上でじっと動かずに待ち、下にいる獲物に飛びかかる前のヒョウが映っていた。</li>
+<li>彼女は鍋に入れる前に、鋭いナイフで玉ねぎを小さく切り刻んだ。</li>
+<li>上の階からの大きな音楽が、赤ちゃんが夜通し眠るのを妨げた。</li>
+<li>弟が誕生日プレゼントを開けたときの反応は見ものだった。</li>
+<li>今年の冬は例外的に穏やかで、多くの花が2ヶ月早く咲いた。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>intrude</li>
+<li>encounter</li>
+<li>kangaroo</li>
+<li>saving</li>
+<li>get a ride</li>
+<li>leopard</li>
+<li>chop</li>
+<li>keep ... from doing</li>
+<li>reaction</li>
+<li>exceptionally</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>intrude | 邪魔をする；侵入する</li>
+<li>encounter | 偶然出くわす；遭遇する</li>
+<li>kangaroo | カンガルー</li>
+<li>saving | 節約；倹約</li>
+<li>get a ride | 車に乗せてもらう</li>
+<li>leopard | ヒョウ</li>
+<li>chop | 切り刻む</li>
+<li>kept ... from sleeping | 〜が〜するのを妨げた</li>
+<li>reaction | 反応</li>
+<li>exceptionally | 例外的に；非常に</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

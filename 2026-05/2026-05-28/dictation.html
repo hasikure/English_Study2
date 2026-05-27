@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-28 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-28</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <div class="audio-label">Question 1</div>
+      <audio controls preload="metadata" src="2026-05-28_dictation_q1.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 2</div>
+      <audio controls preload="metadata" src="2026-05-28_dictation_q2.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 3</div>
+      <audio controls preload="metadata" src="2026-05-28_dictation_q3.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>The young athlete continued to train despite suffering from a painful ankle injury.</li>
+<li>A blaze started near the main intersection and spread to three buildings before dawn.</li>
+<li>By law, shops must display a clear quotation of all charges before completing a repair.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>その若いアスリートは、足首の痛みに苦しみながらもトレーニングを続けた。</li>
+<li>火事は主要交差点付近で発生し、夜明け前に3棟の建物に燃え広がった。</li>
+<li>法律により、店舗は修理を完了する前にすべての料金の明確な見積もりを提示しなければならない。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>suffering</td><td>苦痛；苦難</td></tr>
+<tr><td>blaze</td><td>炎；火災；強烈な光</td></tr>
+<tr><td>intersection</td><td>交差点</td></tr>
+<tr><td>by law</td><td>法律によって</td></tr>
+<tr><td>quotation</td><td>見積もり；引用（文）</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>The young athlete continued to train despite suffering from a painful ankle injury.</li>
+<li>A blaze started near the main intersection and spread to three buildings before dawn.</li>
+<li>By law, shops must display a clear quotation of all charges before completing a repair.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
