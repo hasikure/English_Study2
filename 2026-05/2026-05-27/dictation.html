@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-27 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-27</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <div class="audio-label">Question 1</div>
+      <audio controls preload="metadata" src="2026-05-27_dictation_q1.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 2</div>
+      <audio controls preload="metadata" src="2026-05-27_dictation_q2.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 3</div>
+      <audio controls preload="metadata" src="2026-05-27_dictation_q3.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>The wedding guests felt at home the moment they stepped into the old converted barn.</li>
+<li>Please put the newspapers back on the rack by the door, if possible, before noon.</li>
+<li>Some traditional skills in this region are expected to die out within the next decade.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>結婚式のゲストたちは、古い改装された納屋に足を踏み入れた瞬間、くつろいだ気持ちになった。</li>
+<li>できれば正午前に、ドアそばのラックに新聞を戻してください。</li>
+<li>この地域の伝統的な技能の一部は、今後10年以内に廃れると見込まれている。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>feel at home</td><td>くつろぐ；居心地よく感じる</td></tr>
+<tr><td>barn</td><td>納屋；物置</td></tr>
+<tr><td>rack</td><td>ラック；棚</td></tr>
+<tr><td>if possible</td><td>できれば；可能なら</td></tr>
+<tr><td>die out</td><td>廃れる；絶滅する</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>The wedding guests felt at home the moment they stepped into the old converted barn.</li>
+<li>Please put the newspapers back on the rack by the door, if possible, before noon.</li>
+<li>Some traditional skills in this region are expected to die out within the next decade.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
