@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-29 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-29</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>The therapist advised her to f____ her thoughts __ something positive whenever she felt anxious.</li>
+<li>My father i_ _________ ____ his current role and does not plan to change jobs.</li>
+<li>The e_________ of the building was completed in under four minutes during the drill.</li>
+<li>The b_____ of the morning market made it hard to find a quiet place to sit and eat.</li>
+<li>Joining a sports team requires a real c__________ to attend practice at least twice a week.</li>
+<li>My younger brother is quite s________ to criticism and gets upset even when feedback is mild.</li>
+<li>The soup was still b______ when she served it, so I waited a few minutes before eating.</li>
+<li>The little girl called out m___ the moment she spotted her mother across the playground.</li>
+<li>The bridge can support a maximum load of fifty t_____ before safety limits are reached.</li>
+<li>She w__ _____ __ herself for forgetting the appointment she had made three weeks earlier.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>セラピストは、不安を感じたときはポジティブなことに思考を集中させるよう彼女にアドバイスした。</li>
+<li>父は現在の役職に満足しており、転職する予定はない。</li>
+<li>避難訓練中、建物の避難は4分以内に完了した。</li>
+<li>朝市のざわめきで、座って食べるための静かな場所を見つけるのが難しかった。</li>
+<li>スポーツチームに入ると、週に少なくとも2回は練習に参加するという本気のコミットメントが必要だ。</li>
+<li>弟は批判にとても敏感で、フィードバックが穏やかでも動揺してしまう。</li>
+<li>彼女がスープを出したとき、まだ沸騰していたので、食べる前に数分待った。</li>
+<li>小さな女の子は、遊び場の向こうに母親を見つけた瞬間「ままー」と呼んだ。</li>
+<li>その橋は安全基準に達するまで最大50トンの荷重に耐えられる。</li>
+<li>彼女は3週間前に取り決めた約束を忘れてしまったことに自分自身に腹を立てていた。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>focus A on B</li>
+<li>be satisfied with</li>
+<li>evacuation</li>
+<li>bustle</li>
+<li>commitment</li>
+<li>sensitive</li>
+<li>boiling</li>
+<li>mama</li>
+<li>tonne</li>
+<li>be angry at</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>focus ... on | 〜に集中させる</li>
+<li>is satisfied with | 〜に満足している</li>
+<li>evacuation | 避難；撤退</li>
+<li>bustle | ざわめき；喧騒</li>
+<li>commitment | コミットメント；責任感</li>
+<li>sensitive | 敏感な；神経過敏な</li>
+<li>boiling | 沸騰している；ひどく熱い</li>
+<li>mama | お母ちゃん</li>
+<li>tonne | トン（1,000kg）</li>
+<li>was angry at | 〜に腹を立てていた</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

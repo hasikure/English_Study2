@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-29 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-29</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>毎日少しずつ練習し続ける限り、必ず上達するはずだ。</li>
+</ol>
+<p>Grammar hint: use <code>as long as</code>.</p>
+<ol>
+<li>優れたリーダーになるには、何年もの経験と強い忍耐力が必要だ。</li>
+</ol>
+<p>Grammar hint: use <code>It takes ... to do</code>.</p>
+<h2>Task</h2>
+<p>Translate into English.</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>As long as you keep practising a little every day, you are sure to improve.</li>
+<li>It takes years of experience and strong patience to become an excellent leader.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li><code>as long as</code>: 「〜する限り」。条件を表す接続詞。&quot;provided that&quot; と同義に使えるが、より口語的。主節が現在形・未来形でも <code>as long as</code> 節は現在形を使う点に注意（例: as long as you try, not &quot;as long as you will try&quot;）。</li>
+<li><code>It takes [time/effort] to do</code>: 「〜するには〔時間・労力〕がかかる・必要だ」。時間・労力・資質などを主語に取れる汎用構文。&quot;It takes courage to speak up.&quot; のように資質を表す名詞も使える。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
