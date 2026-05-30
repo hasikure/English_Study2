@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-31 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-31</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-05-31_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Sunday, my sister invited me to visit an old converted chapel on the edge of town. An artist she knows has been renting it as a studio for the past three years, and she wanted to show me around.</p>
+<p>We rang the bell and waited. The artist unlocked the side door after a few minutes and waved us in. He apologised for keeping us — he was on a deadline for a group show opening the following week and had lost track of time.</p>
+<p>The inside was striking. The high stone walls had been recently repaired, and the smell of mortar was still faint in the air. Canvases were stacked along one wall, and a long work table ran down the centre of the room.</p>
+<p>He walked us through his current project — a series of large prints. He explained that duplication was the main challenge. Each print had to be pulled by hand, and even a slight change in pressure could produce a result that looked almost right but was not quite there.</p>
+<p>I felt a quiet thrill standing in the middle of all those half-finished pieces. It was the kind of space that made ordinary things feel less important.</p>
+<p>We left before noon and stopped for coffee on the way home. I keep thinking about going back.</p>
+<h2>Japanese Translation</h2>
+<p>先週の日曜日、姉が町外れにある古い改装礼拝堂を見に行こうと誘ってくれた。彼女の知り合いのアーティストが3年ほどそこをアトリエとして借りており、案内してもらえることになった。</p>
+<p>呼び鈴を押して待っていると、数分後にアーティストが脇のドアを開けて手招きしてくれた。彼は少し謝りながら説明してくれた——翌週の合同展のオープニングに向けて締め切り作業中で、時間を忘れていたとのことだった。</p>
+<p>内部は印象的だった。高い石造りの壁は最近補修されたばかりで、モルタルのにおいがかすかに漂っていた。壁沿いにキャンバスが積まれ、長い作業台が部屋の中央を縦断していた。</p>
+<p>彼は現在のプロジェクト——大判プリントのシリーズ——について説明してくれた。最大の課題は複製の難しさだと言った。プリントは一枚一枚手で刷らなければならず、わずかな圧力の違いでも、ほぼ正解だが完全ではない仕上がりになってしまうのだという。</p>
+<p>未完成の作品に囲まれた空間の真ん中に立ち、静かな高揚感を覚えた。日常のことが少しどうでもよくなるような、そんな場所だった。</p>
+<p>正午前に辞し、帰り道でコーヒーを飲んだ。また訪ねたいと、今でも思い続けている。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>unlock</td><td>〜の錠を開ける；解放する</td></tr>
+<tr><td>be on ...</td><td>〜に従事している；〜中である</td></tr>
+<tr><td>mortar</td><td>モルタル；しっくい</td></tr>
+<tr><td>duplication</td><td>複製すること；複写</td></tr>
+<tr><td>thrill</td><td>ゾクゾクする感じ；高揚感</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

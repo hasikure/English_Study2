@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-30 Reading</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-30</div>
+    <h1>Reading</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Reading</h1>
+<h2>English Text</h2>
+<p>Not long ago, a large technology company announced that it was allowing all employees to work from home permanently. The decision turned office culture upside down almost overnight. Managers who had spent years gearing their approach toward face-to-face supervision suddenly had to translate that instinct into something that worked through a screen.</p>
+<p>The shift exposed a gap that few companies had planned for. In most cases, the tools were ready long before the culture was. Video calls replaced meetings, shared documents replaced whiteboards, and messaging apps filled the silence of the empty office. But the informal habits that hold a team together — the corridor conversation, the lunch that solves a problem before it becomes one — proved almost impossible to replicate online.</p>
+<p>Some managers took the silence of remote employees for contentment, only realising weeks later that several people had been struggling quietly on their own. Others piled on a ton of tasks without considering whether people had the space to handle them. Neither approach helped.</p>
+<p>The companies that adapted most successfully were those that treated remote work as a different mode of working, not a lesser one. They rethought how decisions were made, how ideas moved from one person to another, and how new employees could learn without a colleague at the next desk to consult. The goal was not to recreate the office online but to build something genuinely geared to how people work when they are alone and in charge of their own time.</p>
+<p>Whether the traditional office returns in its old form remains unclear. What is certain is that the question of where work happens has been permanently joined by a harder one: what work is actually for.</p>
+<h2>Japanese Translation</h2>
+<p>少し前、大手テクノロジー企業が全従業員に永続的な在宅勤務を認めると発表した。その決定はほぼ一夜にして職場文化をひっくり返した。対面での監督にアプローチを合わせることに何年も費やしてきたマネージャーたちは、その直感を画面越しに機能する何かへと変換しなければならなくなった。</p>
+<p>この変化は、ほとんどの企業が想定していなかったギャップを露わにした。たいていの場合、ツールは文化よりずっと早く整っていた。ビデオ通話が会議に、共有ドキュメントがホワイトボードに、メッセージアプリが空のオフィスの沈黙を埋めた。しかし、チームをまとめる非公式な習慣——廊下での立ち話、問題になる前に解決してしまうランチ——はオンラインではほぼ再現不可能だとわかった。</p>
+<p>リモート社員の沈黙を満足と勘違いし、数週間後になって何人かが静かに一人で悩んでいたことに気づくマネージャーもいた。人々がこなせる余裕があるかどうかを考えずに大量のタスクを積み上げる者もいた。どちらのアプローチも助けにはならなかった。</p>
+<p>最もうまく適応した企業は、リモートワークを劣ったものではなく、別の働き方として捉えたところだ。意思決定のあり方、アイデアの伝わり方、そして新入社員が隣の席に聞ける同僚なしにどう学ぶかを再考した。目標はオフィスをオンラインで再現することではなく、一人でいて自分の時間を管理しているときに人々が実際にどう働くかに本当に合ったものを作ることだった。</p>
+<p>従来のオフィスがかつての形で戻ってくるかどうかはまだわからない。はっきりしているのは、どこで働くかという問いに、より難しい問い——仕事は本当は何のためにあるのか——が永続的に加わったということだ。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>employee</td><td>従業員；雇われる人</td></tr>
+<tr><td>upside down</td><td>さかさまに；ひっくり返って</td></tr>
+<tr><td>gear</td><td>〜に合わせる；歯車；装置一式</td></tr>
+<tr><td>in most cases</td><td>たいていの場合</td></tr>
+<tr><td>translate A into B</td><td>AをBに変換する；翻訳する</td></tr>
+<tr><td>take A for B</td><td>AをBと間違える；AをBだと思う</td></tr>
+<tr><td>ton</td><td>トン；《話》大量</td></tr>
+</tbody></table></div>
+<h2>Notes</h2>
+<ul>
+<li>face-to-face supervision: 対面での指導・監督。</li>
+<li>replicate: 再現する・複製する。&quot;replicate online&quot; = オンラインで同じことを再現する。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
