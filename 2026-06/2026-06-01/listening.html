@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-01 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-01</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-06-01_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Saturday morning, I drove out to a small pick-your-own farm about twenty minutes from home. A friend had mentioned it a few weeks earlier, and I wanted to go before the season ended.</p>
+<p>When I arrived, I enrolled my name on a clipboard at the entrance and was handed a bucket. The woman at the gate ran through the rules quickly — stay on the marked paths, and avoid the far end of the field because the ground was still soft after the recent rain.</p>
+<p>I spent about an hour moving back and forth along the rows, checking the colour and firmness of each strawberry before picking it. The morning was warm and humid. A few of the berries lower down had started to turn and smelled foul, so I was careful to look before I reached in.</p>
+<p>At the weighing table near the exit, I was told the total and went to pay. I asked if they took cards, and the woman shook her head — payment by check or cash only. I had enough cash, so it was fine, though I would not have guessed that from the outside.</p>
+<p>I got home just before noon with nearly two kilograms of strawberries. That afternoon, I made jam for the first time. It took two hours and most of the sugar in the house, but by evening I had six small jars lined up on the counter. They looked better than I expected.</p>
+<h2>Japanese Translation</h2>
+<p>先週の土曜日の朝、自宅から車で20分ほどのところにある小さな自分で摘める農場に行った。数週間前に友人から教えてもらっており、シーズンが終わる前に行きたかった。</p>
+<p>到着すると、入口のクリップボードに名前を記入し、バケツを手渡された。入口の女性は手短にルールを説明してくれた——標識のある通路を歩き、最近の雨で地面がまだ柔らかいため奥の端には近づかないようにとのことだった。</p>
+<p>私は1時間ほど列の間を行ったり来たりしながら、イチゴを摘む前に色と硬さを確認した。朝は暖かく蒸し暑かった。下の方にあるいくつかのベリーは傷み始めていて嫌な臭いがしたので、手を伸ばす前に確認するよう気をつけた。</p>
+<p>出口近くの計量台で合計金額を告げられ、支払おうとした。カードが使えるか聞くと、女性は首を振った——小切手か現金のみとのことだった。現金は十分あったので問題なかったが、外観からはそうとは思わなかっただろう。</p>
+<p>ほぼ2キログラムのイチゴを持って正午前に帰宅した。その午後、初めてジャムを作った。2時間かかり、家にある砂糖もほとんど使い切ったが、夕方には6本の小瓶がカウンターに並んだ。予想以上によい出来だった。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>enroll</td><td>名前を記入する；入会させる</td></tr>
+<tr><td>back and forth</td><td>行ったり来たり；前後に</td></tr>
+<tr><td>berry</td><td>ベリー；小粒の果実</td></tr>
+<tr><td>foul</td><td>嫌な；汚い；不潔な</td></tr>
+<tr><td>by check</td><td>小切手で</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

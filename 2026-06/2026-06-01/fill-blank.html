@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-01 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-01</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>The manager decided to b___ __ the team&#x27;s IT skills by arranging a series of short training sessions.</li>
+<li>Try not to b____ when the doctor shines the light into your eye during the examination.</li>
+<li>Wearing a seatbelt is c_________ for all passengers in this country, not just the driver.</li>
+<li>Navigating the old town by car can be t_____ because many of the streets are one-way and poorly marked.</li>
+<li>The surface of the dried-out lake bed looked like a m________, with cracked white earth as far as the eye could see.</li>
+<li>Her j__ dropped when she opened the envelope and found a cheque for ten thousand pounds inside.</li>
+<li>We finally got b________ installed last month, and video calls are much smoother now.</li>
+<li>She felt a sharp p____ on her finger when she accidentally touched the thorn on the rose stem.</li>
+<li>The competition was open to both professional and n______________ writers from any country.</li>
+<li>He made the a_________ that the meeting had been cancelled, so he did not bother to show up.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>マネージャーは短いトレーニングセッションを連続して設けることで、チームのITスキルを強化することにした。</li>
+<li>検査中に医師が目に光を当てるとき、まばたきしないようにしてください。</li>
+<li>この国では、すべての乗客にとってシートベルトを着用することは義務であり、運転手だけではない。</li>
+<li>多くの通りが一方通行で標識もわかりにくいため、旧市街を車で走ることは難しい場合がある。</li>
+<li>干上がった湖底の表面は、ひびの入った白い大地が見渡す限り続く月面のように見えた。</li>
+<li>封筒を開けて中に1万ポンドの小切手が入っているのを見たとき、彼女はあごが落ちるほど驚いた。</li>
+<li>先月ようやくブロードバンドが導入され、ビデオ通話がずっとスムーズになった。</li>
+<li>バラの茎のとげに誤って触れたとき、彼女は指に鋭いちくりとした感覚を覚えた。</li>
+<li>そのコンテストは、どの国のプロとアマチュア両方のライターに開かれていた。</li>
+<li>彼はミーティングがキャンセルされたものと思い込んでいたため、来ようとしなかった。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>beef up</li>
+<li>blink</li>
+<li>compulsory</li>
+<li>tricky</li>
+<li>moonscape</li>
+<li>jaw</li>
+<li>broadband</li>
+<li>prick</li>
+<li>nonprofessional</li>
+<li>assumption</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>beef up | 〜を強化する</li>
+<li>blink | まばたきする</li>
+<li>compulsory | 義務的な；必修の</li>
+<li>tricky | 慎重を要する；扱いにくい</li>
+<li>moonscape | 月面の眺め；月面状の地形</li>
+<li>jaw | あご（jaw dropped で「あごが落ちるほど驚く」）</li>
+<li>broadband | ブロードバンド</li>
+<li>prick | ちくりと刺すこと；刺す</li>
+<li>nonprofessional | 素人の；非専門家の</li>
+<li>assumption | 思い込み；仮定</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
