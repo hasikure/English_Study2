@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-03 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-03</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>彼はあまりにも疲れていて、夕食の後に宿題をする気力もなかった。</li>
+</ol>
+<p>Grammar hint: use <code>too</code>.</p>
+<ol>
+<li>その映画はとても面白かったので、彼女は見終わった後もしばらく席を立てなかった。</li>
+</ol>
+<p>Grammar hint: use <code>so ... that</code>.</p>
+<h2>Task</h2>
+<p>Translate into English.</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>He was too tired to do his homework after dinner.</li>
+<li>The film was so interesting that she could not leave her seat for a while after it ended.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li><code>too ... to do</code>: 「〜すぎて...できない」。<code>too</code> の後に形容詞・副詞、<code>to</code> の後に動詞原形が来る。<code>so ... that ... can&#x27;t</code> に書き換えられる（例：He was so tired that he could not do his homework）。</li>
+<li><code>so ... that</code>: 「とても〜なので...」。<code>so</code> の後に形容詞・副詞、<code>that</code> の後に結果の節が来る。<code>too ... to</code> と違い、結果が否定でなくてもよい（例：so happy that she cried）。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-03 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-03</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <div class="audio-label">Question 1</div>
+      <audio controls preload="metadata" src="2026-06-03_dictation_q1.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 2</div>
+      <audio controls preload="metadata" src="2026-06-03_dictation_q2.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 3</div>
+      <audio controls preload="metadata" src="2026-06-03_dictation_q3.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>The office was faced with unrest after the new attendance policy was posted on Friday.</li>
+<li>He does his shopping on weekday mornings to avoid the long queues at the weekend.</li>
+<li>She was in a good temper all morning, which made the whole team feel more relaxed.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>新しい出勤ポリシーが金曜日に掲示された後、オフィスは不満に直面した。</li>
+<li>彼は週末の長い行列を避けるため、平日の午前中に買い物をする。</li>
+<li>彼女は午前中ずっと機嫌がよく、チーム全体がよりリラックスした雰囲気になった。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>be faced with</td><td>〜に直面している</td></tr>
+<tr><td>unrest</td><td>不安；不穏</td></tr>
+<tr><td>do one&#x27;s shopping</td><td>買い物をする</td></tr>
+<tr><td>be in a good temper</td><td>機嫌がよい</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>The office was faced with unrest after the new attendance policy was posted on Friday.</li>
+<li>He does his shopping on weekday mornings to avoid the long queues at the weekend.</li>
+<li>She was in a good temper all morning, which made the whole team feel more relaxed.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-03 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-03</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>The match was played in a______ conditions, with strong winds and heavy rain throughout.</li>
+<li>The centre offered free language classes to r______ families who had recently arrived in the city.</li>
+<li>The two bakers competed in a d___ to see who could produce the better loaf in one hour.</li>
+<li>She had packed her suitcase and checked her tickets t__ _____ ______ so she would not feel rushed.</li>
+<li>He has a calm d__________ and rarely raises his voice, even when things go wrong at work.</li>
+<li>The final result managed to a_______ everyone in the room, including the judges themselves.</li>
+<li>He tends to o_____ over small mistakes long after everyone else has moved on.</li>
+<li>The restaurant was known for its e_____ menu, which featured dishes from across Southeast Asia.</li>
+<li>The door was opened b_ _____ __ a small electronic key that each resident carried.</li>
+<li>Fruit grew i_ _________ in the valley, and local families made jam every autumn.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>その試合は強風と大雨が続く悪条件の中で行われた。</li>
+<li>そのセンターは最近市に到着した難民家族に無料の語学クラスを提供していた。</li>
+<li>2人のパン職人は1時間でどちらが優れたパンを作れるかを競う決闘を行った。</li>
+<li>彼女は慌てないように前夜にスーツケースを詰めてチケットを確認しておいた。</li>
+<li>彼は穏やかな性格で、職場で問題が起きても声を荒げることはほとんどない。</li>
+<li>最終結果は審査員たちを含め、部屋にいた全員を驚かせた。</li>
+<li>彼は他の皆がとっくに忘れた後も、小さなミスをいつまでも気にし続ける傾向がある。</li>
+<li>そのレストランは東南アジア各地の料理を揃えた珍しいメニューで知られていた。</li>
+<li>そのドアは各住人が持つ小さな電子キーを使って開けられた。</li>
+<li>その谷では果物が豊富に実り、地元の家族は毎年秋にジャムを作った。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>adverse</li>
+<li>refugee</li>
+<li>duel</li>
+<li>the night before</li>
+<li>disposition</li>
+<li>astonish</li>
+<li>obsess</li>
+<li>exotic</li>
+<li>by means of</li>
+<li>in abundance</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>adverse | 不利な；悪条件の</li>
+<li>refugee | 難民；亡命者</li>
+<li>duel | 決闘；一対一の対決</li>
+<li>the night before | 前夜</li>
+<li>disposition | 気質；性質</li>
+<li>astonish | 〜をびっくりさせる</li>
+<li>obsess | 〜に執着する；とりつく</li>
+<li>exotic | 異国風の；珍しい</li>
+<li>by means of | 〜を用いて；〜によって</li>
+<li>in abundance | 豊富に</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
