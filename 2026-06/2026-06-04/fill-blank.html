@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-04 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-04</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>The sensor was designed to d_____ even small changes in temperature inside the building.</li>
+<li>Two c______ officials were removed from office after an investigation into the misuse of public funds.</li>
+<li>Throughout the coldest months, only a _______ __ dedicated volunteers kept the shelter open each night.</li>
+<li>Please b___ __ ____ that the final submission deadline cannot be extended under any circumstances.</li>
+<li>There were very few complaints, i_ ___, after the updated timetable came into effect.</li>
+<li>The deputy made all key decisions i_ ___ _______ while the head of department was on annual leave.</li>
+<li>The castle was built during the m_______ period and still draws thousands of visitors each year.</li>
+<li>The contractor was found to be i_ ______ __ the agreed safety standards on three separate occasions.</li>
+<li>The argument over the inheritance threatened to t___ _____ a family that had always been close.</li>
+<li>After the long-distance race, she booked a session with a m______ to ease the tension in her legs.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>そのセンサーは建物内のわずかな温度変化でも感知できるよう設計されていた。</li>
+<li>公的資金の不正使用に関する調査の後、腐敗した役人が2人職を解かれた。</li>
+<li>最も寒い月の間、少数の献身的なボランティアだけが毎晩シェルターを開け続けた。</li>
+<li>最終提出期限はいかなる状況でも延長できないことを心に留めておいてください。</li>
+<li>更新された時刻表が発効した後、苦情はあったとしてもほとんどなかった。</li>
+<li>部長が年次休暇中の間、副部長がすべての重要な決定を行った。</li>
+<li>その城は中世に建てられ、今も毎年何千人もの観光客を集めている。</li>
+<li>そのコントラクターは3度にわたり合意された安全基準に違反していることが判明した。</li>
+<li>遺産をめぐる争いは、これまでずっと仲の良かった家族を引き裂く恐れがあった。</li>
+<li>長距離レースの後、彼女は脚の緊張をほぐすためにマッサージ師のセッションを予約した。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>detect</li>
+<li>corrupt</li>
+<li>a handful of</li>
+<li>bear in mind</li>
+<li>if any</li>
+<li>in one&#x27;s absence</li>
+<li>medieval</li>
+<li>in breach of</li>
+<li>tear apart</li>
+<li>masseur</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>detect | 〜を感知する；検出する</li>
+<li>corrupt | 腐敗した；堕落した</li>
+<li>a handful of | 一握りの；少数の</li>
+<li>bear in mind | 〜を心に留める</li>
+<li>if any | もしあれば；たとえあるとしても</li>
+<li>in his absence | 〜の不在中に</li>
+<li>medieval | 中世の</li>
+<li>in breach of | 〜に違反して</li>
+<li>tear apart | 〜を引き裂く</li>
+<li>masseur | （男性の）マッサージ師</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
