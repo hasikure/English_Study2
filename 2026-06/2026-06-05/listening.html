@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-05 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-05</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-06-05_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Saturday, I spent the day helping my older brother move into his new flat on the other side of town. We had borrowed a small van from a friend and managed to load everything in a single morning.</p>
+<p>My brother had spent the previous week packing. Every surface in his old flat was stacked with cardboard boxes, each one labelled with a thick marker. He had been living there for seven years, and the amount of accumulated clutter was striking. Some of it he had disregarded entirely during packing — old cables, worn-out shoes, a broken desk lamp — and left in a pile by the door for the charity shop.</p>
+<p>By noon, the van was full. We drove across town and spent the afternoon carrying everything up to the second floor. Lifting the heavier items — a wardrobe, a bookcase, a box packed entirely with textbooks — required the strength of an ox. My shoulders were still aching on Monday.</p>
+<p>Once everything was in place, the new flat felt genuinely calm. It was smaller than the old one but free of the years of clutter that had slowly filled every corner. My brother said he felt, if not completely settled, at least ready for a new start.</p>
+<p>I drove home that evening tired but satisfied. It had been a good day&#x27;s work.</p>
+<h2>Japanese Translation</h2>
+<p>先週の土曜日、兄が町の反対側にある新しいマンションに引っ越すのを一日手伝った。友人から小さなバンを借りており、午前中にすべて積み込むことができた。</p>
+<p>兄は前の週を荷造りに費やしていた。古いマンションのあらゆる表面が、太いマーカーで名前が書かれた段ボール箱で埋め尽くされていた。7年間そこに住んでいたので、たまった荷物の量は驚くほどだった。古いケーブル、くたびれた靴、壊れた電気スタンドなど、荷造りの途中でまったく無視して、チャリティショップのためにドアのそばに山積みにしたものもあった。</p>
+<p>正午にはバンがいっぱいになった。町を横断して2階まですべてを運び上げるのに午後を費やした。ワードローブ、本棚、教科書だけで詰め込まれた箱など重いものを持ち上げるには、牛のような力が必要だった。肩の痛みは月曜日まで残った。</p>
+<p>すべてが所定の場所に収まると、新しいマンションは本当に落ち着いた雰囲気になった。前の部屋より小さいが、長年かけてすみずみに溜まっていた荷物から解放されていた。兄は、完全に落ち着いたとはいえなくても、少なくとも新しいスタートを切る準備ができたと言った。</p>
+<p>その日の夕方、疲れたが満足して帰宅した。充実した一日の仕事だった。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>cardboard</td><td>厚紙；ボール紙</td></tr>
+<tr><td>disregard</td><td>〜を無視する；無関心</td></tr>
+<tr><td>ox</td><td>雄牛；（比喩）力強い人</td></tr>
+<tr><td>be free of</td><td>〜を免除されている；〜がない</td></tr>
+<tr><td>if not</td><td>もしそうでなければ；〜とはいえないにしても</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

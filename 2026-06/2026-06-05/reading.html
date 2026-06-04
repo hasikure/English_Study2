@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-05 Reading</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-05</div>
+    <h1>Reading</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Reading</h1>
+<h2>English Text</h2>
+<p>A doctor taking a patient&#x27;s blood pressure does not need an expensive machine. A simple cuff and a stethoscope are enough to catch one of the most common warning signs of cardiovascular disease. What that doctor cannot see as easily, however, is the long chain of circumstances that brought the patient to that point.</p>
+<p>Research conducted over a long period of time has consistently shown that where a person lives has a significant effect on their health. People raised in densely populated, economically deprived neighbourhoods — in some cities, areas historically referred to as ghettos — are more likely to develop chronic conditions, including certain cancers, than those raised in wealthier districts. The reasons are complex: poor air quality, limited access to fresh food, high noise levels, and chronic stress all contribute.</p>
+<p>The implications for anticancer research have become increasingly clear. Detailed studies published by institutions attached to major universities show that tumour rates in deprived areas run significantly higher than in comparable wealthier ones. These differences persist even after controlling for factors like age and smoking history. Researchers are now more conscious of the need to treat postcode as a health variable, not simply a background detail.</p>
+<p>The problem is not that the data is new. It is that the data has existed for decades without prompting the scale of policy response it seems to demand. A health system that is genuinely conscious of inequality does not only treat illness when it arrives — it works to change the conditions that make illness more likely in the first place.</p>
+<p>Progress in this area is slow, and the evidence of what actually changes outcomes at a population level remains limited. But the case for addressing root causes rather than only symptoms is growing harder to dismiss.</p>
+<h2>Japanese Translation</h2>
+<p>血圧を測定する医師に高価な機械は必要ない。単純なカフと聴診器で、心血管疾患の最も一般的な警告サインの一つを捉えるには十分だ。しかし医師が簡単には見えないのは、患者をその状況に至らせた長い経緯だ。</p>
+<p>長期間にわたって行われた研究は、人が住む場所がその健康に大きな影響を与えることを一貫して示してきた。経済的に恵まれない過密した地区——一部の都市では歴史的にゲットーと呼ばれてきた地域——で育った人々は、裕福な地区で育った人々より、特定のがんを含む慢性疾患を発症しやすい。理由は複雑だ——劣悪な大気の質、新鮮な食品へのアクセスの制限、高い騒音レベル、慢性的なストレスがすべて影響している。</p>
+<p>抗がん研究への示唆はますます明確になっている。大学附属の機関が発表した詳細な研究は、恵まれない地域の腫瘍発症率が、同等の裕福な地域と比べて有意に高いことを示している。これらの違いは、年齢や喫煙歴などの要因を調整した後でも持続する。研究者たちは今、郵便番号を単なる背景情報ではなく、健康変数として扱う必要性をより意識するようになっている。</p>
+<p>問題はデータが新しくないことだ。データは数十年前から存在していたのに、それに見合った規模の政策対応を促してこなかった。不平等を真に意識した医療制度は、病気が発生してから治療するだけでなく、そもそも病気になりやすい状況を変えるために取り組む。</p>
+<p>この分野での進歩は遅く、人口レベルでの成果を実際に変えるものの証拠はまだ限られている。しかし、症状だけでなく根本原因に対処するという主張は、無視しがたいものになってきている。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>cuff</td><td>カフ；袖口；手錠</td></tr>
+<tr><td>over a long period of time</td><td>長期間にわたって</td></tr>
+<tr><td>ghetto</td><td>ゲットー；貧民街</td></tr>
+<tr><td>anticancer</td><td>抗がんの</td></tr>
+<tr><td>detailed</td><td>詳細にわたる；細部に注意した</td></tr>
+<tr><td>attached</td><td>付属した；附属の；添付の</td></tr>
+<tr><td>be conscious of</td><td>〜に気づいている；〜を意識している</td></tr>
+</tbody></table></div>
+<h2>Notes</h2>
+<ul>
+<li><strong>cardiovascular disease</strong>: 心血管疾患。心臓や血管に関わる病気の総称。</li>
+<li><strong>postcode</strong>: 郵便番号。ここでは「居住地域」を表す変数として使われている。</li>
+<li><strong>tumour rate</strong>: 腫瘍発症率。ある集団における腫瘍の発生割合。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

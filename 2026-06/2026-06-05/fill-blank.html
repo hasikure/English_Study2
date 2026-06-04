@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-05 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-05</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>Parents naturally tend to b_ _____ __ even small achievements when their children are young.</li>
+<li>You would b_ ______ ___ taking the train than driving, given how heavy the traffic is today.</li>
+<li>The h_______ along the steep path was repaired after a walker reported it felt unsafe.</li>
+<li>Several residents o_____ __ the proposal to close the local library on Sunday afternoons.</li>
+<li>She sat down to s_____ the old fountain before the square became too crowded to see clearly.</li>
+<li>The museum had a small room dedicated to traditional h_________, including weaving and basket making.</li>
+<li>Please c___ __ the reservation desk at least twenty-four hours before you plan to arrive.</li>
+<li>It took most of the morning to s___ through the old files and decide what to keep.</li>
+<li>Strong winds brought down a large l___ from the oak tree at the edge of the field.</li>
+<li>Constant notifications on a phone can t___ _____ the focus needed to finish a task properly.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>親は子どもが幼い頃、小さな成果でも自然に誇りに思う傾向がある。</li>
+<li>今日の交通渋滞を考えると、車で運転するよりも電車に乗った方がよいだろう。</li>
+<li>急な坂道の手すりは、歩行者が危険だと報告した後に修理された。</li>
+<li>数人の住民が日曜日の午後に地元の図書館を閉める提案に反対した。</li>
+<li>広場が混雑して見えにくくなる前に、彼女は古い噴水をスケッチするために腰を下ろした。</li>
+<li>その博物館には、織物やかご編みを含む伝統的な手工芸に専念した小さな部屋があった。</li>
+<li>到着予定の少なくとも24時間前に予約デスクにお電話ください。</li>
+<li>古いファイルを仕分けて何を保管するかを決めるのに午前中のほとんどがかかった。</li>
+<li>強風がフィールドの端にあるオークの木から大きな枝を折って落とした。</li>
+<li>スマートフォンの絶え間ない通知が、タスクをきちんと終えるのに必要な集中力を奪うことがある。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>be proud of</li>
+<li>be better off</li>
+<li>handrail</li>
+<li>object to</li>
+<li>sketch</li>
+<li>handicraft</li>
+<li>call up</li>
+<li>sort</li>
+<li>limb</li>
+<li>take away</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>be proud of | 〜を誇りに思う</li>
+<li>be better off | より暮らし向きがよい；〜した方がよい</li>
+<li>handrail | 手すり；欄干</li>
+<li>object to | 〜に反対する</li>
+<li>sketch | スケッチする；写生する</li>
+<li>handicraft | 手工芸；手芸</li>
+<li>call up | 〜に電話をかける</li>
+<li>sort | 〜を仕分ける；分類する</li>
+<li>limb | （木の）大枝；（動物の）手足</li>
+<li>take away | 〜を取り去る；奪う</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
