@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-06 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-06</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>Thick fog began to e_______ the harbour just before the boats left the dock.</li>
+<li>After two weeks on the road, her shoes were completely w_______-___.</li>
+<li>At that hotel, luggage is checked in a_ _ ______ __ ______, so guests do not need to ask.</li>
+<li>Before GPS became common, sailors depended on n__________ charts and the stars to cross the ocean.</li>
+<li>The company updated its handbook to include clear rules against s______ in the workplace.</li>
+<li>The goldsmith showed us an e________ brooch he had made entirely by hand from silver wire.</li>
+<li>It is easy to b_ ___________ __ astronomy once you start watching the night sky regularly.</li>
+<li>Are you going to apologise for what you said, o_ ____?</li>
+<li>Three u_____________ attempts were made to open the locked cabinet before the manager was called.</li>
+<li>The seller wanted to be paid i_ ____, so we stopped at a cash machine on the way there.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>ボートが桟橋を離れる直前、濃い霧が港を包み始めた。</li>
+<li>2週間の旅の後、彼女の靴は完全に履き古されていた。</li>
+<li>そのホテルでは荷物のチェックインは当然のこととして行われるので、ゲストが頼む必要はない。</li>
+<li>GPSが普及する前、船乗りたちは海を渡るために航法図と星に頼っていた。</li>
+<li>その会社は職場における男女差別を明確に禁止するルールを社内規定に追加した。</li>
+<li>その金細工師は純銀の針金だけを使って手作りした絶妙なブローチを見せてくれた。</li>
+<li>夜空を定期的に眺め始めると、天文学に興味を持つのは簡単だ。</li>
+<li>自分が言ったことを謝るつもりなの、それとも何？</li>
+<li>管理者が呼ばれる前に、鍵のかかったキャビネットを開けようとする3度の失敗した試みがあった。</li>
+<li>売り手は現金での支払いを希望したので、途中でATMに立ち寄った。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>envelop</li>
+<li>worn-out</li>
+<li>as a matter of course</li>
+<li>navigation</li>
+<li>sexism</li>
+<li>exquisite</li>
+<li>be interested in</li>
+<li>or what?</li>
+<li>unsuccessful</li>
+<li>in cash</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>envelop | 〜を包む；覆う</li>
+<li>worn-out | 使い古した；疲れきった</li>
+<li>as a matter of course | 当然のこととして</li>
+<li>navigation | 航行；航海術</li>
+<li>sexism | 男女差別；性差別主義</li>
+<li>exquisite | 絶妙な；精巧な</li>
+<li>be interested in | 〜に興味を持っている</li>
+<li>or what? | それとも何か</li>
+<li>unsuccessful | 不成功の；失敗した</li>
+<li>in cash | 現金で</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

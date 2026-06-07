@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-08 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-08</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>彼女が部屋に入るとすぐに、電話が鳴り始めた。</li>
+</ol>
+<p>Grammar hint: use <code>no sooner ... than</code>.</p>
+<ol>
+<li>定期的な練習が上達に不可欠であることは言うまでもない。</li>
+</ol>
+<p>Grammar hint: use <code>it goes without saying that</code>.</p>
+<h2>Task</h2>
+<p>Translate into English.</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>No sooner had she entered the room than the phone began to ring.</li>
+<li>It goes without saying that regular practice is essential for improvement.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li><code>no sooner ... than</code>: 「〜するとすぐに」。<code>No sooner had + S + 過去分詞 + than ...</code> の形。No sooner が文頭に来ると倒置が起こる（had + S + V）。<code>hardly ... when/before</code> もほぼ同義。</li>
+<li><code>it goes without saying that</code>: 「〜は言うまでもない」。<code>It goes without saying that + S + V</code> の形。<code>needless to say</code> や <code>obviously</code> に言い換えられるが、よりフォーマルな表現。</li>
+</ul>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

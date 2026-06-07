@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-08 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-08</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>Everyone assumed the plan had failed, but the c_______ turned out to be true.</li>
+<li>She gave her little sister a long h__ at the airport before boarding the plane.</li>
+<li>Of all the options, this one requires the l_____ effort and gives the best result.</li>
+<li>She muted the TV every time a c_________ came on during the film.</li>
+<li>He was r_______ to find his passport still in his jacket pocket at check-in.</li>
+<li>Please l___ _______ these documents and let me know if anything needs to be changed.</li>
+<li>She stared at the instructions in complete b___________, unable to work out what to do first.</li>
+<li>He discovered the hidden switch b_ ________ while cleaning behind the bookcase.</li>
+<li>She has a remarkable f_______ for remembering faces even years after meeting someone.</li>
+<li>The lack of parking near the venue could p___ _ _______ for guests travelling by car.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>誰もがその計画は失敗したと思っていたが、実際には逆のことが真実であることが判明した。</li>
+<li>彼女は搭乗前に空港で妹を長い間抱きしめた。</li>
+<li>すべての選択肢の中で、これが最も少ない労力で最良の結果をもたらす。</li>
+<li>映画の途中でコマーシャルが流れるたびに、彼女はテレビの音を消した。</li>
+<li>彼は搭乗手続きでパスポートがジャケットのポケットにまだあると分かり、ほっとした。</li>
+<li>これらの書類に目を通して、変更が必要な箇所があれば教えてください。</li>
+<li>彼女は説明書を見て完全に当惑し、最初に何をすべきかわからなかった。</li>
+<li>本棚の後ろを掃除しているときに、彼は偶然隠されたスイッチを見つけた。</li>
+<li>彼女は会ってから何年も経った後でも顔を覚えるという驚くべき才能を持っている。</li>
+<li>会場付近の駐車スペースの不足が、車で来場するゲストにとって問題になる可能性がある。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>converse</li>
+<li>hug</li>
+<li>least</li>
+<li>commercial</li>
+<li>relieved</li>
+<li>look through</li>
+<li>bewilderment</li>
+<li>by accident</li>
+<li>faculty</li>
+<li>pose a problem</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>converse | 逆のこと；反対のもの</li>
+<li>hug | 抱擁；抱きしめること</li>
+<li>least | 最も少ない；最小の</li>
+<li>commercial | コマーシャル；広告</li>
+<li>relieved | ほっとした；安心した</li>
+<li>look through | 〜に目を通す</li>
+<li>bewilderment | 当惑；うろたえ</li>
+<li>by accident | 偶然に</li>
+<li>faculty | 才能；能力</li>
+<li>pose a problem | 問題を提起する；問題になる</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
