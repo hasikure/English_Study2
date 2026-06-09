@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-09 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-09</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>She will be e________ grateful to the teacher who encouraged her when nobody else did.</li>
+<li>Each j____ was asked to sign a form promising not to discuss the case outside the courtroom.</li>
+<li>The local bakery owner g_________ donated half the proceeds from the event to the food bank.</li>
+<li>A small m_______ was built in the park to honour the firefighters who lost their lives.</li>
+<li>It takes practice to d__________ fresh herbs ____ dried ones when both have been finely chopped.</li>
+<li>He managed to s___ a rare butterfly resting on a fence post at the edge of the garden.</li>
+<li>The extra hours she put into research helped c_________ ___ her lack of practical experience.</li>
+<li>The old stone a___ at the garden entrance had been repaired and cleaned over the winter.</li>
+<li>He did not want to r___ losing his savings, so he chose the more cautious investment option.</li>
+<li>A major vaccination programme in the 1950s helped nearly wipe out p____ in many countries.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>誰も励ましてくれなかったときに励ましてくれた先生に、彼女は永遠に感謝し続けるだろう。</li>
+<li>各陪審員は、法廷外で事件を議論しないことを約束する書類に署名するよう求められた。</li>
+<li>地元のパン屋のオーナーは、イベントの収益の半分を気前よくフードバンクに寄付した。</li>
+<li>命を失った消防士たちを称えるために、公園に小さな記念碑が建てられた。</li>
+<li>両方を細かく刻んだ場合、新鮮なハーブと乾燥ハーブを区別するには練習が必要だ。</li>
+<li>彼は庭の端にある柵の支柱に止まった珍しい蝶を見つけることができた。</li>
+<li>リサーチに費やした余分な時間が、実践的な経験の不足を補う助けになった。</li>
+<li>庭の入口にある古い石造りのアーチは、冬の間に修復され清掃されていた。</li>
+<li>彼は貯金を危険にさらしたくなかったので、より慎重な投資オプションを選んだ。</li>
+<li>1950年代の大規模なワクチン接種プログラムが、多くの国でポリオをほぼ根絶するのに貢献した。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>eternally</li>
+<li>juror</li>
+<li>generously</li>
+<li>memorial</li>
+<li>distinguish ... from</li>
+<li>spot</li>
+<li>compensate for</li>
+<li>arch</li>
+<li>risk</li>
+<li>polio</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>eternally | 永久に；永遠に</li>
+<li>juror | 陪審員</li>
+<li>generously | 気前よく；物惜しみせず</li>
+<li>memorial | 記念碑；記念の</li>
+<li>distinguish ... from | 〜をAとBに区別する</li>
+<li>spot | 〜を見つける；見つける</li>
+<li>compensate for | 〜を補う；埋め合わせをする</li>
+<li>arch | アーチ；弓形の構造物</li>
+<li>risk | 〜を危険にさらす</li>
+<li>polio | ポリオ；小児麻痺</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
