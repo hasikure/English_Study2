@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-11 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-11</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>We started to r__ _____ of chairs as more guests arrived than expected.</li>
+<li>She used a safety p__ to hold the torn hem in place until she could sew it properly.</li>
+<li>The small hotel b_____ __ having the only rooftop terrace in the old part of the city.</li>
+<li>The rooms include breakfast and free parking. A___________, guests can use the gym at no extra charge.</li>
+<li>She was v______ moved by the final scene and had to look away for a moment.</li>
+<li>Children who b_ ________ __ iron may feel tired and find it hard to concentrate at school.</li>
+<li>The entrance hall was a____ with fresh flowers and seasonal decorations for the wedding.</li>
+<li>The tickets r____ ____ ten to sixty pounds depending on where you sit in the theatre.</li>
+<li>The paint s_______ across the floor when he knocked over the tin by accident.</li>
+<li>The team held an u_________ meeting after work to discuss the changes before the formal announcement.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>予想より多くのゲストが来たので、椅子が不足し始めた。</li>
+<li>きちんと縫えるまで、彼女は安全ピンを使って破れた裾をとめた。</li>
+<li>その小さなホテルは、旧市街で唯一の屋上テラスを持つことを自慢にしている。</li>
+<li>部屋には朝食と無料駐車場が含まれている。さらに、ゲストは追加料金なしでジムを利用できる。</li>
+<li>彼女は最終シーンに明らかに心を動かされ、少しの間視線をそらさなければならなかった。</li>
+<li>鉄分が不足している子どもは疲れやすく、学校で集中するのが難しいことがある。</li>
+<li>エントランスホールは結婚式のために生花と季節の装飾で飾られていた。</li>
+<li>チケットは劇場内の座席の位置によって10ポンドから60ポンドまで幅がある。</li>
+<li>彼が誤って缶を倒したとき、ペンキが床一面に飛び散った。</li>
+<li>正式な発表の前に変更点を話し合うため、チームは仕事後に非公式のミーティングを開いた。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>run short</li>
+<li>pin</li>
+<li>boast of</li>
+<li>additionally</li>
+<li>visibly</li>
+<li>be deficient in</li>
+<li>adorn</li>
+<li>range from ... to</li>
+<li>splatter</li>
+<li>unofficial</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>run short | 不足する；底をつく</li>
+<li>pin | ピン；留め針</li>
+<li>boast of | 〜を自慢する</li>
+<li>additionally | その上；さらに</li>
+<li>visibly | 目に見えて；明らかに</li>
+<li>be deficient in | 〜が不足している</li>
+<li>adorn | 〜を飾る；装飾する</li>
+<li>range from ... to | 〜からAまでに及ぶ</li>
+<li>splatter | 飛び散る；はね散らす</li>
+<li>unofficial | 非公式の；公式でない</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

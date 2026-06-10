@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-11 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-11</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-06-11_dictation.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>Now that the renovation is complete, the office feels much brighter and easier to work in.</li>
+<li>The senior technician in charge of quality control found three faults during the morning inspection.</li>
+<li>He bought a lightweight waterproof jacket for the cycling trip along the coastal path.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>改装が完了した今、オフィスははるかに明るく作業しやすくなった。</li>
+<li>品質管理を担当するシニア技術者が、午前の検査で3つの不具合を発見した。</li>
+<li>彼は沿岸の遊歩道に沿ったサイクリング旅行のために、軽量の防水ジャケットを購入した。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>now (that)</td><td>今や〜なので；〜した今は</td></tr>
+<tr><td>in charge of</td><td>〜を担当して；〜の責任者で</td></tr>
+<tr><td>waterproof</td><td>防水の；水を通さない</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>Now that the renovation is complete, the office feels much brighter and easier to work in.</li>
+<li>The senior technician in charge of quality control found three faults during the morning inspection.</li>
+<li>He bought a lightweight waterproof jacket for the cycling trip along the coastal path.</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
