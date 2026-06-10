@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-10 Fill in the Blank</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-10</div>
+    <h1>Fill in the Blank</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Fill in the Blank</h1>
+<h2>Questions</h2>
+<ol>
+<li>Waiting for the exam results was absolute t______ — she checked the website every few minutes.</li>
+<li>She lost c____________ briefly after hitting her head, but recovered quickly in the ambulance.</li>
+<li>Dogs must be kept on a l____ in the park during morning school-run hours.</li>
+<li>She checked her bag and realised the z__ on the front pocket had completely broken.</li>
+<li>The summer festival finally c___ __ __ ___ after three days of music, food, and fireworks.</li>
+<li>Landlords b_ ___ must fit a working smoke alarm on every floor of a rented property.</li>
+<li>The officer decided to c_____ the driver ____ dangerous driving after reviewing the footage.</li>
+<li>It was t__________ of him to cancel at the last minute without letting anyone know in advance.</li>
+<li>She k___ __________ at the guitar every evening until she felt ready to play in front of others.</li>
+<li>He immediately a________ __ the customer ___ the long wait at the service desk.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>試験の結果を待つのは本当に苦痛だった――彼女は数分ごとにウェブサイトを確認した。</li>
+<li>彼女は頭を打った後、一時的に意識を失ったが、救急車の中ですぐに回復した。</li>
+<li>学校の登下校時間帯の朝は、公園内で犬はリードにつないでおかなければならない。</li>
+<li>彼女はバッグを確認し、前ポケットのファスナーが完全に壊れていることに気づいた。</li>
+<li>音楽、食べ物、花火が3日間続いた夏祭りがついに終わった。</li>
+<li>家主は法律によって、賃貸物件の各階に作動する火災警報器を設置しなければならない。</li>
+<li>その警察官は映像を確認した後、ドライバーを危険運転で告発することを決めた。</li>
+<li>事前に誰にも知らせずに直前でキャンセルするのは、思いやりがなかった。</li>
+<li>彼女は他の人の前で弾く準備ができると感じるまで、毎晩ギターを練習し続けた。</li>
+<li>彼はすぐにサービスデスクでの長い待ち時間について顧客に謝った。</li>
+</ol>
+<h2>Word Bank</h2>
+<ol>
+<li>torture</li>
+<li>consciousness</li>
+<li>leash</li>
+<li>zip</li>
+<li>come to an end</li>
+<li>by law</li>
+<li>charge ... with</li>
+<li>thoughtless</li>
+<li>keep practising</li>
+<li>apologize to ... for</li>
+</ol>
+<h2>Answer</h2>
+<ol>
+<li>torture | 苦痛；拷問のようなこと</li>
+<li>consciousness | 意識</li>
+<li>leash | リード；革紐</li>
+<li>zip | ファスナー；ジッパー</li>
+<li>come to an end | 終わる</li>
+<li>by law | 法律によって</li>
+<li>charge ... with | 〜をAで告発する</li>
+<li>thoughtless | 思いやりのない；不注意な</li>
+<li>keep practising | 練習し続ける</li>
+<li>apologize to ... for | BについてAに謝る</li>
+</ol>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

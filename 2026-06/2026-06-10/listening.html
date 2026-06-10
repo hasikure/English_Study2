@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-10 Listening</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+</head>
+<body>
+
+<main class="shell">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-10</div>
+    <h1>Listening</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <audio controls preload="metadata" src="2026-06-10_listening.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Listening</h1>
+<h2>Script</h2>
+<p>Last Friday evening, I went to a reading event at a small venue near the central library. A novelist from abroad was presenting her latest book, and a professional translator was there to interpret everything into English. I had been to similar events before, but this one felt different from the start.</p>
+<p>The translator worked at a pace that matched the speaker almost exactly. Listening to both voices overlapping slightly was stranger than I had expected. What struck me most was the artistry involved — not just finding the right words, but catching the tone and rhythm of the original.</p>
+<p>During the break, I spoke to the translator briefly. She mentioned that events like this were becoming rarer, partly because organisers failed to budget properly. She had attended several where tickets were sold at a discount just to fill the seats, which made it harder to pay speakers and translators fairly.</p>
+<p>She also told me that in some countries, organisers are required by law to provide professional interpretation when hosting international events above a certain size. She felt this was a positive step — it helped ensure that both the performers and the needy audiences, those who could not access the content in the original language, were properly served.</p>
+<p>The novelist read one more passage before the evening ended. Even without understanding the original language, I found the whole experience unexpectedly moving.</p>
+<h2>Japanese Translation</h2>
+<p>先週の金曜日の夜、中央図書館近くの小さな会場で朗読イベントに行った。外国人小説家が最新作を発表し、プロの翻訳者がその内容をすべて英語に通訳していた。似たようなイベントに以前も参加したことがあったが、このイベントは最初から違う雰囲気があった。</p>
+<p>翻訳者は話者のペースにほぼ合わせて作業しており、二つの声がわずかに重なるのを聞くのは思ったより奇妙な体験だった。最も印象的だったのは、その芸術性だった――正しい言葉を見つけるだけでなく、原文のトーンとリズムを捉えること。</p>
+<p>休憩中に翻訳者と少し話した。彼女は、こうしたイベントはだんだん少なくなっていると語った。主催者が予算を適切に組まないことが多いためで、座席を埋めようと割引価格でチケットを販売したイベントにいくつか参加したことがあり、演者や翻訳者に適切な報酬を払うのが難しくなると話していた。</p>
+<p>また、一定規模以上の国際イベントを主催する際には、法律によってプロの通訳を提供することが義務付けられている国もあると教えてくれた。彼女はこれを積極的な取り組みだと感じていた――演者にとっても、原語でコンテンツにアクセスできない人々にとっても、適切に支援されることになるからだ。</p>
+<p>小説家はその夜の最後にもう一節を朗読した。原語を理解できなくても、この体験全体が思いがけなく心に響いた。</p>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>translator</td><td>翻訳者；通訳者</td></tr>
+<tr><td>artistry</td><td>芸術性；芸術的才能</td></tr>
+<tr><td>at a discount</td><td>割引で</td></tr>
+<tr><td>by law</td><td>法律によって</td></tr>
+<tr><td>needy</td><td>暮らしに困っている；支援が必要な</td></tr>
+</tbody></table></div>
+  </article>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
