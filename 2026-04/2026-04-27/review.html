@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-27 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-04-27" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-27</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-04-27", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2728, "expression": "allow ... to do", "meaning": "...が〜するのを許す／可能にする"}, {"id": 2645, "expression": "willing", "meaning": "《補語にのみ用いて》『喜んで(快く)する』 / (人・動物などが)『乗り気の』,いそいそとした / 《名詞の前にのみ用いて》(行為などが)自発的な"}, {"id": 2437, "expression": "treat", "meaning": "〈他〉(人など) を扱う / 《...と》 ...を見なす 《as ...》 / (問題など)を扱う, を論じる / (病人・病気など)を治療する / 〈自〉扱う / おごる"}, {"id": 3380, "expression": "get to one’s feet", "meaning": "立ち上がる"}, {"id": 4134, "expression": "to the letter", "meaning": "文字通りに／厳密に"}, {"id": 4114, "expression": "to a certain degree", "meaning": "ある程度まで"}, {"id": 1335, "expression": "listener", "meaning": "耳を傾ける人,聞き手;(ラジオ)聴取者"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2983, "expression": "be inconsistent with", "meaning": "〜と一致しない"}, {"id": 4054, "expression": "take away", "meaning": "〜を取り去る"}, {"id": 1517, "expression": "nomination", "meaning": "〈U〉指名, 任命 / 指名権, 任命権 / 《...を...に》 指名すること, 任命すること 《of ... to, as, for ...》"}, {"id": 1627, "expression": "pancake", "meaning": "パンケーキ(牛乳・卵・小麦粉で作った薄くて柔らかい食べ物)"}, {"id": 3823, "expression": "on one’s guard", "meaning": "警戒して"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 1217, "expression": "interpreter", "meaning": "〈C〉通訳,通訳者 / （音楽・劇などの）解説者 / インタープリタ"}, {"id": 2980, "expression": "be in touch with", "meaning": "〜と連絡を取っている"}, {"id": 2499, "expression": "underwater", "meaning": "水面下に(を),水中で(を)"}, {"id": 1617, "expression": "owl", "meaning": "『フクロウ』"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-10 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-10" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-10</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-06-10", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 3433, "expression": "hang on", "meaning": "電話を切らずに待つ"}, {"id": 3624, "expression": "jazz up", "meaning": "〜を活気づける／派手にする"}, {"id": 3430, "expression": "hand down A to B", "meaning": "AをBに伝える／譲る"}, {"id": 902, "expression": "flawless", "meaning": "(宝石などが)傷のない / (演技・演奏などが)完全な(perfect)"}, {"id": 2825, "expression": "at the request of", "meaning": "〜の依頼で"}, {"id": 3671, "expression": "let ... know", "meaning": "...に知らせる"}, {"id": 828, "expression": "explode", "meaning": "〈自〉爆発する / 《怒り・笑いなどで》〈人が〉爆発する《with, in ...》 / 〈人口などが〉急激に増す / 〈他〉〈物〉を破裂させる / 〈習慣・迷信・学説など〉をくつがえす"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2429, "expression": "translator", "meaning": "(特に専門の)翻訳者,翻訳家"}, {"id": 2777, "expression": "at a discount", "meaning": "割引で／軽視されて"}, {"id": 3134, "expression": "by law", "meaning": "法律によって"}, {"id": 117, "expression": "artistry", "meaning": "芸術的効果,芸術性 / 芸術的才能"}, {"id": 1496, "expression": "needy", "meaning": "非常に暮らしに困っている  / 《名詞的に;the~》《集合的に;複数扱い》貧困者たち"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 2100, "expression": "shaky", "meaning": "(体・声などが)揺れる,震える / こわれそうな,安定していない / 不碓実な,あてにならない"}, {"id": 170, "expression": "barbershop", "meaning": "《米》理髪店,理容店《英》barber's [shop])"}, {"id": 4031, "expression": "such as", "meaning": "〜のような"}, {"id": 4059, "expression": "take ... for granted", "meaning": "...を当然だと思う"}, {"id": 3977, "expression": "set about", "meaning": "〜に取りかかる"}, {"id": 986, "expression": "gloomy", "meaning": "暗い,薄暗い / 気をめいらせる,陰気な / 憂うつな / 悲観的な"}, {"id": 3965, "expression": "run short of", "meaning": "〜が不足する"}, {"id": 354, "expression": "circuitry", "meaning": "電気回路 / 電気回路構成物(真空管など)"}, {"id": 2697, "expression": "a great deal of", "meaning": "多量の／たくさんの"}, {"id": 1918, "expression": "regard", "meaning": "〈U〉《...に対する》 考慮 《to, for ...》 / 《...に対する》 敬意 《to, for ...》 / 《複数形で》 よろしくという挨拶"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 2406, "expression": "torture", "meaning": "拷問"}, {"id": 445, "expression": "consciousness", "meaning": "〈U〉意識, 知覚 / (個人や集団の)意識, 意見"}, {"id": 1302, "expression": "leash", "meaning": "(犬などをつなぐ)皮ひも,綱,鎖(くさり) / 〈犬など〉‘を'皮ひもなどでつなぐ"}, {"id": 2690, "expression": "zip", "meaning": "〈U〉(弾丸が飛ぶときまたは布地の裂けるときの)ビュッという音 / 〈U〉《話》元気,力 / 〈C〉《英》(また zip fastener)=zipper"}, {"id": 3189, "expression": "come to an end", "meaning": "終わる"}, {"id": 3134, "expression": "by law", "meaning": "法律によって"}, {"id": 3169, "expression": "charge A with B", "meaning": "AをBで告発する／AにBを請求する"}, {"id": 2377, "expression": "thoughtless", "meaning": "思いやりのない,不親切な;(…に)思いやりのない《+of+名》 / 不注意な,考えの浅い"}, {"id": 3633, "expression": "keep doing", "meaning": "〜し続ける"}, {"id": 2736, "expression": "apologize to A for B", "meaning": "BについてAに謝る"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

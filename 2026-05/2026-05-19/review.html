@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-19 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-05-19" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-19</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-05-19", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 467, "expression": "conventional", "meaning": "従来の, 型にはまった / 慣例の, 因襲的な  / (核兵器に対して)通常兵器の"}, {"id": 256, "expression": "breed", "meaning": "〈C〉(動植物の改良された) 品種"}, {"id": 379, "expression": "coherence", "meaning": "密着,結合 / (論理などの)首尾一貫性"}, {"id": 147, "expression": "audition", "meaning": "〈C〉視聴テスト,オーディション(歌手・俳優など声の質や演技を試す審査)  / 〈U〉聴力,聴くこと"}, {"id": 730, "expression": "elect", "meaning": "〈他〉(投票で)〈議長・議員など〉を選ぶ, を選挙する"}, {"id": 2743, "expression": "around the corner", "meaning": "すぐ近くに／間近に迫って"}, {"id": 1698, "expression": "pessimistic", "meaning": "悲観的な,厭世的な"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2191, "expression": "spark", "meaning": "〈C〉火花,火の粉;(電気の)スパーク;(一般に)閃光(せんこう),(宝石などの)きらめき  / 〈C〉(人などの)活気,生気;(才気などの)ひらめき《+of+名》  / 〈C〉(事件などの)発端,発火点  / 《a spark》ほんの少し(の…)《+of+名》  / 火花を出す;閃光を発する;〈電気が〉スパークする  / 〈人〉‘を'かり立てて…させる《+名〈人〉+to(into)+名(doing)》"}, {"id": 1037, "expression": "harmless", "meaning": "『無害の』 / 悪意のない,無邪気な"}, {"id": 171, "expression": "bare", "meaning": "を裸にする,あらわにする"}, {"id": 3750, "expression": "make up with", "meaning": "〜と仲直りする"}, {"id": 3794, "expression": "nothing but", "meaning": "〜にすぎない／〜だけ"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 3630, "expression": "keep an eye on", "meaning": "〜を見張る／見守る"}, {"id": 3951, "expression": "result from", "meaning": "〜に起因する"}, {"id": 1032, "expression": "handrail", "meaning": "手すり,欄干"}, {"id": 1699, "expression": "petrified", "meaning": "石化した / びっくり仰天して,ぼうぜん自失状態で"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 2864, "expression": "be appreciative of", "meaning": "〜に感謝している／〜を正しく評価している"}, {"id": 2708, "expression": "according to", "meaning": "〜によると／〜に従って"}, {"id": 3920, "expression": "provide A for B", "meaning": "BにAを提供する／備える"}, {"id": 2620, "expression": "wealthy", "meaning": "(人が)富裕な, 裕福な / 豊富に持っている / 《...に》富んだ《in ...》"}, {"id": 1360, "expression": "major", "meaning": "《米》専攻科目;専攻学生  /   《しばしばM-》陸軍(空軍)少佐  /"}, {"id": 3596, "expression": "in the run-up to", "meaning": "〜に向けた準備期間に"}, {"id": 3953, "expression": "reveal the identity of", "meaning": "〜の正体を明らかにする"}, {"id": 822, "expression": "expansion", "meaning": "〈U〉拡大, 拡張 / 〈C〉拡大されたもの / 〈U/C〉(数字で)展開式"}, {"id": 412, "expression": "complexity", "meaning": "複雑さ,〈C〉複雑なもの"}, {"id": 3568, "expression": "in secret", "meaning": "秘密に"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

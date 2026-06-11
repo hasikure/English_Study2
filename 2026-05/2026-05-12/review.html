@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-12 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-05-12" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-12</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-05-12", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 1007, "expression": "greatness", "meaning": "〈U〉大きいこと,巨大, 多大 / 偉大さ, 高貴, 高名"}, {"id": 2354, "expression": "terrifying", "meaning": "恐ろしい"}, {"id": 1565, "expression": "orator", "meaning": "演説者,講演者 / 雄弁家"}, {"id": 2790, "expression": "at best", "meaning": "せいぜい／よくても"}, {"id": 2751, "expression": "as ... as any", "meaning": "どれにも劣らず〜"}, {"id": 3787, "expression": "not at all", "meaning": "全然〜ない"}, {"id": 3394, "expression": "give ... leeway", "meaning": "...に裁量を与える／余裕を与える"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3675, "expression": "lift up", "meaning": "〜を持ち上げる"}, {"id": 1092, "expression": "humiliation", "meaning": "辱めること;辱めを受けること;〈C〉辱め,屈辱[感]"}, {"id": 755, "expression": "enduring", "meaning": "がまん強い(patient) / 不朽の,永続する, 長続きする"}, {"id": 3961, "expression": "run out", "meaning": "なくなる，切れる"}, {"id": 3982, "expression": "show around", "meaning": "〜を案内して回る"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 3930, "expression": "put out", "meaning": "〜を消す"}, {"id": 1901, "expression": "reconsider", "meaning": "…‘を'再考する,考え直す"}, {"id": 3171, "expression": "check in", "meaning": "チェックインする／到着を報告する"}, {"id": 1599, "expression": "overbook", "meaning": "(航空会社・ホテルなどが)オーバーブッキングを行う"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1966, "expression": "respiration", "meaning": "〈U〉呼吸すること(breathing)〈C〉一呼吸,一息 / 〈U〉(生物の)呼吸作用"}, {"id": 2732, "expression": "and so on", "meaning": "〜など"}, {"id": 2053, "expression": "scheme", "meaning": "計画 / 策略"}, {"id": 3348, "expression": "from scratch", "meaning": "最初から"}, {"id": 3255, "expression": "do without", "meaning": "〜なしで済ます"}, {"id": 2155, "expression": "snap", "meaning": "パチン(ポキン,カチッ,ピシッ)と音をたてる / 〈木の枝などが〉ポキッと折れる,〈糸などが〉プツンと切れる / 〈戸・ふた・カギなどが〉パチン(カチッなど)と音をたてて(…の状態に)なる《+形〈補〉》 / (…に)ぱくっとかみつく《+at+名》 / …‘を'パチン(ピシッ)と音をさせる / …‘を'ポキッと折る,プツンと切る;…‘を'パチッと締める / 〈命令・応答など〉‘を'ピシッと言う《+out+名,+名+out》 / 《話》〈スナップ写真〉‘を'撮る"}, {"id": 1120, "expression": "immortality", "meaning": "不死,不滅 / 不朽の名声"}, {"id": 1480, "expression": "nano", "meaning": "ナノ、10億分の1"}, {"id": 799, "expression": "examinee", "meaning": "被験者"}, {"id": 2269, "expression": "strictly", "meaning": "厳格に,厳重に  / 厳密に,正確に  / 全く,きっはりと,断然"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-28 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-04-28" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-28</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-04-28", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 173, "expression": "bark", "meaning": "〈自〉《…に》ほえる,ほえつく《at ...》 / 《…に》ほえるようにしゃべる,《…を》どなる《at ...》 / 〈他〉…をどなって言う《out》"}, {"id": 379, "expression": "coherence", "meaning": "密着,結合 / (論理などの)首尾一貫性"}, {"id": 3970, "expression": "see a doctor", "meaning": "医者に診てもらう"}, {"id": 2627, "expression": "welfare", "meaning": "幸福,繁栄  / 福祉[事業],厚生[事業]  / (米政府の)生活保護"}, {"id": 2448, "expression": "trip", "meaning": "〈自〉つまづく / 〈他〉つまずかせる"}, {"id": 3472, "expression": "hurry up", "meaning": "急ぐ"}, {"id": 810, "expression": "exclusively", "meaning": "排他的に,独占的に,のみ/ 全く,もっぱら(solely)"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 1163, "expression": "indulgent", "meaning": "気ままな;寛大な,甘い"}, {"id": 3233, "expression": "delve into", "meaning": "〜を掘り下げる"}, {"id": 969, "expression": "genre", "meaning": "ジャンル"}, {"id": 1765, "expression": "predicament", "meaning": "苦境,窮地"}, {"id": 3760, "expression": "midway through", "meaning": "〜の途中で"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 3158, "expression": "cannot be too ...", "meaning": "いくら〜してもしすぎることはない"}, {"id": 1407, "expression": "microbe", "meaning": "〈C〉微生物,(特に)細菌"}, {"id": 3924, "expression": "put emphasis on", "meaning": "〜を重視する"}, {"id": 1863, "expression": "racism", "meaning": "民族主義,民族的優越感;人種差別 / 民族主義政策(体制)"}, {"id": 1573, "expression": "ornament", "meaning": "〈C〉『装飾品』,飾り / 〈U〉『装飾』,装飾法"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

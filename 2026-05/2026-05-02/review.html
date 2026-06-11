@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-02 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-05-02" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-02</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-05-02", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2739, "expression": "apply to", "meaning": "〜に当てはまる／〜に申し込む"}, {"id": 2698, "expression": "a handful of", "meaning": "一握りの／少数の"}, {"id": 1244, "expression": "irritating", "meaning": "いらだたせる"}, {"id": 864, "expression": "fear", "meaning": "…‘を'恐れる,こわがる(進行形にできない)  / …‘を'気づかう,あやぶむ  / 《古》〈神など〉‘を'恐れる  / 恐れる,こわがる  / (…を)気づかう,心配する《+for+名》"}, {"id": 590, "expression": "demanding", "meaning": "過度(不当)に要求する;骨の折れる"}, {"id": 834, "expression": "exquisite", "meaning": "『絶妙な』,精巧な / (苦痛・快感などが)強烈な / (感受性が)鋭敏で洗練された"}, {"id": 1786, "expression": "prestigious", "meaning": "誉れの高い,高名な, 名門の / 尊敬されている / 権威のある"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3634, "expression": "keep down", "meaning": "〜を抑える／低く保つ"}, {"id": 678, "expression": "donation", "meaning": "寄贈,寄付  / 寄付金,寄贈品"}, {"id": 760, "expression": "enhance", "meaning": "〈他〉...の程度を高める, ...の価値を高める, ...を向上させる"}, {"id": 2477, "expression": "unashamedly", "meaning": "気後れすることなく,臆することなく,恥じらいもなく"}, {"id": 3083, "expression": "become extinct", "meaning": "絶滅する"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 54, "expression": "aircrew", "meaning": "航空機乗組員(操縦士・客室乗務員など)"}, {"id": 3226, "expression": "cut down on", "meaning": "〜を減らす"}, {"id": 1326, "expression": "lighting", "meaning": "照明,点火 / 照明方法(装置)"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 2950, "expression": "be for", "meaning": "〜に賛成である"}, {"id": 3381, "expression": "get to work [office]", "meaning": "通勤する"}, {"id": 1597, "expression": "overall", "meaning": "全部の,全般的な,全面的な,  端から端までの / 全般的に,全面的に, 端から端まで"}, {"id": 3180, "expression": "come around [round]", "meaning": "意識を取り戻す／立ち寄る／考えを変える"}, {"id": 2956, "expression": "be fresh from [out of]", "meaning": "〜を出たばかりである"}, {"id": 3299, "expression": "feel like doing", "meaning": "〜したい気がする"}, {"id": 2199, "expression": "speeder", "meaning": "高速で運転する人、スピード違反者"}, {"id": 2664, "expression": "workbench", "meaning": "(職人などの)仕事台,作業台"}, {"id": 3877, "expression": "out of town", "meaning": "町を離れて"}, {"id": 1261, "expression": "juror", "meaning": "陪審員"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

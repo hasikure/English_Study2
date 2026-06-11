@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-04-25 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-04-25" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-04-25</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-04-25", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 1652, "expression": "patriot", "meaning": "愛国者, 志士 /  （P-） パトリオット (米軍の地［艦］対空ミサイル装置)"}, {"id": 3409, "expression": "go mad", "meaning": "気が狂う"}, {"id": 2498, "expression": "undertake", "meaning": "に着手する / 請け負う, を引き受ける, 始める / ...であることを保証する《that...》"}, {"id": 158, "expression": "badge", "meaning": "記章,バッジ  / 印"}, {"id": 1868, "expression": "radical", "meaning": "急進的な / 根本的な"}, {"id": 4046, "expression": "take a risk", "meaning": "危険を冒す"}, {"id": 3599, "expression": "in the vicinity of", "meaning": "〜の近くに"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 4015, "expression": "stay healthy", "meaning": "健康でいる"}, {"id": 3939, "expression": "refer to", "meaning": "〜に言及する／〜を参照する"}, {"id": 2731, "expression": "amount to", "meaning": "合計〜になる／結局〜に等しい"}, {"id": 2369, "expression": "thigh", "meaning": "『もも』,大腿(だいたい)部"}, {"id": 2254, "expression": "stock", "meaning": "〈C〉〈U〉(…の)在庫品,仕入れ品,ストック《+of+名》  / 〈C〉〈U〉(…の)貯蔵,蓄え《+of+名》  / 〈U〉《集合的に》家畜  / 〈U〉血統,家系,家柄  / 〈U〉〈C〉(動植物の)種属  / 〈U〉(スープ種・ソース種などに用いる)煮出し汁  / 〈U〉〈C〉《おもに米》(株式会社の)株,株式;〈C〉株券,《英》国債,地方債  / 〈U〉原料  / 〈C〉《複数形で》(刑罰用の昔の)さらし台  / 〈C〉(銃の)台じり  / 〈C〉(接ぎ木の)台木  / 〈C〉(接ぎ穂をとる)親株  / 〈C〉(植物の)幹,茎  / 〈C〉(錨(いかり)のリングの下の)横棒  / 〈C〉(劇場の)専属劇団[のレパートリー]"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 4023, "expression": "stop to do", "meaning": "〜するために立ち止まる"}, {"id": 2702, "expression": "a variety of", "meaning": "さまざまな／多様な"}, {"id": 3915, "expression": "prevent ... from doing", "meaning": "...が〜するのを妨げる"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

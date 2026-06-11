@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-04 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-04" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-04</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-06-04", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2681, "expression": "X-ray", "meaning": "〈C〉〈U〉《通例複数形で》『X線』,レントゲン線 / 〈C〉X線(レントゲン)写真,X線検査"}, {"id": 356, "expression": "citywide", "meaning": "市全域の"}, {"id": 50, "expression": "agonize", "meaning": "苦しみもだえる,苦悶(くもん)する / 必死に努力する,苦悶する / …'を'もだえさせる,苦悶させる(torture)"}, {"id": 3691, "expression": "look on A as B", "meaning": "AをBとみなす"}, {"id": 1771, "expression": "prefect", "meaning": "(古代ローマの)長官,総督;(警察・軍・省庁の)長官,総監 / 《英》(public schoolで)風紀の監督をする上級生"}, {"id": 2931, "expression": "be equal to", "meaning": "〜に等しい／〜に耐えられる"}, {"id": 486, "expression": "corporation", "meaning": "〈C〉企業, 法人, 社団法人 / 地方議会"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 1446, "expression": "momentary", "meaning": "『瞬時の』,はかない,つかの間の / 《ややまれ》刻々の"}, {"id": 1773, "expression": "preferably", "meaning": "できれば, なるべく"}, {"id": 1935, "expression": "relic", "meaning": "遺物,遺跡 / (昔の)なごり,形見,記念品 / (聖人の)遺骨,聖骨,聖遺物"}, {"id": 3548, "expression": "in practice", "meaning": "実は，実際は"}, {"id": 3889, "expression": "pay attention to", "meaning": "（自分の行動に注意しなさい）"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 983, "expression": "global warming", "meaning": "地球温暖化"}, {"id": 1697, "expression": "pessimist", "meaning": "悲観論者,厭世家;悲観的な人"}, {"id": 3379, "expression": "get to", "meaning": "〜に着く／〜するようになる"}, {"id": 2121, "expression": "shrink", "meaning": "後ずさり,しりごみ  / 《米俗》精神科医,精神分析医 / 〈布などが〉縮む  / しりごみする,ひるむ,避ける  / (…に)〈数量・価値などが〉減る,減少する《+to+名》  / (…に)…‘を'縮める,減らす《+名+to+名》"}, {"id": 4210, "expression": "without a doubt", "meaning": "疑いなく"}, {"id": 2836, "expression": "attribute A to B", "meaning": "AをBのせいにする／AをBに帰する"}, {"id": 4027, "expression": "subscribe to", "meaning": "〜を購読する／〜に同意する"}, {"id": 3519, "expression": "in embarrassment", "meaning": "困惑して"}, {"id": 2062, "expression": "scribble", "meaning": "走り書き,なぐり書き"}, {"id": 3581, "expression": "in the end", "meaning": "結局"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 613, "expression": "detect", "meaning": "(物事の存在) を感知する,気付く, 検出する / (人)の正体を見破る / (電波)を復調する"}, {"id": 494, "expression": "corrupt", "meaning": "腐敗した,堕落した"}, {"id": 2698, "expression": "a handful of", "meaning": "一握りの／少数の"}, {"id": 3080, "expression": "bear in mind", "meaning": "〜を心に留める"}, {"id": 3474, "expression": "if any", "meaning": "もしあれば／たとえあるとしても"}, {"id": 3535, "expression": "in one’s absence", "meaning": "〜の不在中に"}, {"id": 1393, "expression": "medieval", "meaning": "『中世の』,中世に属する;中世風の / 《話》旧式の"}, {"id": 3502, "expression": "in breach of", "meaning": "〜に違反して"}, {"id": 4082, "expression": "tear apart", "meaning": "〜を引き裂く"}, {"id": 1380, "expression": "masseur", "meaning": "男のマッサージ師"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

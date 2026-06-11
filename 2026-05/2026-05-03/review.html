@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-05-03 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-05-03" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-05-03</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-05-03", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 1740, "expression": "polo", "meaning": "馬上球技,ポロ / =water polo"}, {"id": 2411, "expression": "trade", "meaning": "交換する"}, {"id": 1724, "expression": "plot", "meaning": "〈C〉小区画の土地 / (小説・劇などの) 筋 / 陰謀, たくらみ"}, {"id": 247, "expression": "boxer", "meaning": "ボクサー,けん闘家 / ボクサー(ドイツ種の中型犬)"}, {"id": 3668, "expression": "leave out", "meaning": "〜を省く"}, {"id": 3768, "expression": "much less", "meaning": "まして〜ない"}, {"id": 2138, "expression": "skillfully", "meaning": "熟練して,上手に"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 421, "expression": "conceal", "meaning": "〈他〉を隠す / を秘密にする"}, {"id": 2777, "expression": "at a discount", "meaning": "割引で／軽視されて"}, {"id": 347, "expression": "chief", "meaning": "長,責任者,長官"}, {"id": 814, "expression": "executive", "meaning": "実行の, 執行力のある / 行政上の / 〈C〉行政官 / (会社などの) 重役, 経営陣,管理職員"}, {"id": 3251, "expression": "do one’s best", "meaning": "最善を尽くす"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 1571, "expression": "originally", "meaning": "もともと, 元来は / 独創的に,斬新に"}, {"id": 4144, "expression": "treat A as B", "meaning": "AをBとして扱う"}, {"id": 948, "expression": "fundamental", "meaning": "《...に》基本的な, 根本的な, 不可欠の《to, for ...》"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 3105, "expression": "break one’s word", "meaning": "約束を破る"}, {"id": 2008, "expression": "rock", "meaning": "〈他〉(前後あるいは左右に)を揺り動かす, を振動させる / 〈自〉揺れ動く, 震動する"}, {"id": 1840, "expression": "pulse", "meaning": "〈C〉脈拍 / (一般に,規則的な)鼓動,律動 / (電気の)パルス / 豆類【動/自】脈を打つ,鼓動する"}, {"id": 118, "expression": "ash", "meaning": "〈U〉《しばしば複数形で;単数扱い》『灰』 / 〈U〉火山灰 / 《複数形で》(火葬された)遺骨,なきがら;(火事で焼けた)廃墟(はいきょ)"}, {"id": 1452, "expression": "morality", "meaning": "〈U〉道徳,倫理;道徳学,倫理学  / 〈U〉道徳性  / 〈U〉品行  / 〈C〉教訓;寓意"}, {"id": 2680, "expression": "wrongly", "meaning": "間違って,誤って;よこしまに,不正に,不法に"}, {"id": 537, "expression": "cursor", "meaning": "カーソル / 線を引いたガラス板"}, {"id": 3663, "expression": "lean toward", "meaning": "〜に傾く／〜を好む"}, {"id": 2966, "expression": "be hesitant to do", "meaning": "〜するのをためらう"}, {"id": 2406, "expression": "torture", "meaning": "拷問"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

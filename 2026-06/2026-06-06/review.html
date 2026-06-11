@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-06 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-06" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-06</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-06-06", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 1779, "expression": "preoccupy", "meaning": "《しばしば受動態で》〈人・人の心〉‘を'いっぱいにする"}, {"id": 4053, "expression": "take ... apart", "meaning": "...を分解する"}, {"id": 3834, "expression": "on the agenda", "meaning": "議題に上って"}, {"id": 3974, "expression": "send out", "meaning": "〜を送付する／発する"}, {"id": 2890, "expression": "be busy with", "meaning": "〜で忙しい"}, {"id": 2528, "expression": "unpopular", "meaning": "不人気の"}, {"id": 98, "expression": "antivirus", "meaning": "抗ウイルス性の"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2380, "expression": "thrill", "meaning": "〈C〉ゾクゾクする感じ / ゾクゾクさせるもの"}, {"id": 2682, "expression": "yacht", "meaning": "『ヨット』,(大型で豪華な発動機つきの)快走船 / ヨットに乗る,ヨットを走らせる,ヨット競走をする"}, {"id": 277, "expression": "burden", "meaning": "《...を》...に負わせる, に積む 《with ...》"}, {"id": 1654, "expression": "patriotism", "meaning": "愛国心"}, {"id": 142, "expression": "attractiveness", "meaning": "人を引き付けること,魅了すること"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 2257, "expression": "stonework", "meaning": "石細工,石造物 / 《複数形で》石材工場"}, {"id": 2849, "expression": "be adjacent to", "meaning": "〜に隣接している"}, {"id": 2596, "expression": "visibly", "meaning": "目に見えて;明白に,ありありと"}, {"id": 2981, "expression": "be incapable of doing", "meaning": "〜する能力がない"}, {"id": 630, "expression": "diphtheria", "meaning": "ジフテリア(呼吸困難を起こすのどの病気)"}, {"id": 410, "expression": "completion", "meaning": "完成,成就;完了,修了"}, {"id": 1573, "expression": "ornament", "meaning": "〈C〉『装飾品』,飾り / 〈U〉『装飾』,装飾法"}, {"id": 3017, "expression": "be poor at", "meaning": "〜が苦手である"}, {"id": 3420, "expression": "go to sleep", "meaning": "眠りにつく"}, {"id": 2749, "expression": "as a rule", "meaning": "概して／ふつうは"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 4283, "expression": "envelop", "meaning": "封筒"}, {"id": 2671, "expression": "worn-out", "meaning": "(物が)使い古した,すり切れた / 《補語にのみ用いて》(人が)疲れきった,やつれた"}, {"id": 2746, "expression": "as a matter of course", "meaning": "当然のこととして"}, {"id": 1489, "expression": "navigation", "meaning": "(船・飛行機の)『航行』 / 航海術,航空術"}, {"id": 2094, "expression": "sexism", "meaning": "(職業選択などでの)女性差別主義,男女差別"}, {"id": 834, "expression": "exquisite", "meaning": "『絶妙な』,精巧な / (苦痛・快感などが)強烈な / (感受性が)鋭敏で洗練された"}, {"id": 2989, "expression": "be interested in", "meaning": "〜に興味を持っている"}, {"id": 3863, "expression": "... or what?", "meaning": "それとも何か／〜なのか"}, {"id": 2537, "expression": "unsuccessful", "meaning": "不成功の,失敗の;(…に)失敗する《+in+塁(do・ing)》"}, {"id": 3505, "expression": "in cash", "meaning": "現金で"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
