@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-15 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-15" data-study-mode="translation">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+    <a href="review.html">Review</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-15</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>この本は、子どもだけでなく大人にとっても読む価値がある。 Grammar hint: use <code>worth -ing</code>.</li>
+<li>もっと早く出発していれば、終電に間に合っただろうに。 Grammar hint: use 仮定法過去完了 <code>If ... had + 過去分詞, ... would have + 過去分詞</code>.</li>
+</ol>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>This book is worth reading not only for children but also for adults.</li>
+<li>If we had left earlier, we would have caught the last train.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li><code>be worth -ing</code>: 「〜する価値がある」。worth の後ろは動名詞(-ing)。主語が「読まれる」側でも受動にせず <code>The book is worth reading</code>(× to read / × being read)とするのが定型。</li>
+<li>仮定法過去完了 <code>If + 主語 + had + 過去分詞, 主語 + would/could have + 過去分詞</code>: 過去の事実に反する仮定。「(実際は遅れたが)もっと早く出ていたら間に合っただろうに」。if 節は had left、主節は would have caught と、時制の組み合わせをセットで覚える。</li>
+</ul>
+  </article>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
