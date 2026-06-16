@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-17 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-17" data-study-mode="translation">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+    <a href="review.html">Review</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-17</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>彼が言ったことは、私たちが昨日聞いたことと矛盾している。 Grammar hint: use <code>what ...</code>(関係代名詞 what)を主語と補語に.</li>
+<li>私が出かけようとしていたちょうどそのとき、激しい雨が降り始めた。 Grammar hint: use <code>be about to do</code> + <code>when ...</code>.</li>
+</ol>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>What he said contradicts what we heard yesterday.</li>
+<li>I was about to go out when it started to rain heavily.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li>関係代名詞 <code>what</code>(= the thing(s) that):「〜すること/もの」。先行詞を含み、名詞のかたまりとして主語・目的語・補語になる。<code>What he said</code>(彼が言ったこと)が主語、<code>what we heard</code>(私たちが聞いたこと)が目的語。動詞は単数扱い(contradicts)。</li>
+<li><code>be about to do ... when ~</code>:「まさに〜しようとしたとき、(突然)…した」。be about to do は「まさに〜するところ」という直前の動作を表し、when 以下に予期せぬ出来事が続く定番の語り口。was about to go out と過去進行的な状況設定に注意。</li>
+</ul>
+  </article>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
