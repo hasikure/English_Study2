@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-16 Dictation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-16" data-study-mode="dictation">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+    <a href="review.html">Review</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-16</div>
+    <h1>Dictation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <section class="audio-panel">
+    <strong>Audio</strong>
+        <div class="audio-item">
+      <div class="audio-label">Question 1</div>
+      <audio controls preload="metadata" src="2026-06-16_dictation_q1.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 2</div>
+      <audio controls preload="metadata" src="2026-06-16_dictation_q2.wav"></audio>
+    </div>
+    <div class="audio-item">
+      <div class="audio-label">Question 3</div>
+      <audio controls preload="metadata" src="2026-06-16_dictation_q3.wav"></audio>
+    </div>
+  </section>
+
+  <article class="material material-content">
+<h1>Dictation</h1>
+<h2>Script</h2>
+<ol>
+<li>Heavy snow interfered with the trains, so it took her almost two hours to get to work.</li>
+<li>The new family next door to us is really looking forward to the summer street festival.</li>
+<li>Trusting her instinct, she turned left at the corner and quickly found the right path home.</li>
+</ol>
+<h2>Japanese Translation</h2>
+<ol>
+<li>大雪が電車を妨げたので、彼女が通勤するのにほぼ2時間かかった。</li>
+<li>私たちの隣の新しい家族は、夏のストリートフェスティバルをとても楽しみにしている。</li>
+<li>自分の直感を信じて、彼女は角を左に曲がり、すぐに家への正しい道を見つけた。</li>
+</ol>
+<h2>Today&#x27;s Items</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Expression</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>interfere with</td><td>〜を妨げる</td></tr>
+<tr><td>get to work</td><td>通勤する</td></tr>
+<tr><td>next door to</td><td>〜の隣に</td></tr>
+<tr><td>look forward to</td><td>〜を楽しみにする</td></tr>
+<tr><td>instinct</td><td>本能、直感</td></tr>
+</tbody></table></div>
+<h2>Answer</h2>
+<ol>
+<li>Heavy snow interfered with the trains, so it took her almost two hours to get to work.</li>
+<li>The new family next door to us is really looking forward to the summer street festival.</li>
+<li>Trusting her instinct, she turned left at the corner and quickly found the right path home.</li>
+</ol>
+  </article>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

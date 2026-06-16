@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-16 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260611-review-marks">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-16" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-16</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-06-16", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 491, "expression": "correspondent", "meaning": "〈C〉特派員,通信員,記者 / 手紙を書く人 / 一致するもの /"}, {"id": 3356, "expression": "get attention", "meaning": "注目を集める"}, {"id": 3151, "expression": "call for", "meaning": "〜を要求する"}, {"id": 2574, "expression": "venture", "meaning": "〈U〉〈C〉危険な企て,冒険 / 〈C〉冒険に賭けた物"}, {"id": 2618, "expression": "weaken", "meaning": "‘を'弱くする  / ‘を'薄くする  / 弱くなる  / \u003c人・人の態度が>軟化する,ぐらつく"}, {"id": 3507, "expression": "in common", "meaning": "共通して"}, {"id": 1140, "expression": "improperly", "meaning": "不適当に;無作法に"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 4190, "expression": "What if ...?", "meaning": "もし〜ならどうなるか"}, {"id": 2494, "expression": "underneath", "meaning": "下に, 下の方に"}, {"id": 2328, "expression": "tablecloth", "meaning": "テーブル掛け,テーブルクロス"}, {"id": 609, "expression": "destiny", "meaning": "『運命』,宿命;使命"}, {"id": 3804, "expression": "off the coast", "meaning": "沖合に"}]}, {"mode": "dictation", "label": "Dictation", "items": [{"id": 1203, "expression": "instinct", "meaning": "〈U〉本能 / 〈C〉《…に対する》(生まれつきの)才能,素質,天分《for ...》"}, {"id": 3617, "expression": "interfere with [in]", "meaning": "〜を妨げる／〜に干渉する"}, {"id": 1859, "expression": "quit", "meaning": "《英・かたく》 《be ～》 《不快なものから》免れて, 《…を》取り除いて《of ...》"}, {"id": 3381, "expression": "get to work [office]", "meaning": "通勤する"}, {"id": 2404, "expression": "torch", "meaning": "『たいまつ』 / 《米》(はんだ付けなどに用いる)トーチランプ(《英》blowlamp)・《英》=flashlight・《比喩的に》(…の)火,光,光明《+of+名》・「carry a torch for誰々」または「carry the torch for 誰々」で「誰々に片思いする」"}, {"id": 4116, "expression": "to all appearance(s)", "meaning": "見たところでは"}, {"id": 3774, "expression": "next door to", "meaning": "〜の隣に"}, {"id": 1501, "expression": "neither ... nor", "meaning": "...も...もどちらでもない, ...でも...でもない / ...も...もしない"}, {"id": 3688, "expression": "look forward to", "meaning": "〜を楽しみにする"}, {"id": 2308, "expression": "supply", "meaning": "〈他〉《...に》〈不足物・必要物〉を供給する《to, for ...》 / 《...を》〈人・物〉に供給する《with ...》"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 300, "expression": "carbon dioxide", "meaning": "二酸化炭素,炭酸ガス"}, {"id": 588, "expression": "delicately", "meaning": "繊細に;微妙に / 華奢に / 敏感に"}, {"id": 2697, "expression": "a great deal of", "meaning": "多量の／たくさんの"}, {"id": 348, "expression": "childish", "meaning": "『子供の』;子供らしい / 『幼稚な』"}, {"id": 2089, "expression": "separately", "meaning": "分かれて;別々に,単独で"}, {"id": 2033, "expression": "salesperson", "meaning": "〈C〉店員,販売員,外交員《単数》"}, {"id": 2933, "expression": "be equivalent to", "meaning": "〜に相当する"}, {"id": 2524, "expression": "unmistakable", "meaning": "まぎれもない,明らかな"}, {"id": 18, "expression": "acquisition", "meaning": "〈U〉《...を》獲得すること, 習得すること 《of ...》 / 〈C〉取得したもの, 《...に》 加わったもの(人) 《to ...》"}, {"id": 3179, "expression": "come along with", "meaning": "（彼女は父親に同行した）"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260611-review-marks"></script>
+<script src="../../assets/review.js?v=20260611-review-marks"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
