@@ -138,30 +138,43 @@
     row.className = "review-item";
     const s = newItemState(key);
     const head = document.createElement("div");
-    if (options.editableExpression) {
-      head.appendChild(
-        textInput("expression(英語)", () => s.expression, (v) => { s.expression = v; })
-      );
-    } else {
-      const expression = document.createElement("span");
-      expression.className = "review-expression";
-      expression.textContent = expressionLabel;
-      head.appendChild(expression);
-      if (store) {
-        const dict = document.createElement("a");
+    const isMark = Boolean(options.markWord);
+    if (isMark && !s.expression) s.expression = options.markWord;
+
+    if (options.editableExpression || isMark) {
+      const exprInput = document.createElement("input");
+      exprInput.type = "text";
+      exprInput.className = "review-text-input";
+      exprInput.placeholder = isMark ? "expression(原形に直せます)" : "expression(英語)";
+      exprInput.value = s.expression || "";
+      head.appendChild(exprInput);
+
+      let dict = null;
+      if (store && isMark) {
+        dict = document.createElement("a");
         dict.className = "review-id";
-        dict.href = store.dictUrl(expressionLabel);
         dict.target = "_blank";
         dict.rel = "noopener";
         dict.textContent = "辞書";
+        dict.href = store.dictUrl(s.expression || options.markWord);
         head.appendChild(dict);
       }
+      exprInput.addEventListener("input", () => {
+        s.expression = exprInput.value;
+        if (dict) dict.href = store.dictUrl(exprInput.value || options.markWord);
+        persist();
+      });
       if (options.meta) {
         const meta = document.createElement("span");
         meta.className = "review-id";
         meta.textContent = options.meta;
         head.appendChild(meta);
       }
+    } else {
+      const expression = document.createElement("span");
+      expression.className = "review-expression";
+      expression.textContent = expressionLabel;
+      head.appendChild(expression);
     }
     row.appendChild(head);
     row.appendChild(textInput("meaning_ja(必須)", () => s.meaning, (v) => { s.meaning = v; }));
@@ -188,7 +201,10 @@
   for (const mark of markedWords) {
     const key = `mark:${mark.word.toLowerCase()}`;
     newList.appendChild(
-      newItemRow(key, mark.word, { meta: `${mark.date || ""} ${mark.mode || ""}`.trim() })
+      newItemRow(key, mark.word, {
+        markWord: mark.word,
+        meta: `${mark.date || ""} ${mark.mode || ""}`.trim(),
+      })
     );
   }
 
@@ -251,13 +267,17 @@
     lines.push("## New Items You Want To Add", "");
     let newIndex = 0;
     for (const [key, s] of Object.entries(state.newItems)) {
-      const expression = key.startsWith("mark:")
+      const isMark = key.startsWith("mark:");
+      const markWord = isMark
         ? (markedWords.find((mark) => `mark:${mark.word.toLowerCase()}` === key) || {}).word
+        : null;
+      const expression = isMark
+        ? cleanText(s.expression || markWord || "")
         : cleanText(s.expression);
       if (!expression || !cleanText(s.meaning)) continue;
       newIndex += 1;
       included += 1;
-      if (key.startsWith("mark:")) usedMarkWords.push(expression.toLowerCase());
+      if (isMark && markWord) usedMarkWords.push(markWord.toLowerCase());
       lines.push(
         `### New Item ${newIndex}`,
         `- expression: ${expression}`,

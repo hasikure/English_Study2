@@ -12,7 +12,7 @@
   };
   const saveMarks = (marks) => localStorage.setItem(STORE_KEY, JSON.stringify(marks));
   const activeMarks = () => loadMarks().filter((mark) => !mark.submittedAt);
-  const dictUrl = (word) => `https://ejje.weblio.jp/content/${encodeURIComponent(word)}`;
+  const dictUrl = (word) => `https://eow.alc.co.jp/search?q=${encodeURIComponent(word)}`;
 
   window.EnglishStudyMarks = { STORE_KEY, loadMarks, saveMarks, activeMarks, dictUrl };
 
