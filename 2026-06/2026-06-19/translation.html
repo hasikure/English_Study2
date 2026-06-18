@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-19 Translation</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260617-eijiro-baseform">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-19" data-study-mode="translation">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+    <a href="review.html">Review</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-19</div>
+    <h1>Translation</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Translation</h1>
+<h2>Japanese</h2>
+<ol>
+<li>何度も挑戦したにもかかわらず、彼はその問題を解くことができなかった。 Grammar hint: use <code>no matter how ...</code>.</li>
+<li>彼女は決して約束を破るような人ではない。 Grammar hint: use <code>the last person to do</code>.</li>
+</ol>
+<h2>Task</h2>
+<p>Translate into English</p>
+<h2>Ideal Version</h2>
+<ol>
+<li>No matter how many times he tried, he could not solve the problem.</li>
+<li>She is the last person to break a promise.</li>
+</ol>
+<h2>Focus</h2>
+<ul>
+<li><code>no matter how + 形容詞/副詞 + 主語 + 動詞</code>:「どれほど〜でも」。譲歩を表し、however + 形容詞/副詞 で言い換えられる(However many times he tried, ...)。文頭に置いて、後ろに主節を続ける。</li>
+<li><code>the last person/thing to do</code>:「最も〜しそうにない人/もの」。直訳の「最後の人」ではなく「決して〜しない」という強い否定の含意になる定型表現。She is the last person to lie. = 彼女は決して嘘をつかない人だ。</li>
+</ul>
+  </article>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260617-eijiro-baseform"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
