@@ -354,11 +354,11 @@
   });
 
   clearButton.addEventListener("click", () => {
-    if (store && lastUsedMarkWords.length) {
+    if (store) {
       const marks = store.loadMarks();
       const now = new Date().toISOString();
       for (const mark of marks) {
-        if (!mark.submittedAt && lastUsedMarkWords.includes(mark.word.toLowerCase())) {
+        if (!mark.submittedAt) {
           mark.submittedAt = now;
         }
       }
