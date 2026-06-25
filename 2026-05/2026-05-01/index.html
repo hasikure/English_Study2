@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>2026-05-01 English Study</title>
-  <link rel="stylesheet" href="../../assets/site.css?v=20260625-clear-all-marks">
+  <link rel="stylesheet" href="../../assets/site.css?v=20260625-korean-review-compact">
 </head>
 <body>
 
@@ -23,13 +23,14 @@
 <a href="dictation.html">Dictation + audio</a>
 <a href="fill-blank.html">Fill in the Blank</a>
 <a href="translation.html">Translation</a>
+<a href="writing-speaking.html">Writing + Speaking</a>
 <a href="review.html">Review ✍</a></div>
   </section>
 </main>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
   document.querySelectorAll(".material-content h2").forEach((heading) => {
     const key = heading.textContent.trim().toLowerCase();
     if (!collapsible.has(key)) return;

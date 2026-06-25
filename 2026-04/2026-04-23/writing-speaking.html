@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>2026-04-23 Writing + Speaking</title>
-  <link rel="stylesheet" href="../../assets/site.css?v=20260423-typography-lexend-atkinson">
+  <link rel="stylesheet" href="../../assets/site.css?v=20260625-korean-review-compact">
 </head>
 <body>
 
-<main class="shell">
+<main class="shell" data-study-date="2026-04-23" data-study-mode="writing-speaking">
   <nav class="topbar">
     <a href="../../index.html">All days</a>
     <a href="index.html">This day</a>
+    <a href="review.html">Review</a>
   </nav>
   <section class="hero">
     <div class="kicker">2026-04-23</div>
@@ -54,9 +55,10 @@
   </article>
 </main>
 
+<script src="../../assets/study-marks.js?v=20260625-korean-review-compact"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const collapsible = new Set(["answer", "ideal version", "japanese translation"]);
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
   document.querySelectorAll(".material-content h2").forEach((heading) => {
     const key = heading.textContent.trim().toLowerCase();
     if (!collapsible.has(key)) return;

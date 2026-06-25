@@ -86,37 +86,59 @@
     return input;
   }
 
-  // --- Today's Items sections ---
-  for (const section of data.modes) {
-    const block = document.createElement("section");
-    block.className = "review-section";
-    const heading = document.createElement("h2");
-    heading.textContent = section.label;
-    block.appendChild(heading);
+  // --- Today's Items sections (accordion per mode, compact rows) ---
+  data.modes.forEach((section, sectionIndex) => {
+    const block = document.createElement("details");
+    block.className = "review-mode";
+    if (sectionIndex === 0) block.open = true;
+    const summary = document.createElement("summary");
+    summary.textContent = `${section.label} (${section.items.length})`;
+    block.appendChild(summary);
     for (const item of section.items) {
       const row = document.createElement("div");
       row.className = "review-item";
+      const s = itemState(item.id);
+
       const head = document.createElement("div");
+      head.className = "review-item-head";
       const expression = document.createElement("span");
       expression.className = "review-expression";
       expression.textContent = item.expression;
+      const meaning = document.createElement("span");
+      meaning.className = "review-meaning";
+      meaning.textContent = item.meaning;
       const idBadge = document.createElement("span");
       idBadge.className = "review-id";
       idBadge.textContent = `#${item.id}`;
-      head.append(expression, idBadge);
-      const meaning = document.createElement("div");
-      meaning.className = "review-meaning";
-      meaning.textContent = item.meaning;
-      row.append(head, meaning);
-      const s = itemState(item.id);
-      row.appendChild(scoreGroup("わかる", () => s.r, (v) => { s.r = v; }, 4));
-      row.appendChild(scoreGroup("使える", () => s.p, (v) => { s.p = v; }, 4));
-      row.appendChild(priorityButton(() => s.pr, (v) => { s.pr = v; }));
-      row.appendChild(textInput("memo", () => s.memo, (v) => { s.memo = v; }));
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "review-item-toggle";
+      toggle.textContent = "priority/memo";
+      head.append(expression, meaning, idBadge, toggle);
+      row.appendChild(head);
+
+      const scoreRow = document.createElement("div");
+      scoreRow.className = "score-row";
+      scoreRow.appendChild(scoreGroup("わかる", () => s.r, (v) => { s.r = v; }, 4));
+      scoreRow.appendChild(scoreGroup("使える", () => s.p, (v) => { s.p = v; }, 4));
+      row.appendChild(scoreRow);
+
+      const advanced = document.createElement("div");
+      advanced.className = "review-advanced";
+      advanced.hidden = true;
+      advanced.appendChild(priorityButton(() => s.pr, (v) => { s.pr = v; }));
+      advanced.appendChild(textInput("memo", () => s.memo, (v) => { s.memo = v; }));
+      row.appendChild(advanced);
+
+      toggle.addEventListener("click", () => {
+        advanced.hidden = !advanced.hidden;
+        toggle.classList.toggle("open", !advanced.hidden);
+      });
+
       block.appendChild(row);
     }
     app.appendChild(block);
-  }
+  });
 
   // --- New Items (marked words + manual rows) ---
   const newSection = document.createElement("section");
