@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-26 Korean Episode</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260625-korean-review-compact">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-26" data-study-mode="ko-episode">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+    <a href="review.html">Review</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-26</div>
+    <h1>Korean Episode</h1>
+    <span class="pill">local generated material</span>
+  </section>
+  
+  <article class="material material-content">
+<h1>Korean Episode</h1>
+<h2>本문</h2>
+<p>오늘은 토요일이에요. 저는 친구하고 같이 카페에 갔어요.</p>
+<p>우리는 커피를 마시고 케이크를 먹었어요. 케이크가 정말 맛있었어요.</p>
+<p>저는 한국어 공부를 하고 싶어서 한국 노래도 들었어요.</p>
+<p>조금 어려웠지만 아주 재미있었어요. 다음 주에 또 만나기로 했어요.</p>
+<h2>日本語訳</h2>
+<p>今日は土曜日です。私は友だちと一緒にカフェに行きました。</p>
+<p>私たちはコーヒーを飲んで、ケーキを食べました。ケーキが本当においしかったです。</p>
+<p>私は韓国語の勉強をしたくて、韓国の歌も聞きました。</p>
+<p>少し難しかったけれど、とても面白かったです。来週またに会うことにしました。</p>
+<h2>語彙</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>한국어</th><th>日本語</th></tr></thead>
+<tbody>
+<tr><td>토요일</td><td>土曜日</td></tr>
+<tr><td>같이</td><td>一緒に</td></tr>
+<tr><td>마시다</td><td>飲む</td></tr>
+<tr><td>노래</td><td>歌</td></tr>
+<tr><td>어렵다</td><td>難しい</td></tr>
+<tr><td>다음 주</td><td>来週</td></tr>
+</tbody></table></div>
+<h2>文法ポイント</h2>
+<ul>
+<li>過去形 <code>-았/었어요</code>: 動詞・形容詞の語幹に付けて「〜しました/〜でした」。陽母音(ㅏ,ㅗ)は <code>-았어요</code>、それ以外は <code>-었어요</code>。例) 가다 → 갔어요(行きました)、먹다 → 먹었어요(食べました)、맛있다 → 맛있었어요(おいしかったです)。</li>
+<li><code>-고 싶다</code>: 「〜したい」。動詞の語幹に付ける。例) 공부하다 → 공부하고 싶어요(勉強したいです)。理由をつなぐ <code>-아서/어서</code>(〜なので)と組み合わせて「하고 싶어서(したいので)」のように使える。</li>
+</ul>
+  </article>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260625-korean-review-compact"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
