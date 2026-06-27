@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-28 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260625-korean-review-compact">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-28" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-28</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-06-28", "questions": [{"target": "시장", "meaning_ja": "私は「市場」に行きます。(시장 = 市場)", "sentence": "저는 ____에 가요.", "answer": "저는 시장에 가요."}, {"target": "과일", "meaning_ja": "私は「果物」を買います。(과일 = 果物)", "sentence": "저는 ____을 사요.", "answer": "저는 과일을 사요."}, {"target": "사과", "meaning_ja": "私は「りんご」が好きです。(사과 = りんご)", "sentence": "저는 ____를 좋아해요.", "answer": "저는 사과를 좋아해요."}, {"target": "딸기", "meaning_ja": "「いちご」がとても甘いです。(딸기 = いちご)", "sentence": "____가 아주 달아요.", "answer": "딸기가 아주 달아요."}, {"target": "고기", "meaning_ja": "私は「肉」を食べません。(고기 = 肉)", "sentence": "저는 ____를 안 먹어요.", "answer": "저는 고기를 안 먹어요."}, {"target": "요리", "meaning_ja": "私は週末に「料理」をします。(요리 = 料理)", "sentence": "저는 주말에 ____를 해요.", "answer": "저는 주말에 요리를 해요."}, {"target": "친구", "meaning_ja": "「友だち」がうちに来ます。(친구 = 友だち)", "sentence": "____가 우리 집에 와요.", "answer": "친구가 우리 집에 와요."}, {"target": "저녁", "meaning_ja": "私たちは一緒に「夕食」を食べます。(저녁 = 夕食)", "sentence": "우리는 같이 ____을 먹어요.", "answer": "우리는 같이 저녁을 먹어요."}, {"target": "일요일", "meaning_ja": "私は「日曜日」に休みます。(일요일 = 日曜日)", "sentence": "저는 ____에 쉬어요.", "answer": "저는 일요일에 쉬어요."}, {"target": "집", "meaning_ja": "私は「家」で料理します。(집 = 家)", "sentence": "저는 ____에서 요리해요.", "answer": "저는 집에서 요리해요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260625-korean-review-compact"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
