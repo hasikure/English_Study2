@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-30 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260625-korean-review-compact">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-06-30" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-06-30</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-06-30", "questions": [{"target": "영화", "meaning_ja": "私は「映画」を見ます。(영화 = 映画)", "sentence": "저는 ____를 봐요.", "answer": "저는 영화를 봐요."}, {"target": "시간", "meaning_ja": "土曜日に「時間」がありますか?(시간 = 時間)", "sentence": "토요일에 ____이 있어요?", "answer": "토요일에 시간이 있어요?"}, {"target": "학교", "meaning_ja": "私たちは「学校」の前で会います。(학교 = 学校)", "sentence": "우리는 ____ 앞에서 만나요.", "answer": "우리는 학교 앞에서 만나요."}, {"target": "친구", "meaning_ja": "私は「友だち」と一緒に行きます。(친구 = 友だち)", "sentence": "저는 ____하고 같이 가요.", "answer": "저는 친구하고 같이 가요."}, {"target": "말", "meaning_ja": "難しい「言葉」は使わないでください。(말 = 言葉)", "sentence": "어려운 ____은 쓰지 마세요.", "answer": "어려운 말은 쓰지 마세요."}, {"target": "영어", "meaning_ja": "私は「英語」ができます。(영어 = 英語)", "sentence": "저는 ____를 할 수 있어요.", "answer": "저는 영어를 할 수 있어요."}, {"target": "책", "meaning_ja": "この「本」を読んでください。(책 = 本)", "sentence": "이 ____을 읽으세요.", "answer": "이 책을 읽으세요."}, {"target": "물", "meaning_ja": "温かい「水(お湯)」を飲んでください。(물 = 水)", "sentence": "따뜻한 ____을 드세요.", "answer": "따뜻한 물을 드세요."}, {"target": "의자", "meaning_ja": "この「椅子」に座ってください。(의자 = 椅子)", "sentence": "이 ____에 앉으세요.", "answer": "이 의자에 앉으세요."}, {"target": "우유", "meaning_ja": "私は「牛乳」とパンを買います。(우유 = 牛乳)", "sentence": "저는 ____와 빵을 사요.", "answer": "저는 우유와 빵을 사요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260625-korean-review-compact"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
