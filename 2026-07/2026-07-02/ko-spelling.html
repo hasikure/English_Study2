@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-02 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260625-korean-review-compact">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-02" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-02</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-07-02", "questions": [{"target": "몸", "meaning_ja": "今日は「体」の調子が良くありません。(몸 = 体)", "sentence": "오늘은 ____이 안 좋아요.", "answer": "오늘은 몸이 안 좋아요."}, {"target": "회사", "meaning_ja": "私は「会社」に行けませんでした。(회사 = 会社)", "sentence": "저는 ____에 못 갔어요.", "answer": "저는 회사에 못 갔어요."}, {"target": "약", "meaning_ja": "「薬」を飲まなければなりません。(약 = 薬)", "sentence": "____을 먹어야 돼요.", "answer": "약을 먹어야 돼요."}, {"target": "회의", "meaning_ja": "明日は「会議」があります。(회의 = 会議)", "sentence": "내일은 ____가 있어요.", "answer": "내일은 회의가 있어요."}, {"target": "집", "meaning_ja": "「家」で休んでもいいです。(집 = 家)", "sentence": "____에서 쉬어도 돼요.", "answer": "집에서 쉬어도 돼요."}, {"target": "전화", "meaning_ja": "私は会社に「電話」しました。(전화 = 電話)", "sentence": "저는 회사에 ____했어요.", "answer": "저는 회사에 전화했어요."}, {"target": "내일", "meaning_ja": "「明日」は必ず行かなければなりません。(내일 = 明日)", "sentence": "____은 꼭 가야 돼요.", "answer": "내일은 꼭 가야 돼요."}, {"target": "시간", "meaning_ja": "今「時間」がありません。(시간 = 時間)", "sentence": "지금 ____이 없어요.", "answer": "지금 시간이 없어요."}, {"target": "물", "meaning_ja": "「水」をたくさん飲んでください。(물 = 水)", "sentence": "____을 많이 드세요.", "answer": "물을 많이 드세요."}, {"target": "병원", "meaning_ja": "私は「病院」に行かなければなりません。(병원 = 病院)", "sentence": "저는 ____에 가야 돼요.", "answer": "저는 병원에 가야 돼요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260625-korean-review-compact"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
