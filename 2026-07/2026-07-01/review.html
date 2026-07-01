@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-01 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260625-korean-review-compact">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-01" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-01</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-01", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 3473, "expression": "identify A as B", "meaning": "AをBであると確認する"}, {"id": 2608, "expression": "walkabout", "meaning": "〈U〉(オーストラリア原住民の)放浪 / 〈C〉(政府首脳などが)市民の声を聞く視察"}, {"id": 1439, "expression": "modernization", "meaning": "現代化"}, {"id": 2119, "expression": "showcase", "meaning": "(店や博物館の)陳列ケース,陳列だな"}, {"id": 3227, "expression": "cut in on", "meaning": "〜に割り込む"}, {"id": 4090, "expression": "the last ... that ~", "meaning": "もっとも〜しそうにない…"}, {"id": 2814, "expression": "at stake", "meaning": "危機にさらされて／問題となって"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3992, "expression": "sit up", "meaning": "起き上がる／寝ずにいる"}, {"id": 1553, "expression": "olive", "meaning": "〈C〉『オリーブ』[の木](南欧産の常緑樹) / 〈C〉オリーブの実(ピクルスにしたり,オリーブ油を採る) / (また『olive green』)〈U〉オリーブ色,黄録色"}, {"id": 4064, "expression": "take it for granted that ...", "meaning": "〜を当然だと思う"}, {"id": 604, "expression": "desktop", "meaning": "〈U〉〈C〉デスクトップ / 机の表面"}, {"id": 1204, "expression": "institution", "meaning": "〈U〉設立 / 慣例, 慣習 / 公共機関 / 施設"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 2844, "expression": "be abundant in", "meaning": "〜が豊富である"}, {"id": 811, "expression": "excursion", "meaning": "〈C〉（特定の目的をもった団体の）小旅行,遠足；（特別割引料金の）周遊旅行；出かけること；挑戦,試み"}, {"id": 2395, "expression": "tiresome", "meaning": "『飽き飽きかせる』,うんざりさせる(tedious) / やっかいな,うるさい"}, {"id": 4027, "expression": "subscribe to", "meaning": "〜を購読する／〜に同意する"}, {"id": 2472, "expression": "tyranny", "meaning": "〈U〉『圧制』 / 〈C〉《しばしば複数形で》暴虐行為 / 〈U〉専制政治,専制 / 〈C〉(古代ギリシヤの)僣主政治"}, {"id": 1946, "expression": "reorganize", "meaning": "…‘を'再編成する"}, {"id": 2443, "expression": "triangle", "meaning": "三角形  / 三角形の物  / 《米》三角定規  / (楽器の)トライアングル  / 三つ組,三人組;(男女の)三角関係"}, {"id": 3306, "expression": "find fault with", "meaning": "〜のあら探しをする"}, {"id": 3628, "expression": "just in case", "meaning": "念のため"}, {"id": 2621, "expression": "wearisome", "meaning": "疲れさせる / うんざりさせる,退屈な"}]}]}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260625-korean-review-compact"></script>
+<script src="../../assets/review.js?v=20260625-korean-review-compact"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
