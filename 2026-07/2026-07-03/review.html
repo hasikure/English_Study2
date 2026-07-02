@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-03 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-03" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-03</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-03", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 3827, "expression": "on purpose", "meaning": "わざと"}, {"id": 977, "expression": "giveaway", "meaning": "《a ~》(秘密などを)うっかり漏らすこと,口をすべらすこと / 《米》(買い気をそそるための)景品,(売りあげを増すための)おつとめ品,サービス品"}, {"id": 1607, "expression": "overseas", "meaning": "海外の,外国の, 外国向けの"}, {"id": 2085, "expression": "sensible", "meaning": "分別がある,思慮深い / 実用的な,実用本位の / 顕著な,目立つ / 認識している"}, {"id": 691, "expression": "down", "meaning": "下りの"}, {"id": 956, "expression": "gang", "meaning": "(人の)一団,群れ《+of+名》  / (悪人の)一味,ギャング団《+of+名》  / 《話》親しい仲間,遊び仲間  / 《米》(特に他のグループと争う青少年の)非行グループ"}, {"id": 2696, "expression": "a couple of", "meaning": "2つの／2、3の"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 1891, "expression": "rebel", "meaning": "〈C〉反逆者,反抗者 / 〈自〉《...に》反逆する,反抗する《aganinst》 / 《…を》ひどく嫌う《aganinst at》"}, {"id": 2816, "expression": "at the beginning of", "meaning": "〜の初めに"}, {"id": 1414, "expression": "microscopy", "meaning": "顕微鏡使用[法] / 顕微鏡による検査"}, {"id": 3272, "expression": "embark on", "meaning": "〜に着手する"}, {"id": 968, "expression": "genius", "meaning": "〈U〉《...における》天才《in ...》 / 〈C〉《…の》天才の人《in ...》 / 《a ~》《…に対する》才能,素質《for ...》 / 《単数形で》(時代・人々・言語などの)特質,精神《of ...》"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1160, "expression": "indispensable", "meaning": "『欠くことのできない』,絶対に必要な"}, {"id": 529, "expression": "crystallize", "meaning": "''を'結晶化させる / 〈思想など〉'を'具体化させる / 〈果物〉'を'溶かした砂糖で覆う / 結晶する / 〈思想などが〉(…に)具体化する《+『into』+『名』》"}, {"id": 3547, "expression": "in place of", "meaning": "〜の代わりに"}, {"id": 2312, "expression": "surroundings", "meaning": "(人を取り巻く自然の)『環境』"}, {"id": 1561, "expression": "optimist", "meaning": "楽天主義者;楽天家,のんき者"}, {"id": 987, "expression": "glorify", "meaning": "〈神〉‘を'『ほめたたえる』,あがめる / …‘に'栄光を与える / …‘を'美化する,飾り立てる"}, {"id": 4281, "expression": "shorthand", "meaning": "速記、縮めた言葉"}, {"id": 208, "expression": "biotechnology", "meaning": "《米》生物工学,人間工学)人が機械で最も能率的に仕事をするための研究)(《英》ergonomics)"}, {"id": 453, "expression": "constant", "meaning": "不変の, 一定の / 絶え間のない, 不断の /"}, {"id": 1270, "expression": "kneel", "meaning": "(…に)『ひざまずく』,ひざをつく《+『down on』+『名』》"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
