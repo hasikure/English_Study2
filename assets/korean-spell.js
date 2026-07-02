@@ -15,6 +15,12 @@
   }
   const persist = () => localStorage.setItem(draftKey, JSON.stringify(answers));
   const norm = (value) => (value || "").replace(/\s+/g, "").trim();
+  // Hide any parenthetical that reveals the Korean answer, e.g. "(몸 = 体)".
+  const cleanHint = (value) =>
+    (value || "")
+      .replace(/[（(][^（）()]*[가-힣][^（）()]*[）)]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
 
   questions.forEach((q, index) => {
     const card = document.createElement("section");
@@ -53,10 +59,11 @@
       card.appendChild(input);
     }
 
-    if (q.meaning_ja) {
+    const hintText = cleanHint(q.meaning_ja);
+    if (hintText) {
       const hint = document.createElement("p");
       hint.className = "spell-hint";
-      hint.textContent = q.meaning_ja;
+      hint.textContent = hintText;
       card.appendChild(hint);
     }
 

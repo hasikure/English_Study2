@@ -86,6 +86,7 @@
     return input;
   }
 
+  function buildApp() {
   // --- Today's Items sections (accordion per mode, compact rows) ---
   data.modes.forEach((section, sectionIndex) => {
     const block = document.createElement("details");
@@ -154,6 +155,22 @@
   newSection.appendChild(newList);
 
   const markedWords = store ? store.activeMarks() : [];
+  const todaysExpressions = new Set();
+  data.modes.forEach((section) =>
+    section.items.forEach((item) => todaysExpressions.add((item.expression || "").toLowerCase().trim()))
+  );
+
+  function dismissMark(markWord) {
+    if (store && markWord) {
+      const marks = store.loadMarks();
+      const now = new Date().toISOString();
+      const key = markWord.toLowerCase();
+      for (const m of marks) {
+        if (!m.submittedAt && (m.word || "").toLowerCase() === key) m.submittedAt = now;
+      }
+      store.saveMarks(marks);
+    }
+  }
 
   function newItemRow(key, expressionLabel, options) {
     const row = document.createElement("div");
@@ -191,6 +208,29 @@
         meta.className = "review-id";
         meta.textContent = options.meta;
         head.appendChild(meta);
+      }
+      if (isMark) {
+        const isDup =
+          todaysExpressions.has((options.markWord || "").toLowerCase().trim()) ||
+          todaysExpressions.has((s.expression || "").toLowerCase().trim());
+        if (isDup) {
+          const dup = document.createElement("span");
+          dup.className = "review-id dup-badge";
+          dup.textContent = "既にreviewにあり";
+          head.appendChild(dup);
+        }
+        const removeBtn = document.createElement("button");
+        removeBtn.type = "button";
+        removeBtn.className = "review-item-toggle";
+        removeBtn.textContent = "× マーク削除";
+        removeBtn.title = "この単語のマークを消す(送信対象から外す)";
+        removeBtn.addEventListener("click", () => {
+          dismissMark(options.markWord);
+          delete state.newItems[key];
+          persist();
+          row.remove();
+        });
+        head.appendChild(removeBtn);
       }
     } else {
       const expression = document.createElement("span");
@@ -389,4 +429,62 @@
     localStorage.removeItem(draftKey);
     location.reload();
   });
+  }  // end buildApp
+
+  // --- Optional password gate (hash embedded; plaintext stays in local .env) ---
+  const unlockKey = data.passwordHash ? `englishStudyReviewUnlocked:${data.passwordHash}` : null;
+
+  async function sha256Hex(text) {
+    const buffer = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+    return Array.from(new Uint8Array(buffer))
+      .map((b) => b.toString(16).padStart(2, "0"))
+      .join("");
+  }
+
+  function renderLock() {
+    const box = document.createElement("section");
+    box.className = "review-section";
+    const heading = document.createElement("h2");
+    heading.textContent = "🔒 パスワード";
+    const note = document.createElement("p");
+    note.className = "review-note";
+    note.textContent = "このreviewはパスワードで保護されています。パスワードを入力してください。";
+    const input = document.createElement("input");
+    input.type = "password";
+    input.className = "review-text-input";
+    input.placeholder = "パスワード";
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "review-primary";
+    button.textContent = "ロック解除";
+    const message = document.createElement("div");
+    message.className = "review-status";
+
+    const unlock = () => {
+      try { sessionStorage.setItem(unlockKey, "1"); } catch (error) { /* ignore */ }
+      app.textContent = "";
+      buildApp();
+    };
+    const attempt = async () => {
+      try {
+        const hex = await sha256Hex((data.passwordSalt || "") + input.value);
+        if (hex === data.passwordHash) unlock();
+        else message.textContent = "パスワードが違います。";
+      } catch (error) {
+        message.textContent = "この環境では解錠できません(HTTPSで開いてください)。";
+      }
+    };
+    button.addEventListener("click", attempt);
+    input.addEventListener("keydown", (event) => { if (event.key === "Enter") attempt(); });
+    box.append(heading, note, input, button, message);
+    app.appendChild(box);
+    input.focus();
+  }
+
+  if (data.passwordHash && window.crypto && window.crypto.subtle) {
+    if (sessionStorage.getItem(unlockKey) === "1") buildApp();
+    else renderLock();
+  } else {
+    buildApp();
+  }
 })();

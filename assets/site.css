@@ -488,6 +488,11 @@ mark.study-mark {
   margin-top: 10px;
 }
 
+.dup-badge {
+  color: #b4451f;
+  font-weight: 700;
+}
+
 .review-mode {
   border: 1px solid var(--line);
   border-radius: 18px;
