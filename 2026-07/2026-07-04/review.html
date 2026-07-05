@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-04 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-04" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-04</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-04", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 4042, "expression": "take a nap", "meaning": "昼寝する"}, {"id": 2502, "expression": "undreamed", "meaning": "夢に見られない"}, {"id": 348, "expression": "childish", "meaning": "『子供の』;子供らしい / 『幼稚な』"}, {"id": 3101, "expression": "break away", "meaning": "離脱する／逃げ出す"}, {"id": 2508, "expression": "unfamiliar", "meaning": "よく知らない,未知の見慣ない,聞き慣ない  / 《補語にのみ用いて》(物事を)よく知らない,未知の《+with+名》"}, {"id": 550, "expression": "data", "meaning": "資料,事実;情報"}, {"id": 2178, "expression": "son-in-law", "meaning": "『娘の夫』,娘婿(むすめむこ)"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 686, "expression": "double", "meaning": "〈U〉2倍[の数量・価額など]  / 〈C〉2倍のもの  / 〈C〉よく似た人(物),生き写し  / 〈C〉(映画の)代役  / 《複数形》《単数扱い》(テニスなどの)ダブルス  / 〈C〉(獲物が追っ手を逃れるときなどの)逆走,急転回  / 〈C〉2塁打  / 〈C〉(ブリッジの点の)倍加  / 〈C〉(競馬・ドッグレースの)重勝式のかけ,複式 / …を2倍にする"}, {"id": 3347, "expression": "from now on", "meaning": "今後は"}, {"id": 346, "expression": "chew", "meaning": "〈食物〉'を'『噛む』,噛み砕く / …'を'噛んで作る"}, {"id": 130, "expression": "astonish", "meaning": "…'を'『びっくりさせる』,驚かせる"}, {"id": 622, "expression": "digest", "meaning": "〈食物〉‘を'『消化する』,こなす / …‘を'こなして自分のものとする / …‘を'系統的に整理する,要約する / 〈食物が〉『消化される』,こなれる"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1775, "expression": "prehuman", "meaning": "人間以前の"}, {"id": 1130, "expression": "import", "meaning": "(…から)…‘を'輸入する《+名+from+名》  / 《文》'‘を'意味する,‘の'意味を導入する"}, {"id": 263, "expression": "broaden", "meaning": "を広くする, を広げる / 広くなる, 広がる"}, {"id": 1517, "expression": "nomination", "meaning": "〈U〉指名, 任命 / 指名権, 任命権 / 《...を...に》 指名すること, 任命すること 《of ... to, as, for ...》"}, {"id": 3544, "expression": "in particular", "meaning": "特に"}, {"id": 3551, "expression": "in prison", "meaning": "刑務所に入って"}, {"id": 3525, "expression": "in harmony with", "meaning": "〜と調和して"}, {"id": 1101, "expression": "icy", "meaning": "氷の,氷で覆われた  / 氷のように冷たい  / 冷淡な,よそよそしい"}, {"id": 2709, "expression": "account for", "meaning": "〜を説明する／〜を占める"}, {"id": 1870, "expression": "radium", "meaning": "ラジウム(放射性金属;化学記号は『Ra』)"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

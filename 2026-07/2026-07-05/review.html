@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-05 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-05" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-05</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-05", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 4062, "expression": "take ... into consideration", "meaning": "...を考慮に入れる"}, {"id": 3502, "expression": "in breach of", "meaning": "〜に違反して"}, {"id": 3319, "expression": "for a rainy day", "meaning": "まさかの時に備えて"}, {"id": 853, "expression": "fame", "meaning": "『名声』,高名,声望 / 評判,世評"}, {"id": 862, "expression": "father-in-law", "meaning": "義理の父,養父,舅"}, {"id": 3037, "expression": "be sensitive to", "meaning": "〜に敏感である"}, {"id": 2894, "expression": "be characteristic of", "meaning": "〜に特有である"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2247, "expression": "stiff", "meaning": "堅い / (肩などが)凝った / (態度・動作が)堅苦しい / (要求などが)厳しい"}, {"id": 2937, "expression": "be expected to do", "meaning": "〜することが期待されている"}, {"id": 3676, "expression": "line up", "meaning": "並ぶ／〜を並べる"}, {"id": 3484, "expression": "in a row", "meaning": "連続して／一列に"}, {"id": 1945, "expression": "rental", "meaning": "〈C〉賃貸料,地代,家賃 / 〈U〉《...を》借りること, 貸すこと《of ...》 / 《米》賃貸するもの"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1441, "expression": "modest", "meaning": "謙虚な,控えめな,遠慮がちな / 品のいい / 地味な,質素な / 中ぐらいの, 並の"}, {"id": 3406, "expression": "go for nothing", "meaning": "無駄になる"}, {"id": 1853, "expression": "quarrelsome", "meaning": "議論好きな"}, {"id": 2960, "expression": "be going to be sick", "meaning": "吐きそうである"}, {"id": 1014, "expression": "growing", "meaning": "増えている / 成長中の / 育っている"}, {"id": 1699, "expression": "petrified", "meaning": "石化した / びっくり仰天して,ぼうぜん自失状態で"}, {"id": 3898, "expression": "phase out", "meaning": "〜を段階的に廃止する"}, {"id": 1874, "expression": "rainstorm", "meaning": "暴風雨"}, {"id": 550, "expression": "data", "meaning": "資料,事実;情報"}, {"id": 3026, "expression": "be relevant to", "meaning": "〜に関係がある"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

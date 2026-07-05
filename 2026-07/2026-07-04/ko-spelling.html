@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-04 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-04" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-04</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-07-04", "questions": [{"target": "영화", "meaning_ja": "一緒に「映画」を見ましょうか?", "sentence": "같이 ____를 볼래요?", "answer": "같이 영화를 볼래요?"}, {"target": "표", "meaning_ja": "私が「チケット」を予約しますね。", "sentence": "제가 ____를 예매할게요.", "answer": "제가 표를 예매할게요."}, {"target": "저녁", "meaning_ja": "私は「夕方」しか時間がありません。", "sentence": "저는 ____밖에 시간이 없어요.", "answer": "저는 저녁밖에 시간이 없어요."}, {"target": "집", "meaning_ja": "私は「家」で休んでいます。", "sentence": "저는 ____에서 쉬고 있어요.", "answer": "저는 집에서 쉬고 있어요."}, {"target": "시간", "meaning_ja": "今「時間」がありますか?", "sentence": "지금 ____이 있어요?", "answer": "지금 시간이 있어요?"}, {"target": "친구", "meaning_ja": "私は「友だち」と映画を見ます。", "sentence": "저는 ____하고 영화를 봐요.", "answer": "저는 친구하고 영화를 봐요."}, {"target": "물", "meaning_ja": "私は「水」しか飲みません。", "sentence": "저는 ____밖에 안 마셔요.", "answer": "저는 물밖에 안 마셔요."}, {"target": "학교", "meaning_ja": "私は「学校」に行きます。", "sentence": "저는 ____에 가요.", "answer": "저는 학교에 가요."}, {"target": "음악", "meaning_ja": "私は「音楽」を聞きます。", "sentence": "저는 ____을 들어요.", "answer": "저는 음악을 들어요."}, {"target": "커피", "meaning_ja": "私は「コーヒー」を飲みますね。", "sentence": "저는 ____를 마실게요.", "answer": "저는 커피를 마실게요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-05 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-05" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-05</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-07-05", "questions": [{"target": "음식", "meaning_ja": "私は韓国の「料理(食べ物)」を習っています。", "sentence": "저는 한국 ____을 배워요.", "answer": "저는 한국 음식을 배워요."}, {"target": "여행", "meaning_ja": "来年「旅行」に行こうと思います。", "sentence": "내년에 ____을 가려고 해요.", "answer": "내년에 여행을 가려고 해요."}, {"target": "한국", "meaning_ja": "私は「韓国」に行ったことがありません。", "sentence": "저는 ____에 간 적이 없어요.", "answer": "저는 한국에 간 적이 없어요."}, {"target": "요리", "meaning_ja": "私は「料理」を作ってみました。", "sentence": "저는 ____를 만들어 봤어요.", "answer": "저는 요리를 만들어 봤어요."}, {"target": "친구", "meaning_ja": "私は「友だち」と旅行します。", "sentence": "저는 ____하고 여행해요.", "answer": "저는 친구하고 여행해요."}, {"target": "학교", "meaning_ja": "私は「学校」で韓国語を習います。", "sentence": "저는 ____에서 한국어를 배워요.", "answer": "저는 학교에서 한국어를 배워요."}, {"target": "내년", "meaning_ja": "「来年」日本に行くつもりです。", "sentence": "____에 일본에 가려고 해요.", "answer": "내년에 일본에 가려고 해요."}, {"target": "공부", "meaning_ja": "毎日「勉強」することにしました。", "sentence": "매일 ____하기로 했어요.", "answer": "매일 공부하기로 했어요."}, {"target": "물", "meaning_ja": "私は「水」をたくさん飲みます。", "sentence": "저는 ____을 많이 마셔요.", "answer": "저는 물을 많이 마셔요."}, {"target": "책", "meaning_ja": "私はこの「本」を読んでみました。", "sentence": "저는 이 ____을 읽어 봤어요.", "answer": "저는 이 책을 읽어 봤어요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
