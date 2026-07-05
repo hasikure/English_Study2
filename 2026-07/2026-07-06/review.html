@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-06 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-06" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-06</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-06", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 4166, "expression": "under the current circumstances", "meaning": "現在の状況では"}, {"id": 3527, "expression": "in itself", "meaning": "それ自体で"}, {"id": 216, "expression": "blend", "meaning": "混合,調合;〈C〉混合物"}, {"id": 770, "expression": "envy", "meaning": "…‘を'『うらやむ』,ねたむ"}, {"id": 1604, "expression": "overlap", "meaning": "重複, 重なり；共通点"}, {"id": 2200, "expression": "spellbound", "meaning": "呪文で縛られた;魅せられた"}, {"id": 1723, "expression": "plead", "meaning": "〈自〉懇願する / 《...を》弁護する《for ...》 / 《...に》抗弁する《against ...》 / 〈他〉を言い訳として述べる / を弁護する"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 424, "expression": "conceivable", "meaning": "考えられる,想像できる;考えられる限りの"}, {"id": 2107, "expression": "shift", "meaning": "変換 / (仕事・作業の) 交替"}, {"id": 3228, "expression": "cut off", "meaning": "〜を切り離す／遮断する"}, {"id": 3631, "expression": "keep ... at a distance", "meaning": "...を遠ざけておく"}, {"id": 2450, "expression": "trolley", "meaning": "(2輪または4輪の)手押し車 / (軌道上を手押しする)トロッコ / 触輪(電車のポールの先端にあり,架線に接する) / 《米》=trolley car / 《英》(食事などを運ぶ)手押し車,ワゴン"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1919, "expression": "regardless", "meaning": "とにかく / 《...に》かかわらず, 関係なく《of ...》"}, {"id": 3193, "expression": "come true", "meaning": "実現する"}, {"id": 458, "expression": "contempt", "meaning": "《時に形容詞を伴って,a~》(人・物に対する)『軽蔑』,侮り《+『for』+『名』》 / (人から)軽蔑されていること,(人から受けた)蔑み,恥辱(ちじょく) / (法廷・人法機関に対する)侮辱罪,侮辱行為《+『of』+『名』》"}, {"id": 3206, "expression": "consist in", "meaning": "〜にある"}, {"id": 1890, "expression": "reasonably", "meaning": "適度に / 合理的に,妥当に / もっともだ"}, {"id": 1312, "expression": "legislature", "meaning": "〈C〉《the ~》立法府,立法機関  《米》州議会"}, {"id": 4219, "expression": "would like to do", "meaning": "ぜひ〜したい"}, {"id": 200, "expression": "bewilderment", "meaning": "当惑,うろたえ"}, {"id": 1265, "expression": "karaoke", "meaning": "カラオケ"}, {"id": 380, "expression": "coherent", "meaning": "(論理などが)筋の通った,首尾一貫した / 密着した"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
