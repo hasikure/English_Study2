@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-08 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-08" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-08</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-07-08", "questions": [{"target": "책상", "meaning_ja": "「机」の上に本があります。", "sentence": "____ 위에 책이 있어요.", "answer": "책상 위에 책이 있어요."}, {"target": "뉴스", "meaning_ja": "私は毎朝「ニュース」を見ます。", "sentence": "저는 매일 아침 ____를 봐요.", "answer": "저는 매일 아침 뉴스를 봐요."}, {"target": "책", "meaning_ja": "私は「本」をたくさん読みます。", "sentence": "저는 ____을 많이 읽어요.", "answer": "저는 책을 많이 읽어요."}, {"target": "아침", "meaning_ja": "私は「朝」に起きます。", "sentence": "저는 ____에 일어나요.", "answer": "저는 아침에 일어나요."}, {"target": "한국어", "meaning_ja": "私は「韓国語」を習っています。", "sentence": "저는 ____를 배워요.", "answer": "저는 한국어를 배워요."}, {"target": "학교", "meaning_ja": "私は「学校」まで歩きます。", "sentence": "저는 ____까지 걸어요.", "answer": "저는 학교까지 걸어요."}, {"target": "친구", "meaning_ja": "私は「友だち」が多い方です。", "sentence": "저는 ____가 많은 편이에요.", "answer": "저는 친구가 많은 편이에요."}, {"target": "물", "meaning_ja": "私は「水」をたくさん飲む方です。", "sentence": "저는 ____을 많이 마시는 편이에요.", "answer": "저는 물을 많이 마시는 편이에요."}, {"target": "집", "meaning_ja": "私は「家」で休みます。", "sentence": "저는 ____에서 쉬어요.", "answer": "저는 집에서 쉬어요."}, {"target": "음악", "meaning_ja": "私は静かな「音楽」が好きな方です。", "sentence": "저는 조용한 ____을 좋아하는 편이에요.", "answer": "저는 조용한 음악을 좋아하는 편이에요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

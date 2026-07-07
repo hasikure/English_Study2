@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-08 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-08" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-08</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-08", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2130, "expression": "sincere", "meaning": "(感情・行動が)偽りのない, 心からの, 真剣な / (人が)誠実な,まじめな"}, {"id": 145, "expression": "aubergine", "meaning": "《英》=eggplant"}, {"id": 2171, "expression": "soil", "meaning": "〈U〉(植物の成長に適する) 土, 土壌 / 〈U〉〈C〉《気取って》国,地方 / 《the~》土地,農地"}, {"id": 2494, "expression": "underneath", "meaning": "下に, 下の方に"}, {"id": 3270, "expression": "earn income", "meaning": "収入を得る"}, {"id": 2057, "expression": "scooter", "meaning": "スクーター(足板に片足を載せて走る前後2輪の子供用のハンドル付き車) / モータースクーター(=motor scooter)"}, {"id": 3458, "expression": "have words with", "meaning": "〜と言い争う"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3618, "expression": "iron out", "meaning": "〜を解決する／調整する"}, {"id": 1203, "expression": "instinct", "meaning": "〈U〉本能 / 〈C〉《…に対する》(生まれつきの)才能,素質,天分《for ...》"}, {"id": 2132, "expression": "sister-in-law", "meaning": "義理の姉(妹),兄(弟)の妻"}, {"id": 1786, "expression": "prestigious", "meaning": "誉れの高い,高名な, 名門の / 尊敬されている / 権威のある"}, {"id": 3711, "expression": "make a living", "meaning": "生計を立てる"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1694, "expression": "perspective", "meaning": "〈U〉〈C〉(広い視野からの)観点, 視点 / 〈U〉(距離の遠近による)物の見え方, 遠近感 / 遠近法, 透視図法 / 【形】遠近法の"}, {"id": 3198, "expression": "compare A with B", "meaning": "AをBと比較する"}, {"id": 15, "expression": "ache", "meaning": "(継続的に鈍く)〈人が〉『痛みを感じる』,〈身体が〉痛む,うずく / 《話》切望する,心から願う"}, {"id": 3312, "expression": "fix supper", "meaning": "夕食を用意する"}, {"id": 3832, "expression": "on sight", "meaning": "見つけ次第／一目で"}, {"id": 2755, "expression": "as [so] far as ... know", "meaning": "〜が知る限り"}, {"id": 795, "expression": "exactness", "meaning": "正確,厳密"}, {"id": 78, "expression": "amplifier", "meaning": "(電気の)増幅器,アンプ(電力の振幅を大きくする)"}, {"id": 1878, "expression": "range", "meaning": "《副詞句を伴って》(価格・気温などがある範囲内で)変動する,動く / 《副詞[句]を伴って》(ある状態に)…‘を'並べて置く,配列する,整列させる / (…を)さまよう,歩き回る,(…に)及ぶ《+over(through)+名》/ (動植物が)分布している / …‘を'さまよう,歩き回る(受動態にできない) / 《米》〈家畜〉‘を'放牧地に入れる"}, {"id": 283, "expression": "bustle", "meaning": "『せかせかと動き回る』《+『about』》 / 〈人〉'を'せきたてる / 大騒ぎ,雑踏"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
