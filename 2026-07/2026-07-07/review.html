@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-07 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-07" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-07</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-07", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 1781, "expression": "present", "meaning": "〈贈り物・賞など〉 を贈呈する, 〈人〉に贈る / 《…に》〈勘定書・小切手・書類など〉 を提出する,を渡す《to ...》 / 《…に》…を出して見せる,を提示する《to ...》 / 《…に》〈人〉を紹介する([[introduce]])《to ...》 / 〈作品〉を公開する;〈人〉を出演させる / 〈事が〉《人に》…を引き起こす《to, for ...》 / 〈銃〉をささげ銃(つつ)にする"}, {"id": 125, "expression": "assess", "meaning": "を評価する, を査定する / 《…に》(税金・料金など)を課する,割り当てる《on ...》"}, {"id": 80, "expression": "amuse", "meaning": "〈他〉《...で》を楽しませる《with,by》"}, {"id": 1782, "expression": "presenter", "meaning": "テレビ(ラジオ)ショーの司会者"}, {"id": 2345, "expression": "technically", "meaning": "専門的に / 技術的に / 厳密に言えば / 表向きは, 表面上は, 建前としては"}, {"id": 2981, "expression": "be incapable of doing", "meaning": "〜する能力がない"}, {"id": 1390, "expression": "mechanize", "meaning": "〈生産方法など〉‘に'機械を導入する,‘を'機械化する / 〈陸軍・部隊など〉‘を'機甲化する(戦車・装甲車類を装備すること)"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 238, "expression": "booth", "meaning": "(木の枝・帆布などでできた)仮小屋  / 売店,屋台店  / (特定の用途のための)小さく仕切った部屋,ブース  / (喫茶店などの)ボックス,仕切度"}, {"id": 1572, "expression": "originate", "meaning": "…‘を'引き起こす  / …‘を'考え出す,発明する  / (…に,…から)起こる(begin)《+in(from)+名》  / (人に)始まる《+with+名〈人〉》"}, {"id": 849, "expression": "faculty", "meaning": "〈C〉《...の》才能《for, of ...》 / (身体器官の) 機能, (精神的)能力 / (大学の) 学部 / (大学の学部の) 教授団"}, {"id": 1540, "expression": "obligation", "meaning": "〈U〉(法律・社会・道徳上の) 義務 / 〈C〉恩義"}, {"id": 3052, "expression": "be synonymous with", "meaning": "〜と同義である"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 2308, "expression": "supply", "meaning": "〈他〉《...に》〈不足物・必要物〉を供給する《to, for ...》 / 《...を》〈人・物〉に供給する《with ...》"}, {"id": 1430, "expression": "missile", "meaning": "ミサイル,ロケット弾  / 《文》飛び道具(石,矢,投げやりなど)"}, {"id": 3244, "expression": "distinguish A from B", "meaning": "AをBと区別する"}, {"id": 1155, "expression": "independently", "meaning": "独立して,単独で"}, {"id": 2712, "expression": "after school", "meaning": "放課後に"}, {"id": 1305, "expression": "leek", "meaning": "ニラ,西洋ネギ"}, {"id": 2675, "expression": "worship", "meaning": "(神人などに対する)『崇拝』《+of+名》 / (通例教会での)『礼拝』 / (…に対する)尊敬,賛美《+of+名》 / 《W-》《英》《your, his herなどと共に官職名の前に置いて》閣下"}, {"id": 3258, "expression": "drag on", "meaning": "長引く"}, {"id": 2933, "expression": "be equivalent to", "meaning": "〜に相当する"}, {"id": 1647, "expression": "passionately", "meaning": "情熱的に"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
