@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-10 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-10" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-10</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-10", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2199, "expression": "speeder", "meaning": "高速で運転する人、スピード違反者"}, {"id": 1979, "expression": "reverence", "meaning": "〈U〉(…に対する)『崇敬』,『敬愛』《+『for』+『名』》・会釈・《Your(His/Her)R-》・ローマカトリック教の牧師の敬称・尊敬（の念） (for) (We hold him in ～.); 〔古〕 敬礼・（R-） 尊師 (his [your] R-)"}, {"id": 159, "expression": "bad-tempered", "meaning": "機嫌の悪い,気難しい,怒りっぽい"}, {"id": 1438, "expression": "mock", "meaning": "あざ笑う、ばかにする、まねてばかにする、／にせの,ごまかしの"}, {"id": 3511, "expression": "in conjunction with", "meaning": "〜と連携して／〜とともに"}, {"id": 983, "expression": "global warming", "meaning": "地球温暖化"}, {"id": 634, "expression": "disapproval", "meaning": "『不賛成』,不承認 / 非難(censure)"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 1425, "expression": "minister", "meaning": "〈C〉聖職者, 牧師 / (英国・欧州諸国・日本の) 大臣 / 《…駐在》公使《to ...》"}, {"id": 2877, "expression": "be aware of", "meaning": "〜に気づいている／〜を認識している"}, {"id": 57, "expression": "alert", "meaning": "〈他〉《...に対して》 ...に警報(警告)を出す, に警戒態勢をとらせる《to ...》"}, {"id": 2259, "expression": "stopover", "meaning": "旅行途上の短期滞在 / 立ち寄り先 / 途中下車"}, {"id": 3904, "expression": "play a trick on", "meaning": "〜にいたずらをする"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 239, "expression": "bossy", "meaning": "《話》親分風を吹かせる,おうへいな"}, {"id": 4313, "expression": "babble", "meaning": "わめく"}, {"id": 2890, "expression": "be busy with", "meaning": "〜で忙しい"}, {"id": 3784, "expression": "no more", "meaning": "もはや〜ない／それ以上ない"}, {"id": 3735, "expression": "make much of", "meaning": "〜を重視する"}, {"id": 4043, "expression": "take a picture", "meaning": "写真を撮る"}, {"id": 1146, "expression": "inanimate", "meaning": "生命のない([[lifeless]]), 無生物の / 生気のない,退屈な(dull)"}, {"id": 3290, "expression": "fall into", "meaning": "〜に陥る／〜に分類される"}, {"id": 1176, "expression": "inflate", "meaning": "(空気・ガスなどで)…‘を'ふくらます《+名+with+名》  / 〈物価・株式など〉‘を'釣り上げる;〈通貨〉‘を'膨張させる  / (誇り・満足などで)〈人〉‘を'慢心させる《+名+with+名》  / ふくらむ,膨張する"}, {"id": 3088, "expression": "begin with", "meaning": "〜から始める"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

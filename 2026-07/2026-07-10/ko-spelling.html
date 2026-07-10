@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-10 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-10" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-10</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-07-10", "questions": [{"target": "겨울", "meaning_ja": "私は夏より「冬」が好きです。", "sentence": "저는 여름보다 ____을 더 좋아해요.", "answer": "저는 여름보다 겨울을 더 좋아해요."}, {"target": "눈", "meaning_ja": "冬には「雪」が降ります。", "sentence": "겨울에는 ____이 와요.", "answer": "겨울에는 눈이 와요."}, {"target": "운동", "meaning_ja": "私は毎日「運動」します。", "sentence": "저는 매일 ____해요.", "answer": "저는 매일 운동해요."}, {"target": "음악", "meaning_ja": "私は好きな「音楽」を聞きます。", "sentence": "저는 좋아하는 ____을 들어요.", "answer": "저는 좋아하는 음악을 들어요."}, {"target": "여름", "meaning_ja": "私は「夏」が好きではありません。", "sentence": "저는 ____을 안 좋아해요.", "answer": "저는 여름을 안 좋아해요."}, {"target": "건강", "meaning_ja": "私は「健康」のために運動します。", "sentence": "저는 ____을 위해서 운동해요.", "answer": "저는 건강을 위해서 운동해요."}, {"target": "친구", "meaning_ja": "私は「友だち」のように歌います。", "sentence": "저는 ____처럼 노래해요.", "answer": "저는 친구처럼 노래해요."}, {"target": "학교", "meaning_ja": "私は「学校」で運動します。", "sentence": "저는 ____에서 운동해요.", "answer": "저는 학교에서 운동해요."}, {"target": "물", "meaning_ja": "運動する間、私は「水」を飲みます。", "sentence": "운동하는 동안 ____을 마셔요.", "answer": "운동하는 동안 물을 마셔요."}, {"target": "책", "meaning_ja": "私は休みの間「本」を読みます。", "sentence": "방학 동안 ____을 읽어요.", "answer": "방학 동안 책을 읽어요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
