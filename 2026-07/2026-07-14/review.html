@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-14 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-14" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-14</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-14", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 4103, "expression": "think highly of", "meaning": "〜を高く評価する"}, {"id": 2386, "expression": "tightrope", "meaning": "(綱渡りの)綱"}, {"id": 1642, "expression": "particle", "meaning": "〈C〉粒子 / 小片,(ごく)少量,微量 / 不変化詞"}, {"id": 3963, "expression": "run over", "meaning": "〜をひく"}, {"id": 1252, "expression": "jealously", "meaning": "嫉妬深く、嫉妬して、油断なく、用心深く"}, {"id": 138, "expression": "attainment", "meaning": "〈U〉(目的などを)『達成すること』,(…への)到達《+『of』+『名』》 / 《しばしば複数形で》学識,技能"}, {"id": 704, "expression": "droop", "meaning": "(…の)うなだれている状態(様子)《+『of』+『名』》"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3930, "expression": "put out", "meaning": "〜を消す"}, {"id": 1349, "expression": "lowland", "meaning": "〈U〉〈C〉低地 / 《the Lowlands》スコットランド南東部の低地地方"}, {"id": 882, "expression": "financially", "meaning": "財政的に,経済的に,金銭的に / 財政的にいうと"}, {"id": 2388, "expression": "timeless", "meaning": "無限の,永久の / 特定の時間を示さない,時を超越した"}, {"id": 40, "expression": "advent", "meaning": "《the ~》(際立ったもの・事件・人の)出現,到来《+『of』+『名』》 / 《A-》キリストの降臨;降臨節(クリスマス前のおよそ4週間の期間)"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 2501, "expression": "undoubtedly", "meaning": "疑いなく,確かに"}, {"id": 3775, "expression": "next to", "meaning": "〜の隣に"}, {"id": 2330, "expression": "tack", "meaning": "…‘を'びょうで留める《+down+名,+名+down》 / (…に)…‘を'付け加える《+名+on(onto)+名》 / …‘を'仮縫いする / (風上に向けて)〈船〉‘の'針路を変える;〈船〉‘..."}, {"id": 1270, "expression": "kneel", "meaning": "(…に)『ひざまずく』,ひざをつく《+『down on』+『名』》"}, {"id": 1383, "expression": "mastery", "meaning": "〈U〉《…に対する》支配,統御《of, over ...》 / 《…に》熟達していること,精進していること《of ...》"}, {"id": 2402, "expression": "ton", "meaning": "(重量単位の)トン  / (容積単位の)トン(物によって異なり,木材では40立方フィート,小麦では20立方フィート)  / 《話》大量(の…),多数(の…)《+of+名》"}, {"id": 3750, "expression": "make up with", "meaning": "〜と仲直りする"}, {"id": 1983, "expression": "revive", "meaning": "〈人〉‘を'生き返らせる,〈意識・元気〉‘を'回復させる  / 〈習慣・流行など〉‘を'復活させる  / …‘を'再上演する,再上映する  / 生き返る;元気(意識)を取り戻す  / 〈習慣・流行など〉‘を'復活させる"}, {"id": 338, "expression": "cheat", "meaning": "〈他〉騙す / 〈自〉不正をする"}, {"id": 4236, "expression": "worn", "meaning": "使い古しの、疲れ切った"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

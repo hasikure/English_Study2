@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-14 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-14" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-14</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-07-14", "questions": [{"target": "하늘", "meaning_ja": "「空」が曇っているようです。", "sentence": "____이 흐린 것 같아요.", "answer": "하늘이 흐린 것 같아요."}, {"target": "길", "meaning_ja": "「道」がまだ濡れています。", "sentence": "____이 아직 젖어 있어요.", "answer": "길이 아직 젖어 있어요."}, {"target": "얼굴", "meaning_ja": "彼の「顔」が疲れて見えます。", "sentence": "그 사람 ____이 피곤해 보여요.", "answer": "그 사람 얼굴이 피곤해 보여요."}, {"target": "우산", "meaning_ja": "「傘」がありません。", "sentence": "____이 없어요.", "answer": "우산이 없어요."}, {"target": "아침", "meaning_ja": "「朝」に雨が降ったようです。", "sentence": "____에 비가 온 것 같아요.", "answer": "아침에 비가 온 것 같아요."}, {"target": "오후", "meaning_ja": "「午後」も雨が降っているようです。", "sentence": "____에도 비가 오는 것 같아요.", "answer": "오후에도 비가 오는 것 같아요."}, {"target": "친구", "meaning_ja": "「友だち」も疲れて見えます。", "sentence": "____도 피곤해 보여요.", "answer": "친구도 피곤해 보여요."}, {"target": "음악", "meaning_ja": "静かな「音楽」を聞くこともあります。", "sentence": "조용한 ____을 듣기도 해요.", "answer": "조용한 음악을 듣기도 해요."}, {"target": "책", "meaning_ja": "雨の日は「本」を読むこともあります。", "sentence": "비 오는 날은 ____을 읽기도 해요.", "answer": "비 오는 날은 책을 읽기도 해요."}, {"target": "집", "meaning_ja": "「家」にいるのが好きです。", "sentence": "____에 있는 걸 좋아해요.", "answer": "집에 있는 걸 좋아해요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
