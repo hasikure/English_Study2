@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-15 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-15" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-15</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-15", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 1825, "expression": "prosecute", "meaning": "《...の罪で》〈人〉を起訴する, を告訴する, 摘発する《for ...》 / (司法手続きに訴えて)〈権利など〉を要求する /   〈調査・事業など〉をやり通す,を遂行する"}, {"id": 978, "expression": "glacis", "meaning": "坂,斜面 / (敵対する二つの勢力間の)中立地帯,緩衝地帯"}, {"id": 868, "expression": "fed up", "meaning": "《...に》うんざりしている,がっかりした,不愉快な《with ...》"}, {"id": 4077, "expression": "take (one’s) time", "meaning": "時間をかける／ゆっくりする"}, {"id": 3334, "expression": "for real", "meaning": "本当に"}, {"id": 2989, "expression": "be interested in", "meaning": "〜に興味を持っている"}, {"id": 1706, "expression": "physician", "meaning": "医者;(特に)内科医"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3381, "expression": "get to work [office]", "meaning": "通勤する"}, {"id": 3634, "expression": "keep down", "meaning": "〜を抑える／低く保つ"}, {"id": 1910, "expression": "refinery", "meaning": "〈C〉精製所, 精錬所, 製油所"}, {"id": 1995, "expression": "ridge", "meaning": "『山の背』,尾根 / (動物の)背,背すじ;(畑などの)うね,あぜ / (一般に,うねのような)隆起 / 〈屋根〉‘に'むねをつける;〈畑など〉‘に'うねをたてる"}, {"id": 1234, "expression": "invisible", "meaning": "『目に見えない』;(…に)見えない《+『to』+『名』》"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 90, "expression": "antiaircraft", "meaning": "対空の,防空の"}, {"id": 2782, "expression": "at all costs", "meaning": "どんな犠牲を払っても"}, {"id": 4080, "expression": "talk A into B", "meaning": "Aを説得してBさせる"}, {"id": 2514, "expression": "unimaginable", "meaning": "想像できない,思いもつかない"}, {"id": 2642, "expression": "width", "meaning": "〈U〉〈C〉(幅の)『広さ』,幅,横 / 〈C〉一定の幅のもの(織物)"}, {"id": 2172, "expression": "solar", "meaning": "太陽の"}, {"id": 2691, "expression": "zoom", "meaning": "〈飛行機が〉急上昇する;(一般に)急上昇する / ブーンと大きな音を立てる(立てて動く) / (映画・テレビでズームレンズによって)〈映像が〉拡大(縮小)する《+in(out)》 〈他〉 / 〈飛行機〉‘を'急上昇させる / (飛行機)の急角度上昇[の音];ブーンという音"}, {"id": 2139, "expression": "skim", "meaning": "〈他〉〈液体〉から上澄みを取る / 《液体から》〈浮遊物〉をすくい取る《from, off ...》 / をざっと読む / 〈水面など〉を滑るように進む / 〈自〉滑るように進む, かすめて飛ぶ"}, {"id": 2382, "expression": "thrilling", "meaning": "ぞくぞく(わくわく)させるような,血わき肉おどる"}, {"id": 2601, "expression": "vomit", "meaning": "〈U〉吐いた物,嘔吐物 / 〈C〉へどを吐くこと"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
