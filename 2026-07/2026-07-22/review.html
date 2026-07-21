@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-22 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-22" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-22</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-22", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2458, "expression": "truthful", "meaning": "(人が)真実をいう,誠実な / (記述・説明などが)真実の,正確な(accurate)"}, {"id": 3288, "expression": "fall apart", "meaning": "ばらばらになる／崩壊する"}, {"id": 2209, "expression": "spot", "meaning": "…を見つける / 《…だと》…を見抜く《as, for ...》/ …をしみで汚す / 〈人格・名声など〉を汚す / (特定の場所に)…を置く / 〈インクなどが〉しみになる"}, {"id": 2953, "expression": "be free from", "meaning": "〜がない／〜から自由である"}, {"id": 105, "expression": "approximate", "meaning": "近似の"}, {"id": 3927, "expression": "put off", "meaning": "〜を延期する／〜をうんざりさせる"}, {"id": 2120, "expression": "shower", "meaning": "…に水を注ぐ / …を降り注ぐ / 《itを主語にして》にわか雨が降る / 《…に》降り注ぐ《on, upon ...》  / シャワーを浴びる"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 1192, "expression": "innovation", "meaning": "〈U〉革新,刷新 / 〈C〉新機軸,新制度,改革の行為"}, {"id": 4214, "expression": "without reservations", "meaning": "無条件に／遠慮なく"}, {"id": 1317, "expression": "leopard", "meaning": "ヒョウ"}, {"id": 2940, "expression": "be faithful to", "meaning": "〜に忠実である"}, {"id": 1943, "expression": "remarkably", "meaning": "著しく,目立って"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1794, "expression": "priceless", "meaning": "(値ぶみできないくらい)非常に貴重な / 《話》すごくおもしろい;ばかげた"}, {"id": 1661, "expression": "payment", "meaning": "〈U〉(…の)支払い,納入《+for(of)+名》  / 〈C〉(…の)支払金,支払物《+for(of)+名》  / 〈U〉《時にa payment》(善または悪の)報い,報酬,罰《+for+名》"}, {"id": 24, "expression": "addicted", "meaning": "(薬などの物質の作用によって)中毒になっている,常習的な / (非常に楽しい娯楽などに)病みつきの,熱狂的な,くびったけの,はまっている"}, {"id": 2108, "expression": "shipping", "meaning": "船積み,積み出し,発送 / 海運業,運送業 / 《集合的に》(一港・一国・一海運会社などの)船舶;船舶トン数"}, {"id": 666, "expression": "distressing", "meaning": "悲惨な；苦痛を与える；つらい"}, {"id": 3144, "expression": "by the end of", "meaning": "〜の終わりまでに"}, {"id": 4186, "expression": "wear down", "meaning": "すり減らす／疲れさせる"}, {"id": 4194, "expression": "Why not ?", "meaning": "なぜだめなのか／そうしよう"}, {"id": 3942, "expression": "refuse to do", "meaning": "〜することを拒む"}, {"id": 356, "expression": "citywide", "meaning": "市全域の"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
