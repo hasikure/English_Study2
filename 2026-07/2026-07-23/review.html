@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-23 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-07-23" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-07-23</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-07-23", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2380, "expression": "thrill", "meaning": "〈C〉ゾクゾクする感じ / ゾクゾクさせるもの"}, {"id": 67, "expression": "altitude", "meaning": "〈U〉高さ / 〈C〉標高 / 海抜 /高い地位 / 〈U/C〉高度"}, {"id": 183, "expression": "beak", "meaning": "『くちばし』(通例ワシ・タカなどの曲がった,またカメ・タコなどのような角状のもの) / くちばし状のもの;(人の)かぎ鼻,(水差しの)口 / (昔の戦艦の)船嘴(せんし)"}, {"id": 2567, "expression": "valentine", "meaning": "バレンタインカード(聖バレンタイデーに異性に送るカード) / 《しばしば Valentine》聖バレンタインデーに選ばれた恋人"}, {"id": 1603, "expression": "overhear", "meaning": "…をふと耳にする,を小耳にはさむ / を立ち聞きする, を盗み聞きする"}, {"id": 3003, "expression": "be married to", "meaning": "〜と結婚している"}, {"id": 1454, "expression": "mortal", "meaning": "『必ず死ぬ運命の』 / 『致命題な』,命とりの(fatal) / 《名詞の前にのみ用いて》(はかない)人間の,現世の / 《名詞の前にのみ用いて》死ぬまで続く;殺さずにはおかない / 死の;死のぎわの / 《名詞の前にのみ用いて》《話》非常な,はなはだしい / 許すことのできない,永遠の死を招く / 《しばしばおどけて》人間"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2333, "expression": "tag", "meaning": "〈U〉鬼ごっこ / (野球で)タッチアウトにすること"}, {"id": 4187, "expression": "wear off", "meaning": "徐々に消える／薄れる"}, {"id": 765, "expression": "entitle", "meaning": "(本など)に表題をつける / (人)に権利を与える, に資格をあたえる"}, {"id": 2263, "expression": "straightforward", "meaning": "わかりやすい,簡単な / 正直な,率直な / まっすぐに進む"}, {"id": 3143, "expression": "by regulation", "meaning": "規則により"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 3183, "expression": "come close [near] to doing", "meaning": "もう少しで〜しそうになる"}, {"id": 2903, "expression": "be consistent with", "meaning": "〜と一致している"}, {"id": 1044, "expression": "hay", "meaning": "『干し草』(家畜の飼料)"}, {"id": 761, "expression": "enroll", "meaning": "〈人〉‘の'氏名を名簿に記入する;〈人〉‘を'入会させる,入学させる,兵籍に入れる  / 〈氏名〉‘を'名簿に記入する  / 入会する,入学する,入隊する"}, {"id": 376, "expression": "cocktail", "meaning": "カクテル / (エビ・カニ・混ぜ合わせ果物などからなる)前菜料理"}, {"id": 592, "expression": "denim", "meaning": "〈U〉デニム(厚地の綿布) / 〈C〉《複数形で》デニム製作業服"}, {"id": 2040, "expression": "sanitation", "meaning": "[公衆]衛生;衛生設備(特に下水設備)"}, {"id": 1881, "expression": "rash", "meaning": "発疹(はっしん)"}, {"id": 1018, "expression": "guerrilla", "meaning": "ゲリラ兵,遊撃兵"}, {"id": 3458, "expression": "have words with", "meaning": "〜と言い争う"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
