@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-08-06 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-08-06" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-08-06</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-08-06", "questions": [{"target": "여행", "meaning_ja": "私は今「旅行」の準備をしている最中です。", "sentence": "저는 지금 ____ 준비를 하는 중이에요.", "answer": "저는 지금 여행 준비를 하는 중이에요."}, {"target": "우산", "meaning_ja": "雨が降るかもしれないので「傘」を持っていかなくちゃ。", "sentence": "비가 올지도 몰라서 ____을 챙겨야지요.", "answer": "비가 올지도 몰라서 우산을 챙겨야지요."}, {"target": "여권", "meaning_ja": "「パスポート」を忘れてはいけません。", "sentence": "____을 잊으면 안 돼요.", "answer": "여권을 잊으면 안 돼요."}, {"target": "준비", "meaning_ja": "私は今、「準備」をしている最中です。", "sentence": "저는 지금 ____를 하는 중이에요.", "answer": "저는 지금 준비를 하는 중이에요."}, {"target": "시간", "meaning_ja": "「時間」がないかもしれません。", "sentence": "____이 없을지도 몰라요.", "answer": "시간이 없을지도 몰라요."}, {"target": "친구", "meaning_ja": "「友だち」に会いに行かなくちゃ。", "sentence": "____를 만나러 가야지요.", "answer": "친구를 만나러 가야지요."}, {"target": "학교", "meaning_ja": "「学校」に遅れてはいけません。", "sentence": "____에 늦으면 안 돼요.", "answer": "학교에 늦으면 안 돼요."}, {"target": "물", "meaning_ja": "「水」を持っていかなくちゃ。", "sentence": "____을 챙겨야지요.", "answer": "물을 챙겨야지요."}, {"target": "책", "meaning_ja": "私は今「本」を読んでいる最中です。", "sentence": "저는 지금 ____을 읽는 중이에요.", "answer": "저는 지금 책을 읽는 중이에요."}, {"target": "음악", "meaning_ja": "「音楽」が大きすぎるかもしれません。", "sentence": "____이 너무 클지도 몰라요.", "answer": "음악이 너무 클지도 몰라요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

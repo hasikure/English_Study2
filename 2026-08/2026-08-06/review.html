@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-08-06 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-08-06" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-08-06</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-08-06", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 4275, "expression": "call out", "meaning": "大声で叫ぶ、招集する"}, {"id": 1722, "expression": "playwright", "meaning": "劇作家,脚本家(dramatist)"}, {"id": 2819, "expression": "at the expense of", "meaning": "〜を犠牲にして／〜の費用で"}, {"id": 3113, "expression": "brush up", "meaning": "〜を磨き直す／復習する"}, {"id": 3925, "expression": "put ... in order", "meaning": "...を整理する"}, {"id": 4124, "expression": "to one’s surprise", "meaning": "驚いたことに"}, {"id": 248, "expression": "bracket", "meaning": "(たななどを支える)腕木,たな受け,持ち送り  / (腕木に支えられた)たな,張り出しだな  / 《複数形で》かっこ,角がっこ([ ]など)  / (同類の人の)群,階層"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2109, "expression": "shipwreck", "meaning": "〈U〉〈C〉難船,難破 / 難破継[の残がい] / 〈U〉(計画などの)破滅,破壊《+『of』+『名』》"}, {"id": 2388, "expression": "timeless", "meaning": "無限の,永久の / 特定の時間を示さない,時を超越した"}, {"id": 2443, "expression": "triangle", "meaning": "三角形  / 三角形の物  / 《米》三角定規  / (楽器の)トライアングル  / 三つ組,三人組;(男女の)三角関係"}, {"id": 3114, "expression": "build up", "meaning": "〜を築き上げる／増強する"}, {"id": 3535, "expression": "in one’s absence", "meaning": "〜の不在中に"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1413, "expression": "microscopic", "meaning": "顕微鏡の,顕微鏡による / 《しばしば《話》》非常に小さい,微細な / 非常に綿密な"}, {"id": 106, "expression": "arch", "meaning": "(建物の)『アーチ』,迫持(せりもち) / アーチ型の記念碑,弓形門 / 『弓形のもの』 / (足の)土踏まず"}, {"id": 3397, "expression": "give rise to", "meaning": "〜を引き起こす"}, {"id": 3096, "expression": "beyond one’s control", "meaning": "〜の制御を超えて"}, {"id": 4240, "expression": "host", "meaning": "主人、司会者、主催する"}, {"id": 709, "expression": "duplicate", "meaning": "〈C〉写し,複製"}, {"id": 1714, "expression": "pine", "meaning": "〈C〉『松』,松の木([[pine tree]]) / 〈U〉松材"}, {"id": 2613, "expression": "warship", "meaning": "軍艦"}, {"id": 1877, "expression": "ramp", "meaning": "(病院・ガレージ・立体高速道路の出入口などの)傾斜通路,ランプ / (飛行機の)タラップ"}, {"id": 4151, "expression": "turn into", "meaning": "〜に変る"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
