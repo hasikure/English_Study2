@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-08-08 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-08-08" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-08-08</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-08-08", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 4028, "expression": "substitute A for B", "meaning": "Bの代わりにAを用いる"}, {"id": 1211, "expression": "interactive", "meaning": "相互に作用し合う / 相互作用の / 対話型の,双方向の"}, {"id": 900, "expression": "flat", "meaning": "きっかり,ちょうど,ジャスト / 定額で"}, {"id": 2501, "expression": "undoubtedly", "meaning": "疑いなく,確かに"}, {"id": 3213, "expression": "cooperate with", "meaning": "〜と協力する"}, {"id": 3268, "expression": "dwell on", "meaning": "〜をくよくよ考える／詳しく述べる"}, {"id": 577, "expression": "deep", "meaning": "(表面から下方または内部へ)深い  / (程度が)非常な,深い  / 奥行きの深い,奥まった  / 奥深くて測りしれない,深遠な  / 《補語にのみ用いて》(…の)奥深いところにいる(ある)《+in+名》  / (思想・感情などが)深い,強い  / (色が)濃い  / (音・声が)低い,太い"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3619, "expression": "irrespective of", "meaning": "〜に関係なく"}, {"id": 4273, "expression": "in bulk", "meaning": "大量に、一括で"}, {"id": 1381, "expression": "master", "meaning": "主人,雇主 / 精通者,師匠"}, {"id": 995, "expression": "gorge", "meaning": "谷間,峡谷 / 通路をふさぐ物 / (胃の中の)食物 / 《古》のど,食道 / (…を)〈自分[の腹]〉‘に'詰め込む《+『on』(『with』)+『名』》 / …‘を'がつがつ食べる(飲みこむ) / (…を)がつがつ食べる《+『on』+『名』》"}, {"id": 1234, "expression": "invisible", "meaning": "『目に見えない』;(…に)見えない《+『to』+『名』》"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 454, "expression": "consult", "meaning": "(…についての意見,情報などを)…‘に'頼る,求める,相談する《+名+about(on,for)+名》  / 〈人の感情・都合・利害など〉'を'考慮に入れる  / (…について…と)相談する,協議する《+with+名+about(for)+名》  / (会社などの)顧問(コンサルタント)として働く《+for+名》"}, {"id": 4030, "expression": "succeed to", "meaning": "〜を継承する"}, {"id": 174, "expression": "barley", "meaning": "大麦(ビール・ウイスキー醸造用の麦芽(malt)をとる)"}, {"id": 2455, "expression": "trunk", "meaning": "〈C〉(樹木の)幹 / (人・動物の)胴体 / トランク,旅行用箱型の大型かばん) / 象の鼻 / 《複数形で》(文泳などスポーツ競技用の)男子用パンツ / 《米》(自動車後部の)荷物入れ,トランク"}, {"id": 1268, "expression": "kerosene", "meaning": "灯油(《英》paraffin)[oil])"}, {"id": 3412, "expression": "go on to", "meaning": "〜へ進む"}, {"id": 3374, "expression": "get rid of", "meaning": "〜を取り除く"}, {"id": 3117, "expression": "burst into laughter", "meaning": "急に笑い出す"}, {"id": 1106, "expression": "ideology", "meaning": "〈C〉イデオロギー(社会・政党などが持つ典型的な思考形態)  / 〈U〉《軽蔑して》空理,空論"}, {"id": 2322, "expression": "swing", "meaning": "振幅,ブランコ / 揺り動かす,振り回す"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
