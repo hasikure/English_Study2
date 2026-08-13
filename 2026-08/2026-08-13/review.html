@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-08-13 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-08-13" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-08-13</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-08-13", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2772, "expression": "ask for", "meaning": "〜を求める／要求する"}, {"id": 3551, "expression": "in prison", "meaning": "刑務所に入って"}, {"id": 2712, "expression": "after school", "meaning": "放課後に"}, {"id": 453, "expression": "constant", "meaning": "不変の, 一定の / 絶え間のない, 不断の /"}, {"id": 818, "expression": "exhibit", "meaning": "〈感情・性質など〉‘を'表す,示す  / …‘を'出品する,陳列する  / 出品物,陳列品  / 《米》展覧会,展示会(exhibition)  / (法律上の)証拠書類(物件)"}, {"id": 1965, "expression": "respected", "meaning": "尊敬されている,尊敬するに足る,尊敬を集めている / 評判のいい,立派な"}, {"id": 1284, "expression": "lark", "meaning": "『ヒバリ』"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 976, "expression": "ghetto", "meaning": "ユダヤ人街(昔ヨーロッパでユダヤ人が強制的に居住させられた) / 《米》スラム街,貧民街(黒人・プエルトリコ人などの少数民族が居住する)"}, {"id": 3544, "expression": "in particular", "meaning": "特に"}, {"id": 246, "expression": "bow", "meaning": "(…に)『身をかがめる』,頭をさげる,おじぎをする《+『down』『to』+『名』》 / (…に)屈服する,従う《+『to』+『名』》 / 〈ひざ・腰〉'を'かがめる,(頭など)'を'さげる / …'を'曲げる / 〈感謝など〉'を'おじぎをして示す / …'を'身をかがめて案内する"}, {"id": 3221, "expression": "criticize A for B", "meaning": "BのことでAを批判する"}, {"id": 1762, "expression": "prawn", "meaning": "《おもに英》テナガエビ,クルマエビ"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1862, "expression": "quote", "meaning": "引用 / 見積価格 / 引用する / 見積もる"}, {"id": 3827, "expression": "on purpose", "meaning": "わざと"}, {"id": 1456, "expression": "mortgage", "meaning": "〈C〉抵当, 担保, 住宅ローン"}, {"id": 4155, "expression": "turn up", "meaning": "姿を見せる，音量を上げる"}, {"id": 3943, "expression": "regard A as B", "meaning": "AをBとみなす"}, {"id": 1574, "expression": "ounce", "meaning": "〈C〉オンス（重量の単位） / 液量オンス / 《通例否文で》《an ~》少量《の…》《of ...》"}, {"id": 2746, "expression": "as a matter of course", "meaning": "当然のこととして"}, {"id": 3814, "expression": "on (the) brink of", "meaning": "〜の瀬戸際で"}, {"id": 105, "expression": "approximate", "meaning": "近似の"}, {"id": 2646, "expression": "willingly", "meaning": "喜んで / 快く / 自発的に"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
