@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-08-25 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-08-25" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-08-25</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-08-25", "questions": [{"target": "그림", "meaning_ja": "壁に美しい「絵」がかかっています。", "sentence": "벽에 예쁜 ____이 걸려 있어요.", "answer": "벽에 예쁜 그림이 걸려 있어요."}, {"target": "나무", "meaning_ja": "庭に大きな「木」を植えました。", "sentence": "마당에 큰 ____를 심었어요.", "answer": "마당에 큰 나무를 심었어요."}, {"target": "꽃", "meaning_ja": "彼女の誕生日に「花」をあげました。", "sentence": "그녀의 생일에 ____을 줬어요.", "answer": "그녀의 생일에 꽃을 줬어요."}, {"target": "하늘", "meaning_ja": "今日は「空」がとても青いです。", "sentence": "오늘은 ____이 아주 파래요.", "answer": "오늘은 하늘이 아주 파래요."}, {"target": "바람", "meaning_ja": "外は「風」が強く吹いています。", "sentence": "밖에는 ____이 세게 불고 있어요.", "answer": "밖에는 바람이 세게 불고 있어요."}, {"target": "구름", "meaning_ja": "空に白い「雲」が浮かんでいます。", "sentence": "하늘에 하얀 ____이 떠 있어요.", "answer": "하늘에 하얀 구름이 떠 있어요."}, {"target": "달", "meaning_ja": "今夜は「月」がとても明るいです。", "sentence": "오늘 밤은 ____이 아주 밝아요.", "answer": "오늘 밤은 달이 아주 밝아요."}, {"target": "별", "meaning_ja": "山の上では「星」がよく見えます。", "sentence": "산 위에서는 ____이 잘 보여요.", "answer": "산 위에서는 별이 잘 보여요."}, {"target": "우체통", "meaning_ja": "このはがきを「郵便ポスト」に入れてください。", "sentence": "이 엽서를 ____에 넣어 주세요.", "answer": "이 엽서를 우체통에 넣어 주세요."}, {"target": "병", "meaning_ja": "テーブルの上に空の「瓶」があります。", "sentence": "탁자 위에 빈 ____이 있어요.", "answer": "탁자 위에 빈 병이 있어요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

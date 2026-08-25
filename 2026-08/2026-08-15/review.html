@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-08-15 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-08-15" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-08-15</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-08-15", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 679, "expression": "donkey", "meaning": "(家畜化された)『ロバ』 / ばか者,とんま;強情な人,がんこ者"}, {"id": 1055, "expression": "hemp", "meaning": "麻,大麻(たいま) / 麻の繊維 / 麻から採れる薬品(ハッシッシなど)"}, {"id": 509, "expression": "crack", "meaning": "〈C〉割れ目, ひび / バン,ガチャッ (物が壊れたり銃声などの音) / 〈他〉にひびをいれる / 〈自〉割れる / ガチャっと鳴る"}, {"id": 1597, "expression": "overall", "meaning": "全部の,全般的な,全面的な,  端から端までの / 全般的に,全面的に, 端から端まで"}, {"id": 2472, "expression": "tyranny", "meaning": "〈U〉『圧制』 / 〈C〉《しばしば複数形で》暴虐行為 / 〈U〉専制政治,専制 / 〈C〉(古代ギリシヤの)僣主政治"}, {"id": 443, "expression": "conquest", "meaning": "〈U〉(敵国・山岳などの)『征服』;(病気などの)克服《+『of』+『名』》;(愛情などの)獲得 / 〈C〉征服されたもの(国,土地) / 《the Con・quest》=Norman Conquest"}, {"id": 2721, "expression": "all the same", "meaning": "それでも／やはり"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3600, "expression": "in the wake of", "meaning": "〜を受けて／〜の後に続いて"}, {"id": 2429, "expression": "translator", "meaning": "(特に専門の)翻訳者,翻訳家"}, {"id": 1654, "expression": "patriotism", "meaning": "愛国心"}, {"id": 1047, "expression": "healthcare", "meaning": "ヘルスケア、健康管理"}, {"id": 1575, "expression": "outback", "meaning": "〈U〉(特にオーストラリアの)奥地 / 〈C〉行く価値のない所"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 714, "expression": "eagerly", "meaning": "しきりに;熱心に"}, {"id": 2825, "expression": "at the request of", "meaning": "〜の依頼で"}, {"id": 1564, "expression": "oral", "meaning": "口頭の,口述の(spoken)  / 口の,口部の  / 経口の"}, {"id": 1254, "expression": "jeweler", "meaning": "宝石商,貴金属商;宝石細工"}, {"id": 965, "expression": "generalize", "meaning": "一般化する / 一般原理を引き出す / 帰納する / を概括する / を帰納する / を一般化する"}, {"id": 3623, "expression": "It’s true ~, but ...", "meaning": "確かに〜だが…"}, {"id": 3053, "expression": "be taken into custody", "meaning": "拘留される"}, {"id": 3145, "expression": "by the way", "meaning": "ところで"}, {"id": 3075, "expression": "be well-known for", "meaning": "〜でよく知られている"}, {"id": 2451, "expression": "troop", "meaning": "〈C〉《移動中の人・野生の動物の》群れ《of ...》 / 《複数形で》軍隊"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

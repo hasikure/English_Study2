@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-08-25 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-08-25" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-08-25</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-08-25", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 1554, "expression": "Olympia", "meaning": "オリンピア(ギリシアのペロポネソス半島西部のエリス州にある平原;Zeusの聖地で,古代4年めごとにZeus神の祭りの時,この平原で体育・文芸の大競技会が行われた;これがオリンピック競技の始まり)"}, {"id": 2854, "expression": "be alert to", "meaning": "〜に油断なく注意している"}, {"id": 811, "expression": "excursion", "meaning": "〈C〉（特定の目的をもった団体の）小旅行,遠足；（特別割引料金の）周遊旅行；出かけること；挑戦,試み"}, {"id": 2919, "expression": "be dying to do", "meaning": "〜したくてたまらない"}, {"id": 726, "expression": "educated", "meaning": "『教育』(『教養』)『のある』 / 知識(経験)に基づいた"}, {"id": 1696, "expression": "persuasion", "meaning": "〈U〉『説得』;説得力 / 〈U〉〈C〉『確信』,信念 / 〈U〉〈C〉(宗教上の)信条,教派,宗派"}, {"id": 608, "expression": "despise", "meaning": "《…のことで》…を軽蔑する,を蔑む《for ...》"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2402, "expression": "ton", "meaning": "(重量単位の)トン  / (容積単位の)トン(物によって異なり,木材では40立方フィート,小麦では20立方フィート)  / 《話》大量(の…),多数(の…)《+of+名》"}, {"id": 1691, "expression": "personification", "meaning": "〈U〉〈C〉擬人化 / 〈C〉《the personification》(…が)擬人化されたもの,(…の)典型,権化(ごんげ),化身(けしん)《+『of』+『名』》 / (修辞学で)擬人法"}, {"id": 73, "expression": "ambiguity", "meaning": "(意味の)あいまいさ,不明りょうさ;〈C〉あいまいな表現(語句)"}, {"id": 1246, "expression": "islander", "meaning": "島の住民"}, {"id": 3940, "expression": "reflect on", "meaning": "〜を熟考する／反省する"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 346, "expression": "chew", "meaning": "〈食物〉'を'『噛む』,噛み砕く / …'を'噛んで作る"}, {"id": 375, "expression": "coastline", "meaning": "海岸線"}, {"id": 2502, "expression": "undreamed", "meaning": "夢に見られない"}, {"id": 1773, "expression": "preferably", "meaning": "できれば, なるべく"}, {"id": 1261, "expression": "juror", "meaning": "陪審員"}, {"id": 1463, "expression": "mount", "meaning": "...を登る / (馬・車)に乗る / を乗せる / 《...の上に》を載せる《on ...》 / 登る / 馬に乗る"}, {"id": 3936, "expression": "receive a prize", "meaning": "賞を受ける"}, {"id": 2597, "expression": "vital", "meaning": "生命の / 生き生きとした / 極めて重大な / 命に関わる"}, {"id": 2676, "expression": "worst", "meaning": "([[badly]], [[ill]]の最上級)『最も悪く』,いちばんひどく"}, {"id": 1924, "expression": "regulate", "meaning": "規制する, 統制する, 調整する"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

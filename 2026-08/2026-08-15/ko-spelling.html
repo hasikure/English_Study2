@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-08-15 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-08-15" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-08-15</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-08-15", "questions": [{"target": "컴퓨터", "meaning_ja": "仕事のために新しい「コンピューター」を買いました。", "sentence": "일 때문에 새 ____를 샀어요.", "answer": "일 때문에 새 컴퓨터를 샀어요."}, {"target": "전화", "meaning_ja": "会議中に「電話」がずっと鳴っていました。", "sentence": "회의 중에 ____가 계속 울렸어요.", "answer": "회의 중에 전화가 계속 울렸어요."}, {"target": "음료수", "meaning_ja": "冷蔵庫に冷たい「飲み物」がたくさんあります。", "sentence": "냉장고에 시원한 ____가 많이 있어요.", "answer": "냉장고에 시원한 음료수가 많이 있어요."}, {"target": "과일", "meaning_ja": "健康のために毎日「果物」を食べています。", "sentence": "건강을 위해 매일 ____을 먹고 있어요.", "answer": "건강을 위해 매일 과일을 먹고 있어요."}, {"target": "채소", "meaning_ja": "母は市場で新鮮な「野菜」を買いました。", "sentence": "어머니는 시장에서 신선한 ____를 사셨어요.", "answer": "어머니는 시장에서 신선한 채소를 사셨어요."}, {"target": "자전거", "meaning_ja": "週末には公園で「自転車」に乗ります。", "sentence": "주말에는 공원에서 ____를 타요.", "answer": "주말에는 공원에서 자전거를 타요."}, {"target": "버스", "meaning_ja": "学校に行くとき、いつも「バス」に乗ります。", "sentence": "학교에 갈 때 항상 ____를 타요.", "answer": "학교에 갈 때 항상 버스를 타요."}, {"target": "공책", "meaning_ja": "授業の内容を「ノート」に書いておきました。", "sentence": "수업 내용을 ____에 적어 놓았어요.", "answer": "수업 내용을 공책에 적어 놓았어요."}, {"target": "거울", "meaning_ja": "出かける前に「鏡」で自分の姿を確認します。", "sentence": "나가기 전에 ____로 제 모습을 확인해요.", "answer": "나가기 전에 거울로 제 모습을 확인해요."}, {"target": "침대", "meaning_ja": "疲れていたので「ベッド」にすぐ横になりました。", "sentence": "피곤해서 바로 ____에 누웠어요.", "answer": "피곤해서 바로 침대에 누웠어요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
