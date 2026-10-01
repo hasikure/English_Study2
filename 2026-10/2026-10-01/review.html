@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-01 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-01" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-01</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-10-01", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 195, "expression": "berry", "meaning": "〈C〉『ベリー』,イチゴ(小粒で果汁の多い食用果実;strawberry, raspberry, gooseberryなどのイチゴ類) / 〈C〉液果(果肉が柔らかく多くの種をもつ果実;tomato, grapeなど) / 〈U〉(魚・エビなどの)卵"}, {"id": 2624, "expression": "wed", "meaning": "〈他〉…と結婚する, を妻(夫)にする / 〈自〉結婚する"}, {"id": 1274, "expression": "label", "meaning": "(品名・製造元などを示す)はり札,ラベル;(小包などの)荷札  / (団体・運動・政党支持者などの特徴を示す)短い文句,通り名;(辞書の見出し語などにつける)ラベル([物理][化学]など)  / …‘に'ラベルをはる,荷札をつける;《比喩(ひゆ)的》〈人〉‘に'レッテルをはる"}, {"id": 2336, "expression": "tan", "meaning": "〈U〉黄褐色 / タンニン〈C〉日焼け, 日焼けした色【形】褐色の"}, {"id": 63, "expression": "altar", "meaning": "祭壇,聖餐(せいさん)台"}, {"id": 1748, "expression": "posh", "meaning": "素晴らしい,立派な / 高級な,豪華な"}, {"id": 2726, "expression": "all too", "meaning": "あまりにも／非常に"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3489, "expression": "in accordance with", "meaning": "〜に従って"}, {"id": 2687, "expression": "youthful", "meaning": "(人が)『若い』 / 若者に特有の,青年にふさわしい,(洋服・髪型などが)若い人向けの"}, {"id": 1772, "expression": "preferable", "meaning": "いっそう望ましい,むしろ好ましい;(…より)望ましい《+『to』+『名』(do『ing』)》"}, {"id": 3434, "expression": "hang on to", "meaning": "〜をしっかりつかむ／保持する"}, {"id": 2989, "expression": "be interested in", "meaning": "〜に興味を持っている"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 2041, "expression": "satisfactory", "meaning": "満足を与える,満足な,申し分のない"}, {"id": 4288, "expression": "dedicated", "meaning": "熱心な、特化した"}, {"id": 2177, "expression": "somewhat", "meaning": "いくぶんか, やや, 少し"}, {"id": 2306, "expression": "supplement", "meaning": "〈C〉補足 / 増補"}, {"id": 673, "expression": "DNA", "meaning": "deoxyribonucleic acidディオキシリボ核酸"}, {"id": 2773, "expression": "assent to", "meaning": "〜に同意する"}, {"id": 384, "expression": "colleague", "meaning": "〈C〉(会社・学校などの) 同僚 / (専門職業の) 仲間, 同業者"}, {"id": 1588, "expression": "output", "meaning": "生産高  / (コンピューターなどの)アウトプット,出力"}, {"id": 3917, "expression": "prior to", "meaning": "〜より前に"}, {"id": 691, "expression": "down", "meaning": "下りの"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
