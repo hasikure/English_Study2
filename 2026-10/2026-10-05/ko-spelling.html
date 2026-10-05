@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-05 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-05" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-05</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-10-05", "questions": [{"target": "소금", "meaning_ja": "スープに「塩」を少し入れました。", "sentence": "국에 ____을 조금 넣었어요.", "answer": "국에 소금을 조금 넣었어요."}, {"target": "설탕", "meaning_ja": "コーヒーに「砂糖」を入れますか。", "sentence": "커피에 ____을 넣으세요?", "answer": "커피에 설탕을 넣으세요?"}, {"target": "간장", "meaning_ja": "この料理には「醤油」が合います。", "sentence": "이 음식에는 ____이 잘 어울려요.", "answer": "이 음식에는 간장이 잘 어울려요."}, {"target": "참기름", "meaning_ja": "ナムルに「ごま油」を少し垂らしました。", "sentence": "나물에 ____을 조금 떨어뜨렸어요.", "answer": "나물에 참기름을 조금 떨어뜨렸어요."}, {"target": "양파", "meaning_ja": "カレーのために「玉ねぎ」を切りました。", "sentence": "카레를 위해 ____를 썰었어요.", "answer": "카레를 위해 양파를 썰었어요."}, {"target": "마늘", "meaning_ja": "このスープには「にんにく」がたくさん入っています。", "sentence": "이 국에는 ____이 많이 들어 있어요.", "answer": "이 국에는 마늘이 많이 들어 있어요."}, {"target": "당근", "meaning_ja": "サラダに「にんじん」を入れました。", "sentence": "샐러드에 ____을 넣었어요.", "answer": "샐러드에 당근을 넣었어요."}, {"target": "감자", "meaning_ja": "母が「じゃがいも」を蒸してくれました。", "sentence": "엄마가 ____를 쪄 주셨어요.", "answer": "엄마가 감자를 쪄 주셨어요."}, {"target": "두부", "meaning_ja": "今日の夕食は「豆腐」チゲです。", "sentence": "오늘 저녁은 ____ 찌개예요.", "answer": "오늘 저녁은 두부 찌개예요."}, {"target": "계란", "meaning_ja": "朝ごはんに「卵」を焼いて食べました。", "sentence": "아침에 ____을 구워 먹었어요.", "answer": "아침에 계란을 구워 먹었어요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
