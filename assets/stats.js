@@ -193,23 +193,26 @@
   function buildApp() {
     app.textContent = "";
 
+    const TYPE_LABELS = { idiom: "イディオム", pattern: "パターン", word: "単語" };
+    const typeLabel = (t) => TYPE_LABELS[t] || t;
+
     const updated = document.createElement("p");
     updated.className = "review-note";
-    updated.textContent = `Updated: ${data.updated}`;
+    updated.textContent = `更新日時: ${data.updated}`;
     app.appendChild(updated);
 
-    const overview = section("Overview");
+    const overview = section("概要");
     overview.appendChild(renderStatTiles([
-      { label: "Total items", value: data.total },
-      { label: "High priority", value: data.highPriority },
-      { label: "Never studied", value: data.neverStudied },
-      { label: "Not seen in 14+ days", value: data.stale14 },
+      { label: "総項目数", value: data.total },
+      { label: "優先度高", value: data.highPriority },
+      { label: "未学習", value: data.neverStudied },
+      { label: "14日以上未学習", value: data.stale14 },
     ]));
     app.appendChild(overview);
 
     const activity = section(
-      "Recent Activity",
-      "Items last studied, by month (today's month is highlighted)",
+      "直近の学習状況",
+      "月ごとの最終学習件数(今月をハイライト)",
     );
     const lastIndex = data.monthlyActivity.length - 1;
     activity.appendChild(renderColumnChart(
@@ -220,12 +223,12 @@
       })),
     ));
     activity.appendChild(renderTable(
-      ["Month", "Items"],
+      ["月", "件数"],
       data.monthlyActivity.map((row) => [row.month, row.count]),
     ));
     app.appendChild(activity);
 
-    const receptive = section("Receptive Score Distribution");
+    const receptive = section("受容スコアの分布(Receptive)");
     receptive.appendChild(renderBarChart(
       data.receptive.map((row) => ({
         label: `${row.score} ${row.label}`,
@@ -235,18 +238,18 @@
       })),
     ));
     receptive.appendChild(renderTable(
-      ["Score", "Label", "Count", "%"],
+      ["スコア", "ラベル", "件数", "%"],
       data.receptive.map((row) => [row.score, row.label, row.count, pct(row.count, data.total)]),
     ));
     app.appendChild(receptive);
 
     const productive = section(
-      "Productive Score Distribution",
-      `Items with a recorded productive score: ${data.productiveTotal}/${data.total}`,
+      "産出スコアの分布(Productive)",
+      `産出スコアが記録されている項目: ${data.productiveTotal}/${data.total}`,
     );
     productive.appendChild(renderBarChart([
       {
-        label: "— not recorded",
+        label: "— 未記録",
         count: data.productiveNull,
         pct: data.total ? (data.productiveNull / data.total) * 100 : 0,
         color: NULL_COLOR,
@@ -259,22 +262,22 @@
       })),
     ]));
     productive.appendChild(renderTable(
-      ["Score", "Label", "Count", "%"],
+      ["スコア", "ラベル", "件数", "%"],
       [
-        ["—", "not recorded (null)", data.productiveNull, pct(data.productiveNull, data.total)],
+        ["—", "未記録(null)", data.productiveNull, pct(data.productiveNull, data.total)],
         ...data.productive.map((row) => [row.score, row.label, row.count, pct(row.count, data.productiveTotal)]),
       ],
     ));
     app.appendChild(productive);
 
-    const types = section("Breakdown by Item Type");
+    const types = section("項目タイプ別の内訳");
     types.appendChild(renderLegend([
-      { label: "▼ r≤1 weak", color: STATUS_CRITICAL },
-      { label: "▲ r≥3 strong", color: STATUS_GOOD },
+      { label: "▼ r≤1 弱い", color: STATUS_CRITICAL },
+      { label: "▲ r≥3 強い", color: STATUS_GOOD },
     ]));
     types.appendChild(renderGroupedBarChart(
       data.types.map((row) => ({
-        label: row.type,
+        label: typeLabel(row.type),
         bars: [
           { key: "weak", count: row.rLow, pct: row.total ? (row.rLow / row.total) * 100 : 0, color: STATUS_CRITICAL, icon: "▼" },
           { key: "strong", count: row.rHigh, pct: row.total ? (row.rHigh / row.total) * 100 : 0, color: STATUS_GOOD, icon: "▲" },
@@ -282,8 +285,8 @@
       })),
     ));
     types.appendChild(renderTable(
-      ["Type", "Total", "r≤1 (weak)", "r≥3 (strong)"],
-      data.types.map((row) => [row.type, row.total, row.rLow, row.rHigh]),
+      ["タイプ", "合計", "r≤1(弱い)", "r≥3(強い)"],
+      data.types.map((row) => [typeLabel(row.type), row.total, row.rLow, row.rHigh]),
     ));
     app.appendChild(types);
   }

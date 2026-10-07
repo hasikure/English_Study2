@@ -86,6 +86,11 @@ a {
   margin-bottom: 18px;
 }
 
+.hero .topbar {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
 .kicker {
   font-family: "Lexend", "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", sans-serif;
   color: var(--accent);
