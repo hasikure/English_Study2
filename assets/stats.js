@@ -91,7 +91,10 @@
     );
     productive.appendChild(renderTable(
       ["Score", "Label", "Count", "%"],
-      data.productive.map((row) => [row.score, row.label, row.count, pct(row.count, data.productiveTotal)]),
+      [
+        ["—", "not recorded (null)", data.productiveNull, pct(data.productiveNull, data.total)],
+        ...data.productive.map((row) => [row.score, row.label, row.count, pct(row.count, data.productiveTotal)]),
+      ],
     ));
     app.appendChild(productive);
 

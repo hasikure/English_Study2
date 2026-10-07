@@ -39,6 +39,10 @@ a {
   padding: 28px 0 56px;
 }
 
+.shell[data-study-mode="stats"] {
+  width: min(1400px, calc(100% - 28px));
+}
+
 .topbar {
   display: flex;
   gap: 10px;
