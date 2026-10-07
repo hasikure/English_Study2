@@ -15,6 +15,114 @@
     return d ? `${Math.round((n / d) * 100)}%` : "0%";
   }
 
+  // Ordinal ramp, one hue (blue), light -> dark as score 0 (unknown) -> 4 (mastered).
+  // Steps 300/400/500/600/700 of the documented sequential ramp, validated against
+  // the .bar-track surface (--soft #e7f3ef): contrast, monotone L, and step gaps all pass.
+  const SCORE_COLORS = ["#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"];
+  const NULL_COLOR = "rgba(101, 115, 109, 0.32)";
+  const STATUS_GOOD = "#0ca30c";
+  const STATUS_CRITICAL = "#d03b3b";
+
+  function renderStatTiles(tiles) {
+    const grid = document.createElement("div");
+    grid.className = "stat-tiles";
+    tiles.forEach(({ label, value }) => {
+      const tile = document.createElement("div");
+      tile.className = "stat-tile";
+      const labelEl = document.createElement("div");
+      labelEl.className = "stat-tile-label";
+      labelEl.textContent = label;
+      const valueEl = document.createElement("div");
+      valueEl.className = "stat-tile-value";
+      valueEl.textContent = value;
+      tile.append(labelEl, valueEl);
+      grid.appendChild(tile);
+    });
+    return grid;
+  }
+
+  // rows: [{ label, count, pct, color }] - pct is 0-100, already computed by the caller.
+  function renderBarChart(rows) {
+    const chart = document.createElement("div");
+    chart.className = "bar-chart";
+    rows.forEach(({ label, count, pct: percent, color }) => {
+      const row = document.createElement("div");
+      row.className = "bar-row";
+
+      const rowLabel = document.createElement("div");
+      rowLabel.className = "bar-row-label";
+      rowLabel.textContent = label;
+
+      const track = document.createElement("div");
+      track.className = "bar-track";
+      const fill = document.createElement("div");
+      fill.className = "bar-fill";
+      fill.style.width = `${Math.max(percent, percent > 0 ? 1.5 : 0)}%`;
+      fill.style.background = color;
+      track.appendChild(fill);
+
+      const value = document.createElement("div");
+      value.className = "bar-row-value";
+      value.textContent = `${count} (${Math.round(percent)}%)`;
+
+      row.append(rowLabel, track, value);
+      chart.appendChild(row);
+    });
+    return chart;
+  }
+
+  function renderLegend(items) {
+    const legend = document.createElement("div");
+    legend.className = "chart-legend";
+    items.forEach(({ label, color }) => {
+      const entry = document.createElement("span");
+      entry.className = "legend-entry";
+      const dot = document.createElement("span");
+      dot.className = "legend-dot";
+      dot.style.background = color;
+      entry.append(dot, document.createTextNode(label));
+      legend.appendChild(entry);
+    });
+    return legend;
+  }
+
+  // groups: [{ label, bars: [{ key, count, pct, color, icon }] }]
+  // `icon` is a secondary (non-color) encoding: red/green fails the colorblind
+  // separation check outright (deutan ΔE 4.1, below the 6 floor), so identity
+  // here must not rest on hue alone - see the icon + legend text pairing below.
+  function renderGroupedBarChart(groups) {
+    const chart = document.createElement("div");
+    chart.className = "bar-chart";
+    groups.forEach(({ label, bars }) => {
+      const group = document.createElement("div");
+      group.className = "bar-group";
+      const groupLabel = document.createElement("div");
+      groupLabel.className = "bar-group-label";
+      groupLabel.textContent = label;
+      const groupBars = document.createElement("div");
+      groupBars.className = "bar-group-bars";
+      bars.forEach(({ count, pct: percent, color, icon }) => {
+        const row = document.createElement("div");
+        row.className = "bar-row bar-row-compact";
+        const track = document.createElement("div");
+        track.className = "bar-track";
+        const fill = document.createElement("div");
+        fill.className = "bar-fill";
+        fill.style.width = `${Math.max(percent, percent > 0 ? 1.5 : 0)}%`;
+        fill.style.background = color;
+        track.appendChild(fill);
+        const value = document.createElement("div");
+        value.className = "bar-row-value";
+        value.textContent = `${icon ? icon + " " : ""}${count}`;
+        row.append(track, value);
+        groupBars.appendChild(row);
+      });
+      group.append(groupLabel, groupBars);
+      chart.appendChild(group);
+    });
+    return chart;
+  }
+
   function renderTable(headers, rows) {
     const wrap = document.createElement("div");
     wrap.className = "table-wrap";
@@ -67,18 +175,23 @@
     app.appendChild(updated);
 
     const overview = section("Overview");
-    overview.appendChild(renderTable(
-      ["Category", "Count"],
-      [
-        ["Total items", data.total],
-        ["High priority", data.highPriority],
-        ["Never studied", data.neverStudied],
-        ["Not seen in 14+ days", data.stale14],
-      ],
-    ));
+    overview.appendChild(renderStatTiles([
+      { label: "Total items", value: data.total },
+      { label: "High priority", value: data.highPriority },
+      { label: "Never studied", value: data.neverStudied },
+      { label: "Not seen in 14+ days", value: data.stale14 },
+    ]));
     app.appendChild(overview);
 
     const receptive = section("Receptive Score Distribution");
+    receptive.appendChild(renderBarChart(
+      data.receptive.map((row) => ({
+        label: `${row.score} ${row.label}`,
+        count: row.count,
+        pct: data.total ? (row.count / data.total) * 100 : 0,
+        color: SCORE_COLORS[row.score],
+      })),
+    ));
     receptive.appendChild(renderTable(
       ["Score", "Label", "Count", "%"],
       data.receptive.map((row) => [row.score, row.label, row.count, pct(row.count, data.total)]),
@@ -89,6 +202,20 @@
       "Productive Score Distribution",
       `Items with a recorded productive score: ${data.productiveTotal}/${data.total}`,
     );
+    productive.appendChild(renderBarChart([
+      {
+        label: "— not recorded",
+        count: data.productiveNull,
+        pct: data.total ? (data.productiveNull / data.total) * 100 : 0,
+        color: NULL_COLOR,
+      },
+      ...data.productive.map((row) => ({
+        label: `${row.score} ${row.label}`,
+        count: row.count,
+        pct: data.total ? (row.count / data.total) * 100 : 0,
+        color: SCORE_COLORS[row.score],
+      })),
+    ]));
     productive.appendChild(renderTable(
       ["Score", "Label", "Count", "%"],
       [
@@ -99,6 +226,19 @@
     app.appendChild(productive);
 
     const types = section("Breakdown by Item Type");
+    types.appendChild(renderLegend([
+      { label: "▼ r≤1 weak", color: STATUS_CRITICAL },
+      { label: "▲ r≥3 strong", color: STATUS_GOOD },
+    ]));
+    types.appendChild(renderGroupedBarChart(
+      data.types.map((row) => ({
+        label: row.type,
+        bars: [
+          { key: "weak", count: row.rLow, pct: row.total ? (row.rLow / row.total) * 100 : 0, color: STATUS_CRITICAL, icon: "▼" },
+          { key: "strong", count: row.rHigh, pct: row.total ? (row.rHigh / row.total) * 100 : 0, color: STATUS_GOOD, icon: "▲" },
+        ],
+      })),
+    ));
     types.appendChild(renderTable(
       ["Type", "Total", "r≤1 (weak)", "r≥3 (strong)"],
       data.types.map((row) => [row.type, row.total, row.rLow, row.rHigh]),

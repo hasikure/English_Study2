@@ -645,3 +645,132 @@ mark.study-mark {
 .spell-result.ng {
   color: #b4451f;
 }
+
+.stat-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin: 14px 0 4px;
+}
+
+.stat-tile {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  padding: 16px 18px;
+}
+
+.stat-tile-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.stat-tile-value {
+  font-family: "Lexend", "Atkinson Hyperlegible", "BIZ UDPGothic", "Yu Gothic", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-ink);
+  margin-top: 4px;
+  font-variant-numeric: normal;
+}
+
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 150px 1fr 96px;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar-row-compact {
+  grid-template-columns: 1fr 72px;
+}
+
+.bar-row-label {
+  font-size: 0.88rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.bar-track {
+  position: relative;
+  height: 22px;
+  background: var(--soft);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+  min-width: 2px;
+}
+
+.bar-row-value {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.bar-group {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar-group-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-transform: capitalize;
+}
+
+.bar-group-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 4px 0 2px;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.legend-entry {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+@media (max-width: 640px) {
+  .bar-row {
+    grid-template-columns: 96px 1fr 72px;
+  }
+
+  .bar-group {
+    grid-template-columns: 64px 1fr;
+  }
+}
