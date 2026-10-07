@@ -123,6 +123,30 @@
     return chart;
   }
 
+  // points: [{ label, count, isCurrent }] - a column chart for a short, discrete
+  // time series (months). Bar height is relative to the max count shown.
+  function renderColumnChart(points) {
+    const chart = document.createElement("div");
+    chart.className = "column-chart";
+    const max = Math.max(1, ...points.map((p) => p.count));
+    points.forEach(({ label, count, isCurrent }) => {
+      const column = document.createElement("div");
+      column.className = isCurrent ? "column is-current" : "column";
+      const value = document.createElement("div");
+      value.className = "column-value";
+      value.textContent = `${count}`;
+      const bar = document.createElement("div");
+      bar.className = "column-bar";
+      bar.style.height = `${Math.max((count / max) * 100, count > 0 ? 3 : 1)}%`;
+      const colLabel = document.createElement("div");
+      colLabel.className = "column-label";
+      colLabel.textContent = label;
+      column.append(value, bar, colLabel);
+      chart.appendChild(column);
+    });
+    return chart;
+  }
+
   function renderTable(headers, rows) {
     const wrap = document.createElement("div");
     wrap.className = "table-wrap";
@@ -182,6 +206,24 @@
       { label: "Not seen in 14+ days", value: data.stale14 },
     ]));
     app.appendChild(overview);
+
+    const activity = section(
+      "Recent Activity",
+      "Items last studied, by month (today's month is highlighted)",
+    );
+    const lastIndex = data.monthlyActivity.length - 1;
+    activity.appendChild(renderColumnChart(
+      data.monthlyActivity.map((row, index) => ({
+        label: `${parseInt(row.month.split("-")[1], 10)}月`,
+        count: row.count,
+        isCurrent: index === lastIndex,
+      })),
+    ));
+    activity.appendChild(renderTable(
+      ["Month", "Items"],
+      data.monthlyActivity.map((row) => [row.month, row.count]),
+    ));
+    app.appendChild(activity);
 
     const receptive = section("Receptive Score Distribution");
     receptive.appendChild(renderBarChart(
