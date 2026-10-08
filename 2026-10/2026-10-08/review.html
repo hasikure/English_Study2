@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-08 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-08" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-08</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-10-08", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 3239, "expression": "differ from ... to ...", "meaning": "〜によって異なる"}, {"id": 1043, "expression": "haunting", "meaning": "絶えず心に浮かぶ"}, {"id": 1232, "expression": "investment", "meaning": "〈U〉〈C〉(…を…へ)投資すること,出資《+of+名+in+名》  / 〈C〉(…への)投下資本,投資金《+in+名》  / 〈C〉投資の対象"}, {"id": 4026, "expression": "strip A of B", "meaning": "AからBを奪う"}, {"id": 3236, "expression": "derive from", "meaning": "〜に由来する"}, {"id": 1413, "expression": "microscopic", "meaning": "顕微鏡の,顕微鏡による / 《しばしば《話》》非常に小さい,微細な / 非常に綿密な"}, {"id": 3661, "expression": "lead to", "meaning": "〜につながる／〜を引き起こす"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 3921, "expression": "provide A with B", "meaning": "AにBを提供する"}, {"id": 944, "expression": "fulfill", "meaning": "(命令・約束など)を果たす / (要求・希望など)を満たす / (期限・仕事など)を完了する"}, {"id": 3458, "expression": "have words with", "meaning": "〜と言い争う"}, {"id": 2316, "expression": "suspicious", "meaning": "(人物・話などが) 疑わしい, 怪しい / 疑い深い, 人を疑う"}, {"id": 1234, "expression": "invisible", "meaning": "『目に見えない』;(…に)見えない《+『to』+『名』》"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 633, "expression": "disappearance", "meaning": "消失,消滅;〈U〉〈C〉失踪(しっそう)"}, {"id": 2235, "expression": "statesman", "meaning": "(特に有能で公正な)『政治家』"}, {"id": 3501, "expression": "in any way", "meaning": "どんな方法でも／少しでも"}, {"id": 505, "expression": "cowardly", "meaning": "おくびょうな;ひきょうな"}, {"id": 2329, "expression": "tabloid", "meaning": "タブロイド紙の / 扇情的な, 小型の, 短縮された形式の / タブロイド判新聞(普通の新聞紙の半分の大きさ)"}, {"id": 2012, "expression": "roommate", "meaning": "同宿者,同室者"}, {"id": 2079, "expression": "seller", "meaning": "売る人,売り手  / 《good,bad,poorなどの形容詞と共に》売れるもの"}, {"id": 1815, "expression": "prohibit", "meaning": "(法律あるいは権威をもって)…を禁止する, を禁ずる / （物事が）…を妨げる"}, {"id": 2120, "expression": "shower", "meaning": "…に水を注ぐ / …を降り注ぐ / 《itを主語にして》にわか雨が降る / 《…に》降り注ぐ《on, upon ...》  / シャワーを浴びる"}, {"id": 2436, "expression": "tread", "meaning": "〈他〉…を踏んで通る / …を踏みつける / 〈自〉歩く, 行く / 《…を》踏む, 踏みつける《on ...》 /"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
