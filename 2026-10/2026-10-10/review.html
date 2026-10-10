@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-10 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-10" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-10</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-10-10", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 2985, "expression": "be indifferent to", "meaning": "〜に無関心である"}, {"id": 4353, "expression": "hard-wired", "meaning": "組み込まれている、生まれつき備わっている"}, {"id": 538, "expression": "cyberaddict", "meaning": "サイバー中毒者、コンピューター中毒者、インターネット中毒者"}, {"id": 2921, "expression": "be eligible for", "meaning": "〜の資格がある"}, {"id": 3752, "expression": "manage to do", "meaning": "なんとか〜する"}, {"id": 3805, "expression": "on a regular basis", "meaning": "定期的に"}, {"id": 2780, "expression": "at a time", "meaning": "一度に／一回につき"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 1325, "expression": "lighten", "meaning": "…‘を'『明るくする』,照らす / 〈顔・目など〉‘を'輝かせる / 『明るくなる』 / 〈表情が〉明るくなる,晴れやかになる / 《itを主語にして》稲光がする"}, {"id": 3095, "expression": "and me", "meaning": "私も／私を含めて"}, {"id": 3834, "expression": "on the agenda", "meaning": "議題に上って"}, {"id": 4016, "expression": "stay in", "meaning": "家にいる／外出しない"}, {"id": 838, "expression": "extract", "meaning": "〈U〉〈C〉(自然の物質から調製した)濃縮液,精,エキス  / 〈C〉(文学作品からの)引用句,抜粋《+from+名》 / 《…から》〈物〉を引き抜く,抜き取る《from ...》  / 《…から》〈金・情報・約束など〉を引き出す《from ...》  / (圧搾・蒸留などが)《…から》〈成分など〉を絞り出す,抽出する《from ...》  / 《…から》〈喜び・慰めなど〉を引き出す,得る《from, out of ...》  / (本などから)〈語句〉を抜粋する,抜き出す《from, out of ...》"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1037, "expression": "harmless", "meaning": "『無害の』 / 悪意のない,無邪気な"}, {"id": 1529, "expression": "numerical", "meaning": "数字上の,数に関する,数を表す"}, {"id": 3958, "expression": "run away (from)", "meaning": "〜から逃げる"}, {"id": 3355, "expression": "get along (well) with", "meaning": "〜と （たいへん） うま く やっていく"}, {"id": 4349, "expression": "bale", "meaning": "俵、災い"}, {"id": 848, "expression": "factor", "meaning": "(…の)要因,(…を生み出す)要素《+in+名(doing)》  / 囲数,約数  / 代理人,《おもに英》仲買人  / =factorize"}, {"id": 3298, "expression": "feel ill", "meaning": "気分が悪い"}, {"id": 776, "expression": "erupt", "meaning": "〈火山灰・間欠泉などが〉噴出する,〈火山が〉噴火する / 〈争いなどが〉突然起こる;〈感情が〉爆発する / 〈溶岩・熱湯など〉‘を'噴出させる / 〈怒りなど〉‘を'爆発させる"}, {"id": 959, "expression": "gasp", "meaning": "(…に)(驚き・恐怖・怒りなどで)『はっと息をのむ』《+『with』(『in』)+『名』+『at』+『名』》 / あえぐ,ハアハアと息を切らす / …‘を'『あえぎながら言う』《+『名』+『out,』+『out』+『名』》 / 『あえぎ』,息切れ;(驚きなどで)はっと息をのむこと;息が止まること"}, {"id": 622, "expression": "digest", "meaning": "〈食物〉‘を'『消化する』,こなす / …‘を'こなして自分のものとする / …‘を'系統的に整理する,要約する / 〈食物が〉『消化される』,こなれる"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

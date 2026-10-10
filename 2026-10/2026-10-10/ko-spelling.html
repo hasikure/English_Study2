@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-10 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-10" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-10</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-10-10", "questions": [{"target": "강아지", "meaning_ja": "公園で「子犬」と遊びました。", "sentence": "공원에서 ____와 놀았어요.", "answer": "공원에서 강아지와 놀았어요."}, {"target": "고양이", "meaning_ja": "隣の家に「猫」が3匹います。", "sentence": "옆집에 ____가 세 마리 있어요.", "answer": "옆집에 고양이가 세 마리 있어요."}, {"target": "토끼", "meaning_ja": "動物園で白い「うさぎ」を見ました。", "sentence": "동물원에서 하얀 ____를 봤어요.", "answer": "동물원에서 하얀 토끼를 봤어요."}, {"target": "사자", "meaning_ja": "「ライオン」は動物の王様と呼ばれています。", "sentence": "____는 동물의 왕이라고 불려요.", "answer": "사자는 동물의 왕이라고 불려요."}, {"target": "코끼리", "meaning_ja": "「象」の鼻はとても長いです。", "sentence": "____의 코는 아주 길어요.", "answer": "코끼리의 코는 아주 길어요."}, {"target": "호랑이", "meaning_ja": "森の中で「虎」の鳴き声を聞きました。", "sentence": "숲 속에서 ____의 울음소리를 들었어요.", "answer": "숲 속에서 호랑이의 울음소리를 들었어요."}, {"target": "곰", "meaning_ja": "山では「熊」に気をつけなければいけません。", "sentence": "산에서 ____을 조심해야 해요.", "answer": "산에서 곰을 조심해야 해요."}, {"target": "여우", "meaning_ja": "「キツネ」はとても賢い動物です。", "sentence": "____는 아주 영리한 동물이에요.", "answer": "여우는 아주 영리한 동물이에요."}, {"target": "다람쥐", "meaning_ja": "木の上で「リス」を見ました。", "sentence": "나무 위에서 ____를 봤어요.", "answer": "나무 위에서 다람쥐를 봤어요."}, {"target": "거북이", "meaning_ja": "海辺で「カメ」を触りました。", "sentence": "바닷가에서 ____를 만졌어요.", "answer": "바닷가에서 거북이를 만졌어요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
