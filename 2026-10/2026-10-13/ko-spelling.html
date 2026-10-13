@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-13 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-13" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-13</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-10-13", "questions": [{"target": "의사", "meaning_ja": "私の兄は「医者」です。", "sentence": "저희 오빠는 ____예요.", "answer": "저희 오빠는 의사예요."}, {"target": "간호사", "meaning_ja": "彼女は病院で「看護師」として働いています。", "sentence": "그녀는 병원에서 ____로 일해요.", "answer": "그녀는 병원에서 간호사로 일해요."}, {"target": "선생님", "meaning_ja": "私たちの「先生」はとても親切です。", "sentence": "우리 ____은 아주 친절해요.", "answer": "우리 선생님은 아주 친절해요."}, {"target": "경찰관", "meaning_ja": "「警察官」が道を案内してくれました。", "sentence": "____이 길을 안내해 줬어요.", "answer": "경찰관이 길을 안내해 줬어요."}, {"target": "소방관", "meaning_ja": "「消防士」たちが火事をすぐに消しました。", "sentence": "____들이 불을 금방 껐어요.", "answer": "소방관들이 불을 금방 껐어요."}, {"target": "요리사", "meaning_ja": "その店の「料理人」は本当に腕がいいです。", "sentence": "그 가게 ____는 정말 실력이 좋아요.", "answer": "그 가게 요리사는 정말 실력이 좋아요."}, {"target": "변호사", "meaning_ja": "彼は有名な「弁護士」になりたがっています。", "sentence": "그는 유명한 ____가 되고 싶어 해요.", "answer": "그는 유명한 변호사가 되고 싶어 해요."}, {"target": "가수", "meaning_ja": "その「歌手」の新しい歌はとても人気です。", "sentence": "그 ____의 새 노래가 아주 인기예요.", "answer": "그 가수의 새 노래가 아주 인기예요."}, {"target": "화가", "meaning_ja": "あの「画家」の絵はとても美しいです。", "sentence": "저 ____의 그림은 아주 아름다워요.", "answer": "저 화가의 그림은 아주 아름다워요."}, {"target": "운전기사", "meaning_ja": "バスの「運転手」がとても親切でした。", "sentence": "버스 ____가 아주 친절했어요.", "answer": "버스 운전기사가 아주 친절했어요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
