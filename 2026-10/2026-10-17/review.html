@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-17 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-17" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-17</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-10-17", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 445, "expression": "consciousness", "meaning": "〈U〉意識, 知覚 / (個人や集団の)意識, 意見"}, {"id": 2570, "expression": "vanish", "meaning": "(特に急に…から)『見えなくなる』,消える《+from+名》(disappear) / (…から)『存在しなくなる』,ゼロになる《+from+名》"}, {"id": 190, "expression": "bend", "meaning": "〈C〉曲がり,湾曲部"}, {"id": 1397, "expression": "mentor", "meaning": "指導者,師 / (良き)助言者,顧問"}, {"id": 4359, "expression": "fungus", "meaning": "真菌"}, {"id": 3515, "expression": "in cooperation with", "meaning": "〜と協力して"}, {"id": 1971, "expression": "retard", "meaning": "〈他〉…‘の'進歩(進行)を遅らせる(のろくする) / 〈自〉(進行が)遅れる"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2069, "expression": "secondary", "meaning": "第2の,2番目の;(…の)次の《+to+名》  / 派生的な,二次的な,あまり重要でない  / 中等学校[教育]の  / 二次電流の"}, {"id": 1224, "expression": "intruder", "meaning": "侵入者;出しゃばり"}, {"id": 3874, "expression": "out of sight", "meaning": "見えないところに"}, {"id": 705, "expression": "dropout", "meaning": "(世間一般とは別の生き方を求める)脱落者 / 中途退学者 / (ラグビーで)ドロップアウト"}, {"id": 2102, "expression": "sharply", "meaning": "鋭く / 急に / 激しく / 明碓に / 敏感に / 抜け目なく"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 4125, "expression": "to one’s taste", "meaning": "〜の好みに合って"}, {"id": 4088, "expression": "That’s how ...", "meaning": "そういうふうに〜する／それが〜の方法だ"}, {"id": 3740, "expression": "make oneself understood", "meaning": "自分の考えを分かってもらう"}, {"id": 1658, "expression": "paw", "meaning": "(四つ足動物のかぎつめのある)『足』 / 《話》《おどけて》(人間の)手"}, {"id": 2825, "expression": "at the request of", "meaning": "〜の依頼で"}, {"id": 3862, "expression": "or something", "meaning": "〜か何か"}, {"id": 2115, "expression": "shoplifting", "meaning": "万引き(すること)"}, {"id": 3043, "expression": "be suited for [to]", "meaning": "〜に適している"}, {"id": 520, "expression": "cripple", "meaning": "〈C〉肢体障害者(手足の障害のある人,特に歩行の不自由な人)"}, {"id": 843, "expression": "eyelid", "meaning": "まぶた"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
