@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-19 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-19" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-19</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-10-19", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 715, "expression": "eagle", "meaning": "『ワシ』 / ワシ印;ワシ印の旗 / (ゴルフで)標準より二つ少ない打数"}, {"id": 457, "expression": "contemporary", "meaning": "同時代の / 現代の（名詞的に使う場合）同年輩の人 / 同時代の人"}, {"id": 2889, "expression": "be burdened with", "meaning": "〜を負わされている／〜を抱えている"}, {"id": 2476, "expression": "unacceptable", "meaning": "許されない / 受け入れられない / 容認できない"}, {"id": 1249, "expression": "itch", "meaning": "〈人・体の一部が〉かゆい,むずむずする / 《しばしば進行形で》むずむずする,欲しくてたまらない"}, {"id": 1574, "expression": "ounce", "meaning": "〈C〉オンス（重量の単位） / 液量オンス / 《通例否文で》《an ~》少量《の…》《of ...》"}, {"id": 1551, "expression": "offshore", "meaning": "沖合いの / 海外に移された"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 2444, "expression": "tribe", "meaning": "《集合的に》《単数・複数扱い》部族  / 《しばしば軽べつして》(…の)仲間,集団,連中《+of+名》  / (動植物の)族(family(科)と genus(属)の間の分類単位)"}, {"id": 98, "expression": "antivirus", "meaning": "抗ウイルス性の"}, {"id": 3163, "expression": "carry out", "meaning": "〜を実行する （その計画は実行困難に思える）"}, {"id": 1203, "expression": "instinct", "meaning": "〈U〉本能 / 〈C〉《…に対する》(生まれつきの)才能,素質,天分《for ...》"}, {"id": 3810, "expression": "on and off [off and on]", "meaning": "断続的に／時々"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 1446, "expression": "momentary", "meaning": "『瞬時の』,はかない,つかの間の / 《ややまれ》刻々の"}, {"id": 24, "expression": "addicted", "meaning": "(薬などの物質の作用によって)中毒になっている,常習的な / (非常に楽しい娯楽などに)病みつきの,熱狂的な,くびったけの,はまっている"}, {"id": 1776, "expression": "preindustrial", "meaning": "産業革命前の"}, {"id": 4363, "expression": "vine", "meaning": "つる植物(ぶどう)"}, {"id": 881, "expression": "finance", "meaning": "〈U〉財政,財務,財政学  / 《複数形で》財源,財力,収入,歳入;経済状態,金回り"}, {"id": 3461, "expression": "hear from", "meaning": "〜から便りをもらう"}, {"id": 4364, "expression": "accomplish", "meaning": "成し遂げる、勝ち取る"}, {"id": 257, "expression": "breezy", "meaning": "そよ風の吹く / 元気のよくさわやかな"}, {"id": 1597, "expression": "overall", "meaning": "全部の,全般的な,全面的な,  端から端までの / 全般的に,全面的に, 端から端まで"}, {"id": 2084, "expression": "sense", "meaning": "…‘を'感ずる,‘に'気づく"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
