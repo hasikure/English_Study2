@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-10-30 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-10-30" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-10-30</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-10-30", "questions": [{"target": "침대", "meaning_ja": "新しい「ベッド」を買いました。", "sentence": "새 ____를 샀어요.", "answer": "새 침대를 샀어요."}, {"target": "소파", "meaning_ja": "「ソファ」でくつろいでテレビを見ました。", "sentence": "____에서 편하게 텔레비전을 봤어요.", "answer": "소파에서 편하게 텔레비전을 봤어요."}, {"target": "책상", "meaning_ja": "「机」の上がとても散らかっています。", "sentence": "____ 위가 아주 지저분해요.", "answer": "책상 위가 아주 지저분해요."}, {"target": "책장", "meaning_ja": "新しい「本棚」に本を並べました。", "sentence": "새 ____에 책을 꽂았어요.", "answer": "새 책장에 책을 꽂았어요."}, {"target": "옷장", "meaning_ja": "「タンス」に服を整理して入れました。", "sentence": "____에 옷을 정리해서 넣었어요.", "answer": "옷장에 옷을 정리해서 넣었어요."}, {"target": "서랍", "meaning_ja": "「引き出し」の中にペンがたくさんあります。", "sentence": "____ 안에 펜이 많이 있어요.", "answer": "서랍 안에 펜이 많이 있어요."}, {"target": "커튼", "meaning_ja": "新しい「カーテン」を取り付けました。", "sentence": "새 ____을 달았어요.", "answer": "새 커튼을 달았어요."}, {"target": "카펫", "meaning_ja": "リビングに「カーペット」を敷きました。", "sentence": "거실에 ____을 깔았어요.", "answer": "거실에 카펫을 깔았어요."}, {"target": "램프", "meaning_ja": "机の上に小さな「ランプ」を置きました。", "sentence": "책상 위에 작은 ____를 놓았어요.", "answer": "책상 위에 작은 램프를 놓았어요."}, {"target": "베개", "meaning_ja": "「枕」がとても柔らかいです。", "sentence": "____가 아주 푹신해요.", "answer": "베개가 아주 푹신해요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
