@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-11-10 Review</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-11-10" data-study-mode="review">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-11-10</div>
+    <h1>Review</h1>
+    <p class="review-note">スコアを付けた項目と、意味を書いた New Items だけが送信対象になります。入力途中の内容はこの端末に自動保存されます。</p>
+    <p class="review-note">わかる(receptive): 0 初見 / 1 少し / 2 だいたい / 3 かなり / 4 安定 ・ 使える(productive)も同じ目安</p>
+  </section>
+  <script type="application/json" id="review-data">{"date": "2026-11-10", "repo": "hasikure/Management", "titlePrefix": "[english-review]", "modes": [{"mode": "reading", "label": "Reading", "items": [{"id": 4029, "expression": "succeed in", "meaning": "〜に成功する"}, {"id": 2115, "expression": "shoplifting", "meaning": "万引き(すること)"}, {"id": 3792, "expression": "not to say", "meaning": "〜とは言わないまでも"}, {"id": 754, "expression": "endurance", "meaning": "『忍耐』,我慢 / 耐久力,持久力,持続"}, {"id": 482, "expression": "cornet", "meaning": "コルネット(管楽器の一種) / 《英》(アイスクリームの)コーン"}, {"id": 1439, "expression": "modernization", "meaning": "現代化"}, {"id": 4209, "expression": "within the scope of", "meaning": "〜の範囲内で"}]}, {"mode": "listening", "label": "Listening", "items": [{"id": 1249, "expression": "itch", "meaning": "〈人・体の一部が〉かゆい,むずむずする / 《しばしば進行形で》むずむずする,欲しくてたまらない"}, {"id": 962, "expression": "gaze", "meaning": "〈C〉じっと見つめること, 凝視"}, {"id": 733, "expression": "electronically", "meaning": "電子的に / 電子工学的に / 電子装置を用いて"}, {"id": 1573, "expression": "ornament", "meaning": "〈C〉『装飾品』,飾り / 〈U〉『装飾』,装飾法"}, {"id": 1714, "expression": "pine", "meaning": "〈C〉『松』,松の木([[pine tree]]) / 〈U〉松材"}]}, {"mode": "fill-blank", "label": "Fill in the Blank", "items": [{"id": 633, "expression": "disappearance", "meaning": "消失,消滅;〈U〉〈C〉失踪(しっそう)"}, {"id": 2977, "expression": "be in the hands of", "meaning": "〜の管理下にある"}, {"id": 1508, "expression": "next", "meaning": "次のもの, 次のひと"}, {"id": 2900, "expression": "be concerned with", "meaning": "〜とかかわりがある"}, {"id": 737, "expression": "elegantly", "meaning": "優雅に"}, {"id": 1748, "expression": "posh", "meaning": "素晴らしい,立派な / 高級な,豪華な"}, {"id": 3331, "expression": "for one’s age", "meaning": "年齢の割に"}, {"id": 138, "expression": "attainment", "meaning": "〈U〉(目的などを)『達成すること』,(…への)到達《+『of』+『名』》 / 《しばしば複数形で》学識,技能"}, {"id": 1203, "expression": "instinct", "meaning": "〈U〉本能 / 〈C〉《…に対する》(生まれつきの)才能,素質,天分《for ...》"}, {"id": 4069, "expression": "take over", "meaning": "〜を引き継ぐ"}]}], "passwordSalt": "english-study-review-v1", "passwordHash": "caf3d7655f20284f82a86afdc11af9886c8eb38e13695882bafc32f77c9d72e9"}</script>
+  <div id="review-app"></div>
+</main>
+
+<script src="../../assets/study-marks.js?v=20260702-spell-hint-password-markremove"></script>
+<script src="../../assets/review.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>

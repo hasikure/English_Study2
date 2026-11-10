@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-11-10 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-11-10" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-11-10</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-11-10", "questions": [{"target": "사과", "meaning_ja": "彼女は毎朝「りんご」を一つ食べます。", "sentence": "그녀는 매일 아침 ____를 하나 먹어요.", "answer": "그녀는 매일 아침 사과를 하나 먹어요."}, {"target": "바나나", "meaning_ja": "子供たちは「バナナ」を大好きです。", "sentence": "아이들은 ____를 아주 좋아해요.", "answer": "아이들은 바나나를 아주 좋아해요."}, {"target": "포도", "meaning_ja": "秋には「ぶどう」が特においしいです。", "sentence": "가을에는 ____가 특히 맛있어요.", "answer": "가을에는 포도가 특히 맛있어요."}, {"target": "딸기", "meaning_ja": "彼は「いちご」ケーキを注文しました。", "sentence": "그는 ____ 케이크를 주문했어요.", "answer": "그는 딸기 케이크를 주문했어요."}, {"target": "수박", "meaning_ja": "夏には「スイカ」をよく食べます。", "sentence": "여름에는 ____을 자주 먹어요.", "answer": "여름에는 수박을 자주 먹어요."}, {"target": "복숭아", "meaning_ja": "母は「桃」を農家から直接買いました。", "sentence": "어머니는 농장에서 직접 ____를 사 왔어요.", "answer": "어머니는 농장에서 직접 복숭아를 사 왔어요."}, {"target": "배", "meaning_ja": "祖母が「梨」をむいてくれました。", "sentence": "할머니는 ____를 깎아 주셨어요.", "answer": "할머니는 배를 깎아 주셨어요."}, {"target": "오렌지", "meaning_ja": "毎朝「オレンジ」ジュースを飲みます。", "sentence": "아침마다 ____ 주스를 마셔요.", "answer": "아침마다 오렌지 주스를 마셔요."}, {"target": "참외", "meaning_ja": "夏の市場には「韓国メロン(チャメ)」がたくさん出回ります。", "sentence": "여름 시장에는 ____가 많이 나와요.", "answer": "여름 시장에는 참외가 많이 나와요."}, {"target": "자두", "meaning_ja": "木から「すもも」を何個か摘みました。", "sentence": "나무에서 ____를 몇 개 땄어요.", "answer": "나무에서 자두를 몇 개 땄어요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
