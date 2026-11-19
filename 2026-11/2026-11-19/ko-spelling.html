@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-11-19 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-11-19" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-11-19</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-11-19", "questions": [{"target": "물", "meaning_ja": "運動の後は「水」をたくさん飲みます。", "sentence": "운동 후에는 ____을 많이 마셔요.", "answer": "운동 후에는 물을 많이 마셔요."}, {"target": "커피", "meaning_ja": "彼は朝ごとに「コーヒー」を一杯飲みます。", "sentence": "그는 아침마다 ____를 한 잔 마셔요.", "answer": "그는 아침마다 커피를 한 잔 마셔요."}, {"target": "차", "meaning_ja": "食後には温かい「お茶」が好きです。", "sentence": "식사 후에는 따뜻한 ____를 좋아해요.", "answer": "식사 후에는 따뜻한 차를 좋아해요."}, {"target": "우유", "meaning_ja": "子供たちは毎晩「牛乳」を一杯飲みます。", "sentence": "아이들은 매일 밤 ____를 한 잔 마셔요.", "answer": "아이들은 매일 밤 우유를 한 잔 마셔요."}, {"target": "주스", "meaning_ja": "母は毎朝新鮮な「ジュース」を作ってくれます。", "sentence": "어머니는 매일 아침 신선한 ____를 만들어 줘요.", "answer": "어머니는 매일 아침 신선한 주스를 만들어 줘요."}, {"target": "콜라", "meaning_ja": "彼は食事のときいつも「コーラ」を注文します。", "sentence": "그는 식사할 때 항상 ____를 주문해요.", "answer": "그는 식사할 때 항상 콜라를 주문해요."}, {"target": "사이다", "meaning_ja": "夏には冷たい「サイダー」が特においしいです。", "sentence": "여름에는 차가운 ____가 특히 맛있어요.", "answer": "여름에는 차가운 사이다가 특히 맛있어요."}, {"target": "와인", "meaning_ja": "両親は夕食と一緒に「ワイン」を飲みます。", "sentence": "부모님은 저녁 식사와 함께 ____을 드세요.", "answer": "부모님은 저녁 식사와 함께 와인을 드세요."}, {"target": "맥주", "meaning_ja": "叔父は夏になるといつも冷たい「ビール」が好きです。", "sentence": "삼촌은 여름마다 차가운 ____를 좋아해요.", "answer": "삼촌은 여름마다 차가운 맥주를 좋아해요."}, {"target": "녹차", "meaning_ja": "祖母は毎日午後「緑茶」を飲みます。", "sentence": "할머니는 매일 오후 ____를 드세요.", "answer": "할머니는 매일 오후 녹차를 드세요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
