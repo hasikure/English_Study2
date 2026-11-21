@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-11-21 Korean Spelling</title>
+  <link rel="stylesheet" href="../../assets/site.css?v=20260702-spell-hint-password-markremove">
+</head>
+<body>
+
+<main class="shell" data-study-date="2026-11-21" data-study-mode="ko-spelling">
+  <nav class="topbar">
+    <a href="../../index.html">All days</a>
+    <a href="index.html">This day</a>
+  </nav>
+  <section class="hero">
+    <div class="kicker">2026-11-21</div>
+    <h1>Korean Spelling</h1>
+    <p class="review-note">空欄に入る韓国語の単語を入力欄につづり、「答えを見る」で自己採点できます。入力はこの端末に保存されます。</p>
+  </section>
+  <script type="application/json" id="korean-spell-data">{"date": "2026-11-21", "questions": [{"target": "아버지", "meaning_ja": "彼女の「お父さん」は毎朝早く出勤します。", "sentence": "그녀의 ____는 매일 아침 일찍 출근해요.", "answer": "그녀의 아버지는 매일 아침 일찍 출근해요."}, {"target": "어머니", "meaning_ja": "私の「お母さん」は料理がとても上手です。", "sentence": "제 ____는 요리를 아주 잘하세요.", "answer": "제 어머니는 요리를 아주 잘하세요."}, {"target": "형", "meaning_ja": "彼(弟)は自分の「お兄さん」をとても尊敬しています。", "sentence": "그는 자기 ____을 아주 존경해요.", "answer": "그는 자기 형을 아주 존경해요."}, {"target": "누나", "meaning_ja": "彼(弟)の「お姉さん」は医者です。", "sentence": "그의 ____는 의사예요.", "answer": "그의 누나는 의사예요."}, {"target": "오빠", "meaning_ja": "彼女(妹)の「お兄さん」は背が高いです。", "sentence": "그녀의 ____는 키가 커요.", "answer": "그녀의 오빠는 키가 커요."}, {"target": "언니", "meaning_ja": "彼女(妹)の「お姉さん」はパリに住んでいます。", "sentence": "그녀의 ____는 파리에 살아요.", "answer": "그녀의 언니는 파리에 살아요."}, {"target": "동생", "meaning_ja": "私の「弟(または妹)」はまだ小学生です。", "sentence": "제 ____은 아직 초등학생이에요.", "answer": "제 동생은 아직 초등학생이에요."}, {"target": "할아버지", "meaning_ja": "「おじいさん」は毎朝公園を散歩されます。", "sentence": "____께서는 매일 아침 공원을 산책하세요.", "answer": "할아버지께서는 매일 아침 공원을 산책하세요."}, {"target": "할머니", "meaning_ja": "「おばあさん」はいつも美味しいおやつを作ってくれます。", "sentence": "____께서는 항상 맛있는 간식을 만들어 주세요.", "answer": "할머니께서는 항상 맛있는 간식을 만들어 주세요."}, {"target": "삼촌", "meaning_ja": "私の「叔父」はアメリカに住んでいます。", "sentence": "제 ____은 미국에 살아요.", "answer": "제 삼촌은 미국에 살아요."}]}</script>
+  <div id="korean-spell-app"></div>
+</main>
+
+<script src="../../assets/korean-spell.js?v=20260702-spell-hint-password-markremove"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collapsible = new Set(["answer", "ideal version", "japanese translation", "日本語訳", "和訳"]);
+  document.querySelectorAll(".material-content h2").forEach((heading) => {
+    const key = heading.textContent.trim().toLowerCase();
+    if (!collapsible.has(key)) return;
+    const details = document.createElement("details");
+    details.className = "reveal";
+    const summary = document.createElement("summary");
+    summary.textContent = heading.textContent;
+    const first = heading.nextSibling;
+    heading.replaceWith(details);
+    details.appendChild(summary);
+    let node = first;
+    while (node && !(node.nodeType === 1 && /^H[12]$/.test(node.tagName))) {
+      const next = node.nextSibling;
+      details.appendChild(node);
+      node = next;
+    }
+  });
+});
+</script>
+</body>
+</html>
